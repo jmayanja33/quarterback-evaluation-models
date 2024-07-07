@@ -1,0 +1,63 @@
+from scraper import Scraper
+from ncaa_stats_scraper import NCAAStatsScraper
+from columns import *
+
+
+class NFLDraftScraper(Scraper):
+
+    def __init__(self):
+        super().__init__()
+        self.logger.info("Initializing NFL Draft Scraper")
+        self.columns_to_index = nfl_columns_to_index
+        self.ncaa_scraper = NCAAStatsScraper()
+        self.nfl_data = []
+        self.college_data = []
+
+    def scrape_all_years(self):
+        for year in self.years:
+            self.logger.info(f"Scraping NFL draft data for quarterbacks for year: {year}")
+            # Get HTML data from Sports Reference
+            url = f"https://www.pro-football-reference.com/years/{year}/draft.htm"
+            self.send_request(url)
+            # Scrape `drafts` table from HTML
+            table = self.find_table("drafts")
+            self.scrape(table, year)
+
+        # Save data to csv
+        self.save_data("nfl_draft_qbs", self.nfl_data, nfl_csv_columns)
+        # self.save_data("ncaa_drafted_qbs", self.college_data, ncaa_csv_columns)
+
+    def scrape(self, table, year):
+        """Function to scrape NFL statistics for drafted prospects"""
+        for i, row in enumerate(table.tbody.find_all('tr')):
+
+            # Find table columns.py
+            table_columns = row.find_all('td')
+
+            # Iterate through the columns.py
+            if table_columns:
+
+                # Find player ID, position, draft_round
+                player_id = f"{year}-{i}"
+                position = table_columns[3].text.strip()
+                draft_round = int(row.find('th').text.strip())
+                nfl_data_point = [year, position, player_id, draft_round]
+
+                # If the player is a quarterback, scrape the data
+                if position == "QB":
+                    # Extract data from each of the specified columns.py in self.`columns_to_index`
+                    for col in nfl_csv_columns:
+                        if col in self.columns_to_index.keys():
+                            column_val = self.extract_column_value(table_columns, col)
+                            nfl_data_point.append(column_val)
+
+                    # Get college data
+                    # player = table_columns[2].text.strip()
+                    # college = table_columns[26].text.strip()
+                    # college_stats_url = table_columns[27].next_element.attrs["href"]
+                    # college_data_point = self.ncaa_scraper.get_college_stats(player, college, college_stats_url)
+
+                    # Track data
+                    self.nfl_data.append(nfl_data_point)
+                    # self.college_data.append(college_data_point)
+
