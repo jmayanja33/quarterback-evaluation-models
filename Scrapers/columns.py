@@ -1,6 +1,6 @@
 ncaa_csv_columns = [
-     "player_id", "player", "years", "completions", "passes_attempted", "passing_yards", "passing_touchdowns", "interceptions",
-    "passer_rating", "rushing_attempts", "rushing_yards", "rushing_touchdowns", "college", "seasons", "wins", "losses",
+    "player_id", "player", "college", "years", "completions", "passes_attempted", "passing_yards", "passing_touchdowns", "interceptions",
+    "passer_rating", "rushing_attempts", "rushing_yards", "rushing_touchdowns", "wins", "losses",
     "avg_rank", "conference_wins", "conference_losses", "points_for", "points_against", "games_played"
 ]
 
@@ -51,3 +51,7 @@ ncaa_columns_to_index = {
         "rushing_touchdowns": {'type': 'int', 'index': 9},
     }
 }
+
+team_stats = [
+    "Record", "Rank", "Conference Record", "Points For", "Points/G", "Points Against"
+]

@@ -25,7 +25,7 @@ class NFLDraftScraper(Scraper):
 
         # Save data to csv
         self.save_data("nfl_draft_qbs", self.nfl_data, nfl_csv_columns)
-        # self.save_data("ncaa_drafted_qbs", self.college_data, ncaa_csv_columns)
+        self.save_data("ncaa_drafted_qbs", self.college_data, ncaa_csv_columns)
 
     def scrape(self, table, year):
         """Function to scrape NFL statistics for drafted prospects"""
@@ -52,12 +52,12 @@ class NFLDraftScraper(Scraper):
                             nfl_data_point.append(column_val)
 
                     # Get college data
-                    # player = table_columns[2].text.strip()
-                    # college = table_columns[26].text.strip()
-                    # college_stats_url = table_columns[27].next_element.attrs["href"]
-                    # college_data_point = self.ncaa_scraper.get_college_stats(player, college, college_stats_url)
+                    player = table_columns[2].text.strip()
+                    college = table_columns[26].text.strip()
+                    college_stats_url = table_columns[27].next_element.attrs["href"]
+                    college_data_point = self.ncaa_scraper.get_college_stats(player, player_id, college, college_stats_url)
 
                     # Track data
                     self.nfl_data.append(nfl_data_point)
-                    # self.college_data.append(college_data_point)
+                    self.college_data.append(college_data_point)
 

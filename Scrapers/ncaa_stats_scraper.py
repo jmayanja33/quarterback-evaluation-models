@@ -1,5 +1,9 @@
 from scraper import Scraper
 from columns import ncaa_csv_columns, ncaa_columns_to_index
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 
 class NCAAStatsScraper(Scraper):
@@ -13,7 +17,7 @@ class NCAAStatsScraper(Scraper):
     def get_college_stats(self, player, player_id, college, player_url):
         """Function to get all college stats for a certain quarterback"""
         self.logger.info(f"Scraping NCAA statistics for {player}")
-        self.data = [player_id, player]
+        self.data = [player_id, player, college, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
         # Get player statistics
         if player_url is None:
@@ -59,7 +63,7 @@ class NCAAStatsScraper(Scraper):
             # Iterate through columns
             for i, col in enumerate(ncaa_csv_columns):
                 if col in self.columns_to_index[index].keys():
-                    column_val = self.extract_column_value(table_columns, col)
+                    column_val = self.extract_column_value(table_columns, col, index)
 
                     # Update data point
                     if type(column_val) == int:
@@ -72,4 +76,21 @@ class NCAAStatsScraper(Scraper):
                     # Add strings
                     else:
                         self.data[i] = column_val
+
+    def scrape_p_tag(self, item):
+        """Function to scrape a p-tag"""
+
+        # Find the <p> tags
+        p_tag = self.soup.find("p")
+
+        # Scrape the vale
+        if p_tag:
+            tag = p_tag.find(item)
+            if tag and tag.text == 'Rank:':
+                pass
+                #TODO: Create rules for each p-tag needed to extract
+
+                # Get the remaining text after the strong tag and extract the rank
+                # rank_text = p_tag.text.replace('Rank:', '').strip()
+                # rank = rank_text.split(' ')[0]
 
