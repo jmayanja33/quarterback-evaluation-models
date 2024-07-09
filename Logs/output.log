@@ -33337,3 +33337,105 @@
 2024-07-07 23:47:42,214 - INFO - Scraping NCAA statistics for Michael Vick
 2024-07-07 23:49:34,266 - INFO - Scraping NCAA statistics for Drew Brees
 2024-07-07 23:50:27,209 - INFO - Scraping NCAA statistics for Quincy Carter
+2024-07-08 22:56:26,482 - INFO - Initializing NFL Draft Scraper
+2024-07-08 22:56:28,172 - INFO - Initializing NCAA Statistics Scraper
+2024-07-08 22:56:28,173 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-08 22:56:35,088 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-08 22:58:22,543 - INFO - Initializing NFL Draft Scraper
+2024-07-08 22:58:23,714 - INFO - Initializing NCAA Statistics Scraper
+2024-07-08 22:58:23,714 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-08 22:59:51,301 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-08 23:00:03,311 - INFO - Scrpaing team statisitcs for 2001 Virginia Tech
+2024-07-08 23:02:56,500 - INFO - Initializing NFL Draft Scraper
+2024-07-08 23:02:57,560 - INFO - Initializing NCAA Statistics Scraper
+2024-07-08 23:02:57,561 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-08 23:04:25,370 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-08 23:04:35,142 - INFO - Scrpaing team statisitcs for 2001 Virginia Tech
+2024-07-08 23:05:18,860 - INFO - Initializing NFL Draft Scraper
+2024-07-08 23:05:20,118 - INFO - Initializing NCAA Statistics Scraper
+2024-07-08 23:05:20,118 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-08 23:06:37,624 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-08 23:06:48,137 - INFO - Scrpaing team statisitcs for 2001 Virginia Tech
+2024-07-08 23:07:36,882 - INFO - Initializing NFL Draft Scraper
+2024-07-08 23:07:38,263 - INFO - Initializing NCAA Statistics Scraper
+2024-07-08 23:07:38,263 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-08 23:07:50,656 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-08 23:07:56,929 - INFO - Scrpaing team statisitcs for 2001 Virginia Tech
+2024-07-08 23:09:38,400 - INFO - Initializing NFL Draft Scraper
+2024-07-08 23:09:39,578 - INFO - Initializing NCAA Statistics Scraper
+2024-07-08 23:09:39,578 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-08 23:11:07,659 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-08 23:12:35,032 - INFO - Scrpaing team statisitcs for 2001 Virginia Tech
+2024-07-08 23:18:37,499 - INFO - Initializing NFL Draft Scraper
+2024-07-08 23:18:38,875 - INFO - Initializing NCAA Statistics Scraper
+2024-07-08 23:18:38,875 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-08 23:19:10,264 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-08 23:20:38,924 - INFO - Scrpaing team statisitcs for 2001 Virginia Tech
+2024-07-08 23:31:39,381 - INFO - Initializing NFL Draft Scraper
+2024-07-08 23:31:40,443 - INFO - Initializing NCAA Statistics Scraper
+2024-07-08 23:31:40,443 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-08 23:33:11,596 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-08 23:33:18,309 - INFO - Scrpaing team statisitcs for 2001 Virginia Tech
+2024-07-08 23:34:54,736 - INFO - Initializing NFL Draft Scraper
+2024-07-08 23:34:56,976 - INFO - Initializing NCAA Statistics Scraper
+2024-07-08 23:34:56,976 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-08 23:36:27,721 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-08 23:36:34,290 - INFO - Scrpaing team statisitcs for 2001 Virginia Tech
+2024-07-08 23:40:47,942 - INFO - Initializing NFL Draft Scraper
+2024-07-08 23:40:48,970 - INFO - Initializing NCAA Statistics Scraper
+2024-07-08 23:40:48,971 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-08 23:41:09,503 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-08 23:42:46,330 - INFO - Scrpaing team statisitcs for 2001 Virginia Tech
+2024-07-08 23:45:33,036 - INFO - Initializing NFL Draft Scraper
+2024-07-08 23:45:34,310 - INFO - Initializing NCAA Statistics Scraper
+2024-07-08 23:45:34,311 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-08 23:45:56,481 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-08 23:47:28,165 - INFO - Scrpaing team statisitcs for 2001 Virginia Tech
+2024-07-08 23:49:10,368 - INFO - Initializing NFL Draft Scraper
+2024-07-08 23:49:11,586 - INFO - Initializing NCAA Statistics Scraper
+2024-07-08 23:49:11,586 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-08 23:50:50,212 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-08 23:50:57,521 - INFO - Scrpaing team statisitcs for 2001 Virginia Tech
+2024-07-08 23:54:06,353 - INFO - Initializing NFL Draft Scraper
+2024-07-08 23:54:07,524 - INFO - Initializing NCAA Statistics Scraper
+2024-07-08 23:54:07,524 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-08 23:54:14,937 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-08 23:54:27,346 - INFO - Scrpaing team statisitcs for 2001 Virginia Tech
+2024-07-08 23:55:41,271 - INFO - Initializing NFL Draft Scraper
+2024-07-08 23:55:42,588 - INFO - Initializing NCAA Statistics Scraper
+2024-07-08 23:55:42,588 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-08 23:57:17,590 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-08 23:58:47,204 - INFO - Scrpaing team statisitcs for 2001 Virginia Tech
+2024-07-09 00:02:33,851 - INFO - Initializing NFL Draft Scraper
+2024-07-09 00:02:35,998 - INFO - Initializing NCAA Statistics Scraper
+2024-07-09 00:02:35,998 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-09 00:02:42,980 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-09 00:03:18,809 - INFO - Initializing NFL Draft Scraper
+2024-07-09 00:03:19,834 - INFO - Initializing NCAA Statistics Scraper
+2024-07-09 00:03:19,834 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-09 00:03:41,177 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-09 00:05:10,184 - INFO - Scrpaing team statisitcs for 2001 Virginia Tech
+2024-07-09 00:14:42,858 - INFO - Initializing NFL Draft Scraper
+2024-07-09 00:14:44,409 - INFO - Initializing NCAA Statistics Scraper
+2024-07-09 00:14:44,409 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-09 00:14:59,837 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-09 00:16:33,425 - INFO - Scrpaing team statisitcs for 2001 Virginia Tech
+2024-07-09 00:16:38,958 - INFO - Scrpaing team statisitcs for 2002 Virginia Tech
+2024-07-09 00:16:45,035 - INFO - Scrpaing team statisitcs for 2003 Virginia Tech
+2024-07-09 00:28:07,299 - INFO - Initializing NFL Draft Scraper
+2024-07-09 00:28:08,470 - INFO - Initializing NCAA Statistics Scraper
+2024-07-09 00:28:08,470 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-09 00:28:40,968 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-09 00:30:23,490 - INFO - Scrpaing team statisitcs for 0 Virginia Tech
+2024-07-09 00:31:35,574 - INFO - Initializing NFL Draft Scraper
+2024-07-09 00:31:36,839 - INFO - Initializing NCAA Statistics Scraper
+2024-07-09 00:31:36,839 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-09 00:33:06,874 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-09 00:37:33,283 - INFO - Initializing NFL Draft Scraper
+2024-07-09 00:37:34,321 - INFO - Initializing NCAA Statistics Scraper
+2024-07-09 00:37:34,321 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-09 00:37:57,218 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-09 00:39:42,596 - INFO - Initializing NFL Draft Scraper
+2024-07-09 00:39:43,680 - INFO - Initializing NCAA Statistics Scraper
+2024-07-09 00:39:43,680 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-09 00:41:15,182 - INFO - Scraping NCAA statistics for Michael Vick

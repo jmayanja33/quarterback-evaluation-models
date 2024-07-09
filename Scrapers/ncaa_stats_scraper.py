@@ -1,7 +1,8 @@
 from scraper import Scraper
 from columns import ncaa_csv_columns, ncaa_columns_to_index
 from dotenv import load_dotenv
-import os
+import pandas as pd
+import io
 
 load_dotenv()
 
@@ -17,44 +18,41 @@ class NCAAStatsScraper(Scraper):
     def get_college_stats(self, player, player_id, college, player_url):
         """Function to get all college stats for a certain quarterback"""
         self.logger.info(f"Scraping NCAA statistics for {player}")
-        self.data = [player_id, player, college, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        self.data = [player_id, player, college, None, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
         # Get player statistics
         if player_url is None:
-            self.data += [-1 for i in range(12)]
+            for i in range(4, 13):
+                self.data[i] = -1
+            self.data[20] = -1
+
+            player_years = None
         else:
             self.send_request(player_url)
-
-            self.scrape_passing_stats()
+            player_years = self.scrape_passing_stats()
             self.scrape_rushing_stats()
 
         # Get team statistics
-        if college is None:
-            self.data += [-1 for i in range(9)]
+        if college is None or player_years is None:
+            for i in range(14, 20):
+                self.data[i] = -1
         else:
-            self.scrape_team_stats(college)
+            self.scrape_team_stats(college, player_years)
 
         return self.data
 
     def scrape_passing_stats(self):
         """Function to get passing statistics for a quarterback"""
-        self.scrape("passing", "passing")
+        return self.scrape("passing", "passing")
 
     def scrape_rushing_stats(self):
         """Function to get rushing statistics for a quarterback"""
         self.scrape("rushing", "rushing")
 
-    def scrape_team_stats(self, college):
-        """Function to get a quarterback's team statistics for a certain season"""
-        for year in self.years:
-            url = f"https://www.sports-reference.com/cfb/schools/{college.replace(' ', '-')}/{year}-schedule.html"
-            self.send_request(url)
-
-        pass
-
     def scrape(self, table_id, index):
         """Function to scrape data"""
         table = self.find_table(table_id)
+        player_years = []
 
         for row in table.tbody.find_all('tr'):
             # Find table columns
@@ -69,7 +67,7 @@ class NCAAStatsScraper(Scraper):
                     if type(column_val) == int:
                         # Track years
                         if col == "years":
-                            self.years.append(column_val)
+                            player_years.append(column_val)
                             self.data[i] += 1
                         else:
                             self.data[i] += column_val
@@ -77,20 +75,98 @@ class NCAAStatsScraper(Scraper):
                     else:
                         self.data[i] = column_val
 
-    def scrape_p_tag(self, item):
-        """Function to scrape a p-tag"""
+        return player_years
 
-        # Find the <p> tags
-        p_tag = self.soup.find("p")
+    def scrape_team_stats(self, college, player_years):
+        """Function to get a quarterback's team statistics for a certain season"""
 
-        # Scrape the vale
-        if p_tag:
-            tag = p_tag.find(item)
-            if tag and tag.text == 'Rank:':
-                pass
-                #TODO: Create rules for each p-tag needed to extract
+        # Initialize rank
+        rank = -1
 
-                # Get the remaining text after the strong tag and extract the rank
-                # rank_text = p_tag.text.replace('Rank:', '').strip()
-                # rank = rank_text.split(' ')[0]
+        # Extract college stats
+        for year in player_years:
+            # Get yearly statistics
+            self.logger.info(f"Scrpaing team statisitcs for {year} {college}")
+            url = f"https://www.sports-reference.com/cfb/schools/{college.lower().replace(' ', '-')}/{year}-schedule.html"
+            dfs = pd.read_html(url, encoding="utf-8")
+            # self.send_request(url)
+
+            # Scrape stats
+            if len(dfs) == 1:
+                conference, wins, losses, conference_wins, conference_losses, points_for, points_against = self.scrape_season(dfs[0])
+            else:
+                conference, wins, losses, conference_wins, conference_losses, points_for, points_against = self.scrape_season(dfs[1])
+                rank = self.scrape_ranking(dfs[0], rank)
+
+            data_point = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                          wins, losses, rank, conference_wins, conference_losses, points_for, points_against, 0]
+
+            # Set conference (most recent conference will be used)
+            self.data[3] = conference
+
+            # Update data
+            for i in range(14, 21):
+                self.data[i] += data_point[i]
+
+    def scrape_season(self, stats):
+        """Function to scrape team data for a single season"""
+        # stats = self.find_table('schedule')
+        # html_table = io.StringIO(str(self.find_table('schedule')))
+        # stats = pd.read_html(html_table, encoding="utf-8")[0]
+
+        # Get conference
+        conference = self.scrape_conference(stats)
+
+        # Get wins, losses
+        wins, losses, conference_wins, conference_losses = self.scrape_record(stats, conference)
+
+        # Get points for/against
+        points_for, points_against = self.scrape_points(stats)
+
+        return conference, wins, losses, conference_wins, conference_losses, points_for, points_against
+
+    def scrape_conference(self, table):
+        """Function to scrape the conference"""
+        conference_count = int(table['Conf'].value_counts().max())
+        if conference_count < 6:
+            return "Ind"
+        else:
+            return table['Conf'].value_counts().idxmax()
+
+    def scrape_record(self, table, conference):
+        """Function to scrape wins and losses"""
+        wins = int(table['Unnamed: 7'].value_counts()["W"])
+        losses = int(table['Unnamed: 7'].value_counts()["L"])
+
+        # Scrape conference record
+        if conference == "Ind":
+            conference_wins = 0
+            conference_losses = 0
+        else:
+            filtered_table = table[table['Conf'] == conference]
+            conference_wins = int(filtered_table['Unnamed: 7'].value_counts()["W"])
+            conference_losses = int(filtered_table['Unnamed: 7'].value_counts()["L"])
+
+        return wins, losses, conference_wins, conference_losses
+
+    def scrape_points(self, table):
+        """Function to scrape points for and against"""
+        points_for = int(sum(table["Pts"]))
+        points_against = int(sum(table["Opp"]))
+
+        return points_for, points_against
+
+    def scrape_ranking(self, stats, rank):
+        """Function to scrape a teams highest ranking for a season"""
+        try:
+            # html_table = io.StringIO(str(self.find_table('polls')))
+            # stats = pd.read_html(html_table)[0]
+            new_ranking = int(stats.loc[0].max())
+            higher_rank = max(rank, new_ranking)
+
+            return higher_rank
+
+        except Exception as e:
+            return rank
+
 
