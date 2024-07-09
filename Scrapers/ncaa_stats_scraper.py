@@ -28,7 +28,7 @@ class NCAAStatsScraper(Scraper):
 
             player_years = None
         else:
-            self.send_request(player_url)
+            self.send_request(player_url, selenium_needed=True)
             player_years = self.scrape_passing_stats()
             self.scrape_rushing_stats()
 
@@ -41,9 +41,31 @@ class NCAAStatsScraper(Scraper):
 
         return self.data
 
+    def scrape_player_stats(self):
+        """Function to scrape player stats"""
+        player_years = self.scrape_passing_stats()
+        self.scrape_rushing_stats()
+        self.scrape_team_stats(player_years)
+
     def scrape_passing_stats(self):
         """Function to get passing statistics for a quarterback"""
-        return self.scrape("passing", "passing")
+        table = self.find_table("passing")
+
+        # Scrape years played and conference
+        player_years = list(table["Year"])
+        self.data[4] = len(player_years)   # Years played
+        self.data[3] = self.scrape_conference(table)   # Conference
+
+        # Scrape passing data
+        self.data[5] = sum(table["Cmp"][:-1])    # Completions
+        self.data[6] = sum(table["Att"][:-1])   # Attempts
+        self.data[7] = sum(table["Yds"][:-1])  # Passing yards
+        self.data[8] = sum(table["TD"][:-1])  # Passing TDs
+        self.data[9] = sum(table["Int"][:-1])  # Interceptions
+        self.data[10] = table["Rate"][:-1].mean()   # Passer rating
+
+        return player_years
+
 
     def scrape_rushing_stats(self):
         """Function to get rushing statistics for a quarterback"""
@@ -52,7 +74,15 @@ class NCAAStatsScraper(Scraper):
     def scrape(self, table_id, index):
         """Function to scrape data"""
         table = self.find_table(table_id)
-        player_years = []
+
+        # Scrape years played and conference
+        player_years = list(table["Year"])
+        years = len(player_years)
+        conference = self.scrape_conference(table)
+
+
+        completions = sum(table["Cmp"])
+
 
         for row in table.tbody.find_all('tr'):
             # Find table columns
@@ -88,15 +118,14 @@ class NCAAStatsScraper(Scraper):
             # Get yearly statistics
             self.logger.info(f"Scrpaing team statisitcs for {year} {college}")
             url = f"https://www.sports-reference.com/cfb/schools/{college.lower().replace(' ', '-')}/{year}-schedule.html"
-            dfs = pd.read_html(url, encoding="utf-8")
-            # self.send_request(url)
+            passing_df, rushing_df = self.send_request(url)
 
             # Scrape stats
-            if len(dfs) == 1:
-                conference, wins, losses, conference_wins, conference_losses, points_for, points_against = self.scrape_season(dfs[0])
+            if rushing_df is None:
+                conference, wins, losses, conference_wins, conference_losses, points_for, points_against = self.scrape_season(passing_df)
             else:
-                conference, wins, losses, conference_wins, conference_losses, points_for, points_against = self.scrape_season(dfs[1])
-                rank = self.scrape_ranking(dfs[0], rank)
+                conference, wins, losses, conference_wins, conference_losses, points_for, points_against = self.scrape_season(passing_df)
+                rank = self.scrape_ranking(rushing_df, rank)
 
             data_point = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                           wins, losses, rank, conference_wins, conference_losses, points_for, points_against, 0]
@@ -110,10 +139,6 @@ class NCAAStatsScraper(Scraper):
 
     def scrape_season(self, stats):
         """Function to scrape team data for a single season"""
-        # stats = self.find_table('schedule')
-        # html_table = io.StringIO(str(self.find_table('schedule')))
-        # stats = pd.read_html(html_table, encoding="utf-8")[0]
-
         # Get conference
         conference = self.scrape_conference(stats)
 
@@ -159,8 +184,6 @@ class NCAAStatsScraper(Scraper):
     def scrape_ranking(self, stats, rank):
         """Function to scrape a teams highest ranking for a season"""
         try:
-            # html_table = io.StringIO(str(self.find_table('polls')))
-            # stats = pd.read_html(html_table)[0]
             new_ranking = int(stats.loc[0].max())
             higher_rank = max(rank, new_ranking)
 

@@ -5,8 +5,8 @@ from columns import *
 
 class NFLDraftScraper(Scraper):
 
-    def __init__(self):
-        super().__init__()
+    def __init__(self, start_year=2001, end_year=2022):
+        super().__init__(start_year, end_year)
         self.logger.info("Initializing NFL Draft Scraper")
         self.columns_to_index = nfl_columns_to_index
         self.ncaa_scraper = NCAAStatsScraper()
@@ -18,13 +18,13 @@ class NFLDraftScraper(Scraper):
             self.logger.info(f"Scraping NFL draft data for quarterbacks for year: {year}")
             # Get HTML data from Sports Reference
             url = f"https://www.pro-football-reference.com/years/{year}/draft.htm"
-            self.send_request(url)
+            self.send_request(url, selenium_needed=True)
             # Scrape `drafts` table from HTML
             table = self.find_table("drafts")
             self.scrape(table, year)
 
         # Save data to csv
-        self.save_data("nfl_draft_qbs", self.nfl_data, nfl_csv_columns)
+        # self.save_data("nfl_draft_qbs", self.nfl_data, nfl_csv_columns)
         self.save_data("ncaa_drafted_qbs", self.college_data, ncaa_csv_columns)
 
     def scrape(self, table, year):

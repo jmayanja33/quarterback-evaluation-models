@@ -39,18 +39,34 @@ class Scraper:
     def __init__(self, start_year=2001, end_year=2022):
         self.logger = Logger()
         self.driver = initialize_driver()
+        self.session = requests.session()
         self.soup = None
         self.years = [i for i in range(start_year, end_year)]
         self.columns_to_index = dict()
 
-    def send_request(self, url):
+    def send_request(self, url, selenium_needed=False):
         """Function to send request for data to be scraped"""
         # response = self.session.get(url).text
-        self.driver.get(url)
-        self.soup = BeautifulSoup(self.driver.page_source, 'html.parser')
+        if selenium_needed:
+            self.driver.get(url)
+            self.soup = BeautifulSoup(self.driver.page_source, 'html.parser')
+            return
+        else:
+            dfs = pd.read_html(url, encoding="utf-8")
 
-        # Pause for 5 seconds to avoid exceeding rate limit
-        time.sleep(5)
+            # Pause for 5 seconds to avoid exceeding rate limit
+            time.sleep(5)
+
+            # Determine how many tables need to be returned
+            if len(dfs) == 1:
+                return dfs[0], None
+            else:
+                passing = dfs[0]
+                rushing = dfs[1]
+                return passing, rushing
+
+            # response = self.session.get(url).text
+            # self.soup = BeautifulSoup(response, 'html.parser')
 
     def find_table(self, table_id):
         """Function to find a table by its id in the soup result"""
