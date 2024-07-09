@@ -44,29 +44,29 @@ class Scraper:
         self.years = [i for i in range(start_year, end_year)]
         self.columns_to_index = dict()
 
-    def send_request(self, url, selenium_needed=False):
+    def send_request(self, url, selenium_needed=False, use_requests=False, header=None, index=0):
         """Function to send request for data to be scraped"""
         # response = self.session.get(url).text
         if selenium_needed:
             self.driver.get(url)
             self.soup = BeautifulSoup(self.driver.page_source, 'html.parser')
             return
-        else:
-            dfs = pd.read_html(url, encoding="utf-8")
+        elif use_requests:
+            response = self.session.get(url).text
+            self.soup = BeautifulSoup(response, 'html.parser')
 
             # Pause for 5 seconds to avoid exceeding rate limit
             time.sleep(5)
 
-            # Determine how many tables need to be returned
-            if len(dfs) == 1:
-                return dfs[0], None
-            else:
-                passing = dfs[0]
-                rushing = dfs[1]
-                return passing, rushing
+            return
 
-            # response = self.session.get(url).text
-            # self.soup = BeautifulSoup(response, 'html.parser')
+        else:
+            dfs = pd.read_html(url, encoding="utf-8", header=header)
+
+            # Pause for 5 seconds to avoid exceeding rate limit
+            time.sleep(5)
+
+            return dfs[index]
 
     def find_table(self, table_id):
         """Function to find a table by its id in the soup result"""
@@ -98,6 +98,17 @@ class Scraper:
                 return 0
             else:
                 return "MISSING"
+
+    def extract_column_value_pandas(self, table, column, metric="sum"):
+        """Function to extract data from an html table rendered by pandas"""
+        try:
+            if metric == "sum":
+                return sum(table[column][:-1])
+            elif metric == "mean":
+                return table[column][:-1].mean()
+
+        except Exception as e:
+            return 0
 
     def save_data(self, filename, data, columns):
         """Function to save table to a csv file"""

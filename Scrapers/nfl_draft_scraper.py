@@ -18,7 +18,7 @@ class NFLDraftScraper(Scraper):
             self.logger.info(f"Scraping NFL draft data for quarterbacks for year: {year}")
             # Get HTML data from Sports Reference
             url = f"https://www.pro-football-reference.com/years/{year}/draft.htm"
-            self.send_request(url, selenium_needed=True)
+            self.send_request(url, use_requests=True)
             # Scrape `drafts` table from HTML
             table = self.find_table("drafts")
             self.scrape(table, year)
@@ -39,12 +39,15 @@ class NFLDraftScraper(Scraper):
 
                 # Find player ID, position, draft_round
                 player_id = f"{year}-{i}"
+                player = table_columns[2].text.strip()
                 position = table_columns[3].text.strip()
                 draft_round = int(row.find('th').text.strip())
                 nfl_data_point = [year, position, player_id, draft_round]
 
                 # If the player is a quarterback, scrape the data
                 if position == "QB":
+                    self.logger.info(f"Scraping NFL statistics for {player}")
+
                     # Extract data from each of the specified columns.py in self.`columns_to_index`
                     for col in nfl_csv_columns:
                         if col in self.columns_to_index.keys():
@@ -52,7 +55,6 @@ class NFLDraftScraper(Scraper):
                             nfl_data_point.append(column_val)
 
                     # Get college data
-                    player = table_columns[2].text.strip()
                     college = table_columns[26].text.strip()
                     college_stats_url = table_columns[27].next_element.attrs["href"]
                     college_data_point = self.ncaa_scraper.get_college_stats(player, player_id, college, college_stats_url)

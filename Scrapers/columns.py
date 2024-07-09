@@ -33,26 +33,3 @@ nfl_columns_to_index = {
     "rushing_touchdowns": {'type': 'int', 'index': 19},
     "college": {'type': 'str', 'index': 26}
 }
-
-ncaa_columns_to_index = {
-    "passing": {
-        "years": {'type': 'str', 'index': 0},
-        "conference": {'type': 'str', 'index': 2},
-        "games": {'type': 'int', 'index': 3},
-        "completions": {'type': 'int', 'index': 4},
-        "passes_attempted": {'type': 'int', 'index': 5},
-        "passing_yards": {'type': 'int', 'index': 7},
-        "passing_touchdowns": {'type': 'int', 'index': 10},
-        "interceptions": {'type': 'int', 'index': 11},
-        "passer_rating": {'type': 'float', 'index': 12},
-    },
-    "rushing": {
-        "rushing_attempts": {'type': 'int', 'index': 6},
-        "rushing_yards": {'type': 'int', 'index': 7},
-        "rushing_touchdowns": {'type': 'int', 'index': 9},
-    }
-}
-
-team_stats = [
-    "Record", "Rank", "Conference Record", "Points For", "Points/G", "Points Against"
-]
