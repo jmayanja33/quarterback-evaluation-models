@@ -1,8 +1,8 @@
 ncaa_csv_columns = [
-    "player_id", "player", "college", "conference", "years", "completions", "passes_attempted", "passing_yards",
-    "passing_touchdowns", "interceptions", "passer_rating", "rushing_attempts", "rushing_yards", "rushing_touchdowns",
-    "wins", "losses", "highest_rank", "conference_wins", "conference_losses", "points_for", "points_against",
-    "games_played"
+    "player_id", "player", "college", "conference", "years", "games_played", "completions", "passes_attempted",
+    "passing_yards", "passing_touchdowns", "interceptions", "passer_rating", "rushing_attempts", "rushing_yards",
+    "rushing_touchdowns", "wins", "losses", "highest_rank", "conference_wins", "conference_losses", "points_for",
+    "points_against",
 ]
 
 nfl_csv_columns = [

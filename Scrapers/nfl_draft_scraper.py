@@ -25,7 +25,7 @@ class NFLDraftScraper(Scraper):
             self.scrape(table, year)
 
         # Save data to csv
-        # self.save_data("nfl_draft_qbs", self.nfl_data, nfl_csv_columns)
+        self.save_data("nfl_draft_qbs", self.nfl_data, nfl_csv_columns)
         self.save_data("ncaa_drafted_qbs", self.college_data, ncaa_csv_columns)
 
     def scrape(self, table, year):

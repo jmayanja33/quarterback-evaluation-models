@@ -1,12 +1,12 @@
-player_id,player,college,conference,years,completions,passes_attempted,passing_yards,passing_touchdowns,interceptions,passer_rating,rushing_attempts,rushing_yards,rushing_touchdowns,wins,losses,highest_rank,conference_wins,conference_losses,points_for,points_against,games_played
-2001-1,Michael Vick,Virginia Tech,Big East,2,177.0,313.0,3074.0,20.0,11.0,153.9,212,0,16,22,2,4,13,1,968,431,0
-2001-32,Drew Brees,Purdue,Big Ten,4,942.0,1525.0,10909.0,81.0,41.0,123.1,229,0,14,33,16,50,22,10,1605,1114,0
-2001-53,Quincy Carter,Georgia,SEC,3,483.0,853.0,6447.0,35.0,25.0,125.16666666666667,251,0,11,25,11,21,16,8,959,744,0
-2001-59,Marques Tuiasosopo,Washington,Pac-10,4,418.0,761.0,5501.0,31.0,28.0,124.1,346,0,20,32,16,8,22,10,1441,1174,0
-2001-106,Chris Weinke,Florida St.,ACC,4,650.0,1107.0,9839.0,79.0,32.0,147.975,110,0,2,45,5,6,31,1,1838,681,0
-2001-109,Sage Rosenfels,Iowa St.,Big 12,4,306.0,587.0,4164.0,18.0,26.0,79.925,164,0,14,17,28,3022,8,24,1025,1415,0
-2001-125,Jesse Palmer,Florida,SEC,4,254.0,479.0,3755.0,31.0,17.0,133.02499999999998,67,0,6,39,11,4,28,6,1681,915,0
-2001-149,Mike McMahon,Rutgers,Big East,4,482.0,974.0,6608.0,41.0,52.0,108.225,214,0,8,9,35,3996,3,25,785,1698,0
-2001-155,A.J. Feeley,Oregon,Pac-10,4,,,,,,165.0,37,0,1,34,14,1026,21,11,1614,1211,0
-2001-172,Josh Booty,LSU,SEC,2,307.0,623.0,3951.0,24.0,34.0,105.35,53,0,0,11,12,1021,6,10,543,494,0
-2001-177,Josh Heupel,Oklahoma,Big 12,2,590.0,933.0,6852.0,50.0,29.0,136.55,117,0,12,20,5,24,14,3,911,423,0
+player_id,player,college,conference,years,games_played,completions,passes_attempted,passing_yards,passing_touchdowns,interceptions,passer_rating,rushing_attempts,rushing_yards,rushing_touchdowns,wins,losses,highest_rank,conference_wins,conference_losses,points_for,points_against
+2001-1,Michael Vick,Virginia Tech,Big East,2,20.0,177.0,313.0,3074.0,20.0,11.0,153.9,212,1202,16,22,2,2,13,1,968,431
+2001-32,Drew Brees,Purdue,Big Ten,4,41.0,942.0,1525.0,10909.0,81.0,41.0,123.1,229,906,14,33,16,9,22,10,1605,1114
+2001-53,Quincy Carter,Georgia,SEC,3,29.0,483.0,853.0,6447.0,35.0,25.0,125.16666666666667,251,606,11,25,11,7,16,8,959,744
+2001-59,Marques Tuiasosopo,Washington,Pac-10,4,42.0,418.0,761.0,5501.0,31.0,28.0,124.1,346,1374,20,32,16,2,22,10,1441,1174
+2001-106,Chris Weinke,Florida St.,ACC,4,36.0,650.0,1107.0,9839.0,79.0,32.0,147.975,110,-366,2,45,5,1,31,1,1838,681
+2001-109,Sage Rosenfels,Iowa St.,Big 12,4,30.0,306.0,587.0,4164.0,18.0,26.0,79.925,164,660,14,17,28,25,8,24,1025,1415
+2001-125,Jesse Palmer,Florida,SEC,4,27.0,254.0,479.0,3755.0,31.0,17.0,133.02499999999998,67,-124,6,39,11,1,28,6,1681,915
+2001-149,Mike McMahon,Rutgers,Big East,4,35.0,482.0,974.0,6608.0,41.0,52.0,108.225,214,185,8,9,35,999,3,25,785,1698
+2001-155,A.J. Feeley,Oregon,Pac-10,4,20.0,146.0,278.0,2133.0,15.0,6.0,123.75,37,0,1,34,14,5,21,11,1614,1211
+2001-172,Josh Booty,LSU,SEC,2,20.0,307.0,623.0,3951.0,24.0,34.0,105.35,53,-83,0,11,12,22,6,10,543,494
+2001-177,Josh Heupel,Oklahoma,Big 12,2,23.0,590.0,933.0,6852.0,50.0,29.0,136.55,117,46,12,20,5,1,14,3,911,423

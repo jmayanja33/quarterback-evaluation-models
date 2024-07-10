@@ -147,9 +147,9 @@ class Scraper:
         """Function to extract data from an html table rendered by pandas"""
         try:
             if metric == "sum":
-                return sum(table[column][:-1])
+                return sum(table[column].fillna(0)[:-1])
             elif metric == "mean":
-                return table[column][:-1].mean()
+                return table[column].fillna(0)[:-1].mean()
 
         except Exception as e:
             return 0

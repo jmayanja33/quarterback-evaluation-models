@@ -34132,3 +34132,213 @@
 2024-07-10 15:00:03,137 - INFO - Scraping team statisitcs for 1999 Oklahoma
 2024-07-10 15:00:13,672 - INFO - Scraping team statisitcs for 2000 Oklahoma
 2024-07-10 15:00:24,085 - INFO - Saving data to file: ncaa_drafted_qbs.csv
+2024-07-10 15:37:47,073 - INFO - Initializing NFL Draft Scraper
+2024-07-10 15:37:47,073 - INFO - Initializing NCAA Statistics Scraper
+2024-07-10 15:37:47,073 - INFO - Saving data to file: nfl_draft_qbs.csv
+2024-07-10 15:37:47,075 - INFO - Saving data to file: ncaa_drafted_qbs.csv
+2024-07-10 15:38:32,399 - INFO - Initializing NFL Draft Scraper
+2024-07-10 15:38:32,399 - INFO - Initializing NCAA Statistics Scraper
+2024-07-10 15:38:32,399 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-10 15:38:37,883 - INFO - Scraping NFL statistics for Michael Vick
+2024-07-10 15:38:37,883 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-10 15:38:49,076 - INFO - Scraping team statisitcs for 1999 Virginia Tech
+2024-07-10 15:38:59,500 - INFO - Scraping team statisitcs for 2000 Virginia Tech
+2024-07-10 15:39:10,032 - INFO - Scraping NFL statistics for Drew Brees
+2024-07-10 15:39:10,032 - INFO - Scraping NCAA statistics for Drew Brees
+2024-07-10 15:39:20,651 - INFO - Scraping team statisitcs for 1997 Purdue
+2024-07-10 15:39:31,025 - INFO - Scraping team statisitcs for 1998 Purdue
+2024-07-10 15:39:41,497 - INFO - Scraping team statisitcs for 1999 Purdue
+2024-07-10 15:39:52,045 - INFO - Scraping team statisitcs for 2000 Purdue
+2024-07-10 15:40:02,722 - INFO - Scraping NFL statistics for Quincy Carter
+2024-07-10 15:40:02,723 - INFO - Scraping NCAA statistics for Quincy Carter
+2024-07-10 15:40:13,508 - INFO - Scraping team statisitcs for 1998 Georgia
+2024-07-10 15:40:24,138 - INFO - Scraping team statisitcs for 1999 Georgia
+2024-07-10 15:40:34,776 - INFO - Scraping team statisitcs for 2000 Georgia
+2024-07-10 15:40:45,814 - INFO - Scraping NFL statistics for Marques Tuiasosopo
+2024-07-10 15:40:45,814 - INFO - Scraping NCAA statistics for Marques Tuiasosopo
+2024-07-10 15:40:57,241 - INFO - Scraping team statisitcs for 1997 Washington
+2024-07-10 15:41:08,116 - INFO - Scraping team statisitcs for 1998 Washington
+2024-07-10 15:41:18,656 - INFO - Scraping team statisitcs for 1999 Washington
+2024-07-10 15:41:29,312 - INFO - Scraping team statisitcs for 2000 Washington
+2024-07-10 15:41:39,905 - INFO - Scraping NFL statistics for Chris Weinke
+2024-07-10 15:41:39,905 - INFO - Scraping NCAA statistics for Chris Weinke
+2024-07-10 15:41:50,605 - INFO - Scraping team statisitcs for 1997 Florida St.
+2024-07-10 15:42:01,492 - INFO - Scraping team statisitcs for 1998 Florida St.
+2024-07-10 15:42:12,049 - INFO - Scraping team statisitcs for 1999 Florida St.
+2024-07-10 15:42:22,784 - INFO - Scraping team statisitcs for 2000 Florida St.
+2024-07-10 15:42:33,321 - INFO - Scraping NFL statistics for Sage Rosenfels
+2024-07-10 15:42:33,322 - INFO - Scraping NCAA statistics for Sage Rosenfels
+2024-07-10 15:42:43,925 - INFO - Scraping team statisitcs for 1997 Iowa St.
+2024-07-10 15:42:54,336 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1997-schedule.html
+2024-07-10 15:42:54,337 - INFO - Scraping team statisitcs for 1998 Iowa St.
+2024-07-10 15:43:04,723 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1998-schedule.html
+2024-07-10 15:43:04,724 - INFO - Scraping team statisitcs for 1999 Iowa St.
+2024-07-10 15:43:15,071 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1999-schedule.html
+2024-07-10 15:43:15,072 - INFO - Scraping team statisitcs for 2000 Iowa St.
+2024-07-10 15:43:25,486 - INFO - Scraping NFL statistics for Jesse Palmer
+2024-07-10 15:43:25,486 - INFO - Scraping NCAA statistics for Jesse Palmer
+2024-07-10 15:43:36,049 - INFO - Scraping team statisitcs for 1997 Florida
+2024-07-10 15:43:46,519 - INFO - Scraping team statisitcs for 1998 Florida
+2024-07-10 15:43:56,985 - INFO - Scraping team statisitcs for 1999 Florida
+2024-07-10 15:44:07,459 - INFO - Scraping team statisitcs for 2000 Florida
+2024-07-10 15:44:18,157 - INFO - Scraping NFL statistics for Mike McMahon
+2024-07-10 15:44:18,157 - INFO - Scraping NCAA statistics for Mike McMahon
+2024-07-10 15:44:28,964 - INFO - Scraping team statisitcs for 1997 Rutgers
+2024-07-10 15:44:39,485 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1997-schedule.html
+2024-07-10 15:44:39,486 - INFO - Scraping team statisitcs for 1998 Rutgers
+2024-07-10 15:44:49,954 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1998-schedule.html
+2024-07-10 15:44:49,955 - INFO - Scraping team statisitcs for 1999 Rutgers
+2024-07-10 15:45:00,531 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1999-schedule.html
+2024-07-10 15:45:00,532 - INFO - Scraping team statisitcs for 2000 Rutgers
+2024-07-10 15:45:11,012 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/2000-schedule.html
+2024-07-10 15:45:11,014 - INFO - Scraping NFL statistics for A.J. Feeley
+2024-07-10 15:45:11,014 - INFO - Scraping NCAA statistics for A.J. Feeley
+2024-07-10 15:45:21,610 - INFO - Scraping team statisitcs for 1997 Oregon
+2024-07-10 15:45:31,978 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/oregon/1997-schedule.html
+2024-07-10 15:45:31,979 - INFO - Scraping team statisitcs for 1998 Oregon
+2024-07-10 15:45:42,423 - INFO - Scraping team statisitcs for 1999 Oregon
+2024-07-10 15:45:52,753 - INFO - Scraping team statisitcs for 2000 Oregon
+2024-07-10 15:46:03,062 - INFO - Scraping NFL statistics for Josh Booty
+2024-07-10 15:46:03,062 - INFO - Scraping NCAA statistics for Josh Booty
+2024-07-10 15:46:14,605 - INFO - Scraping team statisitcs for 1999 LSU
+2024-07-10 15:46:25,024 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-state/1999-schedule.html
+2024-07-10 15:46:25,026 - INFO - Scraping team statisitcs for 2000 LSU
+2024-07-10 15:46:35,370 - INFO - Scraping NFL statistics for Josh Heupel
+2024-07-10 15:46:35,371 - INFO - Scraping NCAA statistics for Josh Heupel
+2024-07-10 15:46:45,985 - INFO - Scraping team statisitcs for 1999 Oklahoma
+2024-07-10 15:46:56,336 - INFO - Scraping team statisitcs for 2000 Oklahoma
+2024-07-10 15:47:06,659 - INFO - Saving data to file: nfl_draft_qbs.csv
+2024-07-10 15:47:06,661 - INFO - Saving data to file: ncaa_drafted_qbs.csv
+2024-07-10 15:56:04,743 - INFO - Initializing NFL Draft Scraper
+2024-07-10 15:56:04,743 - INFO - Initializing NCAA Statistics Scraper
+2024-07-10 15:56:04,743 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-10 15:56:10,730 - INFO - Scraping NFL statistics for Michael Vick
+2024-07-10 15:56:10,731 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-10 15:56:26,633 - INFO - Scraping team statisitcs for 1999 Virginia Tech
+2024-07-10 15:57:41,723 - INFO - Initializing NFL Draft Scraper
+2024-07-10 15:57:41,724 - INFO - Initializing NCAA Statistics Scraper
+2024-07-10 15:57:41,724 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-10 15:57:47,687 - INFO - Scraping NFL statistics for Michael Vick
+2024-07-10 15:57:47,688 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-10 15:57:58,663 - INFO - Scraping team statisitcs for 1999 Virginia Tech
+2024-07-10 15:58:10,433 - INFO - Scraping team statisitcs for 2000 Virginia Tech
+2024-07-10 15:58:21,699 - INFO - Scraping NFL statistics for Drew Brees
+2024-07-10 15:58:21,699 - INFO - Scraping NCAA statistics for Drew Brees
+2024-07-10 15:58:32,593 - INFO - Scraping team statisitcs for 1997 Purdue
+2024-07-10 15:58:43,193 - INFO - Scraping team statisitcs for 1998 Purdue
+2024-07-10 15:58:53,742 - INFO - Scraping team statisitcs for 1999 Purdue
+2024-07-10 15:59:04,693 - INFO - Scraping team statisitcs for 2000 Purdue
+2024-07-10 15:59:15,196 - INFO - Scraping NFL statistics for Quincy Carter
+2024-07-10 15:59:15,196 - INFO - Scraping NCAA statistics for Quincy Carter
+2024-07-10 15:59:25,960 - INFO - Scraping team statisitcs for 1998 Georgia
+2024-07-10 15:59:36,372 - INFO - Scraping team statisitcs for 1999 Georgia
+2024-07-10 15:59:47,044 - INFO - Scraping team statisitcs for 2000 Georgia
+2024-07-10 15:59:57,473 - INFO - Scraping NFL statistics for Marques Tuiasosopo
+2024-07-10 15:59:57,473 - INFO - Scraping NCAA statistics for Marques Tuiasosopo
+2024-07-10 16:00:08,131 - INFO - Scraping team statisitcs for 1997 Washington
+2024-07-10 16:00:18,456 - INFO - Scraping team statisitcs for 1998 Washington
+2024-07-10 16:00:28,777 - INFO - Scraping team statisitcs for 1999 Washington
+2024-07-10 16:00:39,214 - INFO - Scraping team statisitcs for 2000 Washington
+2024-07-10 16:00:49,628 - INFO - Scraping NFL statistics for Chris Weinke
+2024-07-10 16:00:49,628 - INFO - Scraping NCAA statistics for Chris Weinke
+2024-07-10 16:01:00,196 - INFO - Scraping team statisitcs for 1997 Florida St.
+2024-07-10 16:01:10,532 - INFO - Scraping team statisitcs for 1998 Florida St.
+2024-07-10 16:01:20,852 - INFO - Scraping team statisitcs for 1999 Florida St.
+2024-07-10 16:01:31,300 - INFO - Scraping team statisitcs for 2000 Florida St.
+2024-07-10 16:01:41,703 - INFO - Scraping NFL statistics for Sage Rosenfels
+2024-07-10 16:01:41,703 - INFO - Scraping NCAA statistics for Sage Rosenfels
+2024-07-10 16:01:52,254 - INFO - Scraping team statisitcs for 1997 Iowa St.
+2024-07-10 16:02:02,731 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1997-schedule.html
+2024-07-10 16:02:02,733 - INFO - Scraping team statisitcs for 1998 Iowa St.
+2024-07-10 16:02:13,187 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1998-schedule.html
+2024-07-10 16:02:13,188 - INFO - Scraping team statisitcs for 1999 Iowa St.
+2024-07-10 16:02:23,632 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1999-schedule.html
+2024-07-10 16:02:23,633 - INFO - Scraping team statisitcs for 2000 Iowa St.
+2024-07-10 16:02:34,306 - INFO - Scraping NFL statistics for Jesse Palmer
+2024-07-10 16:02:34,306 - INFO - Scraping NCAA statistics for Jesse Palmer
+2024-07-10 16:02:44,902 - INFO - Scraping team statisitcs for 1997 Florida
+2024-07-10 16:02:55,344 - INFO - Scraping team statisitcs for 1998 Florida
+2024-07-10 16:03:06,129 - INFO - Scraping team statisitcs for 1999 Florida
+2024-07-10 16:03:16,666 - INFO - Scraping team statisitcs for 2000 Florida
+2024-07-10 16:03:27,093 - INFO - Scraping NFL statistics for Mike McMahon
+2024-07-10 16:03:27,093 - INFO - Scraping NCAA statistics for Mike McMahon
+2024-07-10 16:03:37,785 - INFO - Scraping team statisitcs for 1997 Rutgers
+2024-07-10 16:03:48,254 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1997-schedule.html
+2024-07-10 16:03:48,255 - INFO - Scraping team statisitcs for 1998 Rutgers
+2024-07-10 16:03:58,658 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1998-schedule.html
+2024-07-10 16:03:58,659 - INFO - Scraping team statisitcs for 1999 Rutgers
+2024-07-10 16:04:08,963 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1999-schedule.html
+2024-07-10 16:04:08,964 - INFO - Scraping team statisitcs for 2000 Rutgers
+2024-07-10 16:04:20,298 - INFO - Initializing NFL Draft Scraper
+2024-07-10 16:04:20,298 - INFO - Initializing NCAA Statistics Scraper
+2024-07-10 16:04:20,298 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-10 16:04:25,939 - INFO - Scraping NFL statistics for Michael Vick
+2024-07-10 16:04:25,939 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-10 16:04:36,492 - INFO - Scraping team statisitcs for 1999 Virginia Tech
+2024-07-10 16:04:46,839 - INFO - Scraping team statisitcs for 2000 Virginia Tech
+2024-07-10 16:04:57,276 - INFO - Scraping NFL statistics for Drew Brees
+2024-07-10 16:04:57,276 - INFO - Scraping NCAA statistics for Drew Brees
+2024-07-10 16:05:07,841 - INFO - Scraping team statisitcs for 1997 Purdue
+2024-07-10 16:05:18,661 - INFO - Scraping team statisitcs for 1998 Purdue
+2024-07-10 16:05:29,107 - INFO - Scraping team statisitcs for 1999 Purdue
+2024-07-10 16:05:39,627 - INFO - Scraping team statisitcs for 2000 Purdue
+2024-07-10 16:05:50,060 - INFO - Scraping NFL statistics for Quincy Carter
+2024-07-10 16:05:50,060 - INFO - Scraping NCAA statistics for Quincy Carter
+2024-07-10 16:06:00,579 - INFO - Scraping team statisitcs for 1998 Georgia
+2024-07-10 16:06:11,304 - INFO - Scraping team statisitcs for 1999 Georgia
+2024-07-10 16:06:21,648 - INFO - Scraping team statisitcs for 2000 Georgia
+2024-07-10 16:06:32,009 - INFO - Scraping NFL statistics for Marques Tuiasosopo
+2024-07-10 16:06:32,009 - INFO - Scraping NCAA statistics for Marques Tuiasosopo
+2024-07-10 16:06:42,467 - INFO - Scraping team statisitcs for 1997 Washington
+2024-07-10 16:06:52,825 - INFO - Scraping team statisitcs for 1998 Washington
+2024-07-10 16:07:03,139 - INFO - Scraping team statisitcs for 1999 Washington
+2024-07-10 16:07:13,708 - INFO - Scraping team statisitcs for 2000 Washington
+2024-07-10 16:07:24,062 - INFO - Scraping NFL statistics for Chris Weinke
+2024-07-10 16:07:24,062 - INFO - Scraping NCAA statistics for Chris Weinke
+2024-07-10 16:07:34,790 - INFO - Scraping team statisitcs for 1997 Florida St.
+2024-07-10 16:07:45,168 - INFO - Scraping team statisitcs for 1998 Florida St.
+2024-07-10 16:07:56,184 - INFO - Scraping team statisitcs for 1999 Florida St.
+2024-07-10 16:08:06,609 - INFO - Scraping team statisitcs for 2000 Florida St.
+2024-07-10 16:08:17,251 - INFO - Scraping NFL statistics for Sage Rosenfels
+2024-07-10 16:08:17,251 - INFO - Scraping NCAA statistics for Sage Rosenfels
+2024-07-10 16:08:27,884 - INFO - Scraping team statisitcs for 1997 Iowa St.
+2024-07-10 16:08:38,258 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1997-schedule.html
+2024-07-10 16:08:38,259 - INFO - Scraping team statisitcs for 1998 Iowa St.
+2024-07-10 16:08:48,631 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1998-schedule.html
+2024-07-10 16:08:48,632 - INFO - Scraping team statisitcs for 1999 Iowa St.
+2024-07-10 16:08:58,954 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1999-schedule.html
+2024-07-10 16:08:58,956 - INFO - Scraping team statisitcs for 2000 Iowa St.
+2024-07-10 16:09:09,344 - INFO - Scraping NFL statistics for Jesse Palmer
+2024-07-10 16:09:09,344 - INFO - Scraping NCAA statistics for Jesse Palmer
+2024-07-10 16:09:19,957 - INFO - Scraping team statisitcs for 1997 Florida
+2024-07-10 16:09:30,345 - INFO - Scraping team statisitcs for 1998 Florida
+2024-07-10 16:09:40,812 - INFO - Scraping team statisitcs for 1999 Florida
+2024-07-10 16:09:51,280 - INFO - Scraping team statisitcs for 2000 Florida
+2024-07-10 16:10:01,702 - INFO - Scraping NFL statistics for Mike McMahon
+2024-07-10 16:10:01,702 - INFO - Scraping NCAA statistics for Mike McMahon
+2024-07-10 16:10:12,348 - INFO - Scraping team statisitcs for 1997 Rutgers
+2024-07-10 16:10:22,805 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1997-schedule.html
+2024-07-10 16:10:22,806 - INFO - Scraping team statisitcs for 1998 Rutgers
+2024-07-10 16:10:33,165 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1998-schedule.html
+2024-07-10 16:10:33,167 - INFO - Scraping team statisitcs for 1999 Rutgers
+2024-07-10 16:10:43,623 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1999-schedule.html
+2024-07-10 16:10:43,624 - INFO - Scraping team statisitcs for 2000 Rutgers
+2024-07-10 16:10:54,185 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/2000-schedule.html
+2024-07-10 16:10:54,186 - INFO - Scraping NFL statistics for A.J. Feeley
+2024-07-10 16:10:54,186 - INFO - Scraping NCAA statistics for A.J. Feeley
+2024-07-10 16:11:06,218 - INFO - Scraping team statisitcs for 1997 Oregon
+2024-07-10 16:11:16,892 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/oregon/1997-schedule.html
+2024-07-10 16:11:16,893 - INFO - Scraping team statisitcs for 1998 Oregon
+2024-07-10 16:11:28,837 - INFO - Scraping team statisitcs for 1999 Oregon
+2024-07-10 16:11:39,436 - INFO - Scraping team statisitcs for 2000 Oregon
+2024-07-10 16:11:50,047 - INFO - Scraping NFL statistics for Josh Booty
+2024-07-10 16:11:50,047 - INFO - Scraping NCAA statistics for Josh Booty
+2024-07-10 16:12:00,773 - INFO - Scraping team statisitcs for 1999 LSU
+2024-07-10 16:12:11,402 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-state/1999-schedule.html
+2024-07-10 16:12:11,403 - INFO - Scraping team statisitcs for 2000 LSU
+2024-07-10 16:12:21,898 - INFO - Scraping NFL statistics for Josh Heupel
+2024-07-10 16:12:21,898 - INFO - Scraping NCAA statistics for Josh Heupel
+2024-07-10 16:12:32,699 - INFO - Scraping team statisitcs for 1999 Oklahoma
+2024-07-10 16:12:43,458 - INFO - Scraping team statisitcs for 2000 Oklahoma
+2024-07-10 16:12:53,861 - INFO - Saving data to file: nfl_draft_qbs.csv
+2024-07-10 16:12:53,863 - INFO - Saving data to file: ncaa_drafted_qbs.csv

@@ -53,12 +53,13 @@ class NCAAStatsScraper(Scraper):
         self.data[3] = scrape_conference(table)   # Conference
 
         # Scrape passing data
-        self.data[5] = self.extract_column_value_pandas(table, "Cmp")    # Completions
-        self.data[6] = self.extract_column_value_pandas(table, "Att")   # Attempts
-        self.data[7] = self.extract_column_value_pandas(table, "Yds")  # Passing yards
-        self.data[8] = self.extract_column_value_pandas(table, "TD")  # Passing TDs
-        self.data[9] = self.extract_column_value_pandas(table, "Int")  # Interceptions
-        self.data[10] = self.extract_column_value_pandas(table, "Rate", metric="mean")   # Passer rating
+        self.data[5] = self.extract_column_value_pandas(table, "G")     # Games played
+        self.data[6] = self.extract_column_value_pandas(table, "Cmp")   # Completions
+        self.data[7] = self.extract_column_value_pandas(table, "Att")   # Attempts
+        self.data[8] = self.extract_column_value_pandas(table, "Yds")   # Passing yards
+        self.data[9] = self.extract_column_value_pandas(table, "TD")    # Passing TDs
+        self.data[10] = self.extract_column_value_pandas(table, "Int")  # Interceptions
+        self.data[11] = self.extract_column_value_pandas(table, "Rate", metric="mean")   # Passer rating
 
         return player_years
 
@@ -66,9 +67,9 @@ class NCAAStatsScraper(Scraper):
         """Function to get rushing statistics for a quarterback"""
 
         # Scrape rushing data
-        self.data[11] = self.extract_column_value_pandas(table, "Att")  # Rushing Attempts
-        self.data[12] = self.extract_column_value_pandas(table, "yds")  # Rushing Yards
-        self.data[13] = self.extract_column_value_pandas(table, "TD")  # Rushing TDs
+        self.data[12] = self.extract_column_value_pandas(table, "Att")  # Rushing Attempts
+        self.data[13] = self.extract_column_value_pandas(table, "Yds")  # Rushing Yards
+        self.data[14] = self.extract_column_value_pandas(table, "TD")   # Rushing TDs
 
     def scrape_team_stats(self, college, player_years):
         """Function to get a quarterback's team statistics for a certain season"""
@@ -92,12 +93,19 @@ class NCAAStatsScraper(Scraper):
                     rank = scrape_ranking(rank_df, rank)
 
                 # Initialize object to save data point
-                data_point = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                              wins, losses, rank, conference_wins, conference_losses, points_for, points_against, 0]
+                data_point = ['player_id', 'player', 'college', 'conference', 'years', 'games_played', 'completions',
+                              'pass_attempts', 'pass_yards', 'pass_tds', 'int', 'pass_rating', 'rush_attempts',
+                              'rush_yds', 'rush_tds', wins, losses, rank, conference_wins, conference_losses,
+                              points_for, points_against]
 
                 # Update data
-                for i in range(14, 21):
-                    self.data[i] += data_point[i]
+                for i in range(15, 22):
+                    # Special case for rank
+                    if i == 17:
+                        self.data[i] = data_point[i]
+                    # Sum yearly data
+                    else:
+                        self.data[i] += data_point[i]
 
             # Handle missing data
             else:
