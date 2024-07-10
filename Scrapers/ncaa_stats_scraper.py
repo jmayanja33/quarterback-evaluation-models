@@ -49,7 +49,7 @@ class NCAAStatsScraper(Scraper):
         """Function to get passing statistics for a quarterback"""
 
         # Scrape years played and conference
-        player_years = list(table["Year"])
+        player_years = list(table["Year"][:-1])
         self.data[4] = len(player_years)   # Years played
         self.data[3] = scrape_conference(table)   # Conference
 
@@ -82,12 +82,14 @@ class NCAAStatsScraper(Scraper):
             # Get yearly statistics
             self.logger.info(f"Scraping team statisitcs for {year} {college}")
             url = f"https://www.sports-reference.com/cfb/schools/{college.lower().replace(' ', '-')}/{year}-schedule.html"
-            df = self.send_request(url, index=1)
+            team_df, rank_df = self.send_request(url)
 
             # Scrape stats
-            wins, losses, conference_wins, conference_losses, points_for, points_against = scrape_season(df, self.data[3])
-            rank = scrape_ranking(df, rank)
+            wins, losses, conference_wins, conference_losses, points_for, points_against = scrape_season(team_df, self.data[3])
+            if rank_df is not None:
+                rank = scrape_ranking(rank_df, rank)
 
+            # Initialize object to save data point
             data_point = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                           wins, losses, rank, conference_wins, conference_losses, points_for, points_against, 0]
 

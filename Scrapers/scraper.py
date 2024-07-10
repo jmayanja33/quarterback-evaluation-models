@@ -1,5 +1,7 @@
+import sys
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+from selenium.common.exceptions import TimeoutException
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 from Logs.logger import Logger
@@ -29,6 +31,11 @@ def initialize_driver():
              "profile.managed_default_content_settings.stylesheets": 2}
     options.add_experimental_option("prefs", prefs)
 
+    # Initialize driver
+    driver = webdriver.Chrome(options=options, service=service)
+    driver.set_page_load_timeout(60)
+    driver.set_script_timeout(60)
+
     # Return webdriver service
     return webdriver.Chrome(options=options, service=service)
 
@@ -44,13 +51,28 @@ class Scraper:
         self.years = [i for i in range(start_year, end_year)]
         self.columns_to_index = dict()
 
-    def send_request(self, url, selenium_needed=False, use_requests=False, header=None, index=0):
+    def send_request(self, url, selenium_needed=False, use_requests=False, header=None):
         """Function to send request for data to be scraped"""
         # response = self.session.get(url).text
         if selenium_needed:
-            self.driver.get(url)
-            self.soup = BeautifulSoup(self.driver.page_source, 'html.parser')
-            return
+            num_retries = 10
+            num_attempts = 0
+
+            while num_attempts < num_retries:
+                num_attempts += 1
+
+                try:
+                    self.driver.get(url)
+                    self.soup = BeautifulSoup(self.driver.page_source, 'html.parser')
+                    return
+                except TimeoutException as e:
+                    self.logger.error(f"Timeout error attempting to reach: {url}")
+                    self.logger.info(f"Refreshing driver (refresh {num_attempts}/10")
+                    self.driver.refresh()
+
+            self.logger.error(f"Exiting; Unable to reach: {url}")
+            sys.exit()
+
         elif use_requests:
             response = self.session.get(url).text
             self.soup = BeautifulSoup(response, 'html.parser')
@@ -66,7 +88,11 @@ class Scraper:
             # Pause for 5 seconds to avoid exceeding rate limit
             time.sleep(5)
 
-            return dfs[index]
+            # Look for 2 tables, return 1 if the second is not found
+            if len(dfs) == 0:
+                return dfs[0], None
+            else:
+                return dfs[1], dfs[0]
 
     def find_table(self, table_id):
         """Function to find a table by its id in the soup result"""
