@@ -14,11 +14,12 @@ class NFLDraftScraper(Scraper):
         self.college_data = []
 
     def scrape_all_years(self):
+        """Function to scrape draft data for all years specified"""
         for year in self.years:
             self.logger.info(f"Scraping NFL draft data for quarterbacks for year: {year}")
             # Get HTML data from Sports Reference
             url = f"https://www.pro-football-reference.com/years/{year}/draft.htm"
-            self.send_request(url, use_requests=True)
+            self.send_request(url)
             # Scrape `drafts` table from HTML
             table = self.find_table("drafts")
             self.scrape(table, year)
@@ -29,7 +30,7 @@ class NFLDraftScraper(Scraper):
 
     def scrape(self, table, year):
         """Function to scrape NFL statistics for drafted prospects"""
-        for i, row in enumerate(table.tbody.find_all('tr')):
+        for row in table.tbody.find_all('tr'):
 
             # Find table columns.py
             table_columns = row.find_all('td')
@@ -38,10 +39,11 @@ class NFLDraftScraper(Scraper):
             if table_columns:
 
                 # Find player ID, position, draft_round
-                player_id = f"{year}-{i}"
                 player = table_columns[2].text.strip()
                 position = table_columns[3].text.strip()
                 draft_round = int(row.find('th').text.strip())
+                pick_number = int(table_columns[0].text.strip())
+                player_id = f"{year}-{pick_number}"
                 nfl_data_point = [year, position, player_id, draft_round]
 
                 # If the player is a quarterback, scrape the data

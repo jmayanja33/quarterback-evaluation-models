@@ -33760,3 +33760,375 @@
 2024-07-10 00:31:34,635 - INFO - Scraping team statisitcs for 2000 Washington
 2024-07-10 00:31:39,790 - INFO - Scraping NFL statistics for Chris Weinke
 2024-07-10 00:31:39,790 - INFO - Scraping NCAA statistics for Chris Weinke
+2024-07-10 09:32:03,510 - INFO - Initializing NFL Draft Scraper
+2024-07-10 09:32:06,353 - INFO - Initializing NCAA Statistics Scraper
+2024-07-10 09:32:06,353 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-10 09:32:11,871 - INFO - Scraping NFL statistics for Michael Vick
+2024-07-10 09:32:11,871 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-10 09:33:51,205 - INFO - Scraping team statisitcs for 1999 Virginia Tech
+2024-07-10 09:33:56,999 - INFO - Scraping team statisitcs for 2000 Virginia Tech
+2024-07-10 09:34:03,777 - INFO - Scraping NFL statistics for Drew Brees
+2024-07-10 09:34:03,778 - INFO - Scraping NCAA statistics for Drew Brees
+2024-07-10 09:34:15,124 - INFO - Scraping team statisitcs for 1997 Purdue
+2024-07-10 09:34:20,610 - INFO - Scraping team statisitcs for 1998 Purdue
+2024-07-10 09:34:28,759 - INFO - Scraping team statisitcs for 1999 Purdue
+2024-07-10 09:34:34,132 - INFO - Scraping team statisitcs for 2000 Purdue
+2024-07-10 09:34:41,489 - INFO - Scraping NFL statistics for Quincy Carter
+2024-07-10 09:34:41,489 - INFO - Scraping NCAA statistics for Quincy Carter
+2024-07-10 09:34:44,696 - INFO - Scraping team statisitcs for 1998 Georgia
+2024-07-10 09:34:49,943 - INFO - Scraping team statisitcs for 1999 Georgia
+2024-07-10 09:34:55,281 - INFO - Scraping team statisitcs for 2000 Georgia
+2024-07-10 09:35:00,573 - INFO - Scraping NFL statistics for Marques Tuiasosopo
+2024-07-10 09:35:00,573 - INFO - Scraping NCAA statistics for Marques Tuiasosopo
+2024-07-10 09:36:17,980 - INFO - Scraping team statisitcs for 1997 Washington
+2024-07-10 09:36:23,579 - INFO - Scraping team statisitcs for 1998 Washington
+2024-07-10 09:36:33,732 - INFO - Scraping team statisitcs for 1999 Washington
+2024-07-10 09:36:40,619 - INFO - Scraping team statisitcs for 2000 Washington
+2024-07-10 09:36:46,266 - INFO - Scraping NFL statistics for Chris Weinke
+2024-07-10 09:36:46,267 - INFO - Scraping NCAA statistics for Chris Weinke
+2024-07-10 09:41:46,277 - ERROR - Timeout error attempting to reach: http://www.sports-reference.com/cfb/players/chris-weinke-1.html
+2024-07-10 09:41:46,277 - INFO - Refreshing driver (refresh 1/10
+2024-07-10 09:41:57,220 - INFO - Scraping team statisitcs for 1997 Florida St.
+2024-07-10 10:32:29,345 - INFO - Initializing NFL Draft Scraper
+2024-07-10 10:32:30,604 - INFO - Initializing NCAA Statistics Scraper
+2024-07-10 10:32:30,604 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-10 10:32:35,981 - INFO - Scraping NFL statistics for Michael Vick
+2024-07-10 10:32:35,981 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-10 10:33:57,196 - INFO - Scraping team statisitcs for 1999 Virginia Tech
+2024-07-10 10:34:02,342 - INFO - Scraping team statisitcs for 2000 Virginia Tech
+2024-07-10 10:34:07,487 - INFO - Scraping NFL statistics for Drew Brees
+2024-07-10 10:34:07,488 - INFO - Scraping NCAA statistics for Drew Brees
+2024-07-10 10:34:12,071 - INFO - Scraping team statisitcs for 1997 Purdue
+2024-07-10 10:34:17,195 - INFO - Scraping team statisitcs for 1998 Purdue
+2024-07-10 10:34:22,338 - INFO - Scraping team statisitcs for 1999 Purdue
+2024-07-10 10:34:27,504 - INFO - Scraping team statisitcs for 2000 Purdue
+2024-07-10 10:34:32,652 - INFO - Scraping NFL statistics for Quincy Carter
+2024-07-10 10:34:32,653 - INFO - Scraping NCAA statistics for Quincy Carter
+2024-07-10 10:34:37,653 - INFO - Scraping team statisitcs for 1998 Georgia
+2024-07-10 10:34:42,962 - INFO - Scraping team statisitcs for 1999 Georgia
+2024-07-10 10:34:48,149 - INFO - Scraping team statisitcs for 2000 Georgia
+2024-07-10 10:34:53,296 - INFO - Scraping NFL statistics for Marques Tuiasosopo
+2024-07-10 10:34:53,297 - INFO - Scraping NCAA statistics for Marques Tuiasosopo
+2024-07-10 10:36:09,537 - INFO - Scraping team statisitcs for 1997 Washington
+2024-07-10 10:36:15,187 - INFO - Scraping team statisitcs for 1998 Washington
+2024-07-10 10:36:20,361 - INFO - Scraping team statisitcs for 1999 Washington
+2024-07-10 10:36:25,485 - INFO - Scraping team statisitcs for 2000 Washington
+2024-07-10 10:36:30,635 - INFO - Scraping NFL statistics for Chris Weinke
+2024-07-10 10:36:30,635 - INFO - Scraping NCAA statistics for Chris Weinke
+2024-07-10 10:41:30,646 - ERROR - Timeout error attempting to reach: http://www.sports-reference.com/cfb/players/chris-weinke-1.html
+2024-07-10 10:41:30,646 - INFO - Refreshing driver (refresh 1/10)
+2024-07-10 10:41:34,874 - INFO - Scraping team statisitcs for 1997 Florida St.
+2024-07-10 13:02:45,686 - INFO - Initializing NFL Draft Scraper
+2024-07-10 13:02:45,687 - INFO - Initializing NCAA Statistics Scraper
+2024-07-10 13:02:45,687 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-10 13:02:58,032 - INFO - Initializing NFL Draft Scraper
+2024-07-10 13:02:58,032 - INFO - Initializing NCAA Statistics Scraper
+2024-07-10 13:02:58,032 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-10 13:03:04,066 - INFO - Scraping NFL statistics for Michael Vick
+2024-07-10 13:03:04,066 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-10 13:06:47,666 - INFO - Initializing NFL Draft Scraper
+2024-07-10 13:06:47,666 - INFO - Initializing NCAA Statistics Scraper
+2024-07-10 13:06:47,666 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-10 13:06:53,133 - INFO - Scraping NFL statistics for Michael Vick
+2024-07-10 13:06:53,133 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-10 13:08:08,478 - INFO - Initializing NFL Draft Scraper
+2024-07-10 13:08:08,478 - INFO - Initializing NCAA Statistics Scraper
+2024-07-10 13:08:08,478 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-10 13:08:13,876 - INFO - Scraping NFL statistics for Michael Vick
+2024-07-10 13:08:13,876 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-10 13:08:29,616 - INFO - Scraping team statisitcs for 1999 Virginia Tech
+2024-07-10 13:08:40,004 - INFO - Scraping team statisitcs for 2000 Virginia Tech
+2024-07-10 13:08:50,529 - INFO - Scraping NFL statistics for Drew Brees
+2024-07-10 13:08:50,530 - INFO - Scraping NCAA statistics for Drew Brees
+2024-07-10 13:09:06,401 - INFO - Scraping team statisitcs for 1997 Purdue
+2024-07-10 13:09:16,770 - INFO - Scraping team statisitcs for 1998 Purdue
+2024-07-10 13:09:27,266 - INFO - Scraping team statisitcs for 1999 Purdue
+2024-07-10 13:09:37,670 - INFO - Scraping team statisitcs for 2000 Purdue
+2024-07-10 13:09:48,100 - INFO - Scraping NFL statistics for Quincy Carter
+2024-07-10 13:09:48,100 - INFO - Scraping NCAA statistics for Quincy Carter
+2024-07-10 13:10:04,263 - INFO - Scraping team statisitcs for 1998 Georgia
+2024-07-10 13:10:14,841 - INFO - Scraping team statisitcs for 1999 Georgia
+2024-07-10 13:10:25,335 - INFO - Scraping team statisitcs for 2000 Georgia
+2024-07-10 13:10:36,352 - INFO - Scraping NFL statistics for Marques Tuiasosopo
+2024-07-10 13:10:36,352 - INFO - Scraping NCAA statistics for Marques Tuiasosopo
+2024-07-10 13:10:52,807 - INFO - Scraping team statisitcs for 1997 Washington
+2024-07-10 13:11:03,274 - INFO - Scraping team statisitcs for 1998 Washington
+2024-07-10 13:11:13,738 - INFO - Scraping team statisitcs for 1999 Washington
+2024-07-10 13:11:24,193 - INFO - Scraping team statisitcs for 2000 Washington
+2024-07-10 13:11:34,649 - INFO - Scraping NFL statistics for Chris Weinke
+2024-07-10 13:11:34,650 - INFO - Scraping NCAA statistics for Chris Weinke
+2024-07-10 13:11:50,648 - INFO - Scraping team statisitcs for 1997 Florida St.
+2024-07-10 13:14:41,104 - INFO - Initializing NFL Draft Scraper
+2024-07-10 13:14:41,104 - INFO - Initializing NCAA Statistics Scraper
+2024-07-10 13:14:41,104 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-10 13:14:46,841 - INFO - Scraping NFL statistics for Michael Vick
+2024-07-10 13:14:46,842 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-10 13:15:02,730 - INFO - Scraping team statisitcs for 1999 Virginia Tech
+2024-07-10 13:15:13,215 - INFO - Scraping team statisitcs for 2000 Virginia Tech
+2024-07-10 13:15:23,640 - INFO - Scraping NFL statistics for Drew Brees
+2024-07-10 13:15:23,641 - INFO - Scraping NCAA statistics for Drew Brees
+2024-07-10 13:15:39,695 - INFO - Scraping team statisitcs for 1997 Purdue
+2024-07-10 13:15:50,093 - INFO - Scraping team statisitcs for 1998 Purdue
+2024-07-10 13:16:00,544 - INFO - Scraping team statisitcs for 1999 Purdue
+2024-07-10 13:16:10,991 - INFO - Scraping team statisitcs for 2000 Purdue
+2024-07-10 13:16:21,415 - INFO - Scraping NFL statistics for Quincy Carter
+2024-07-10 13:16:21,415 - INFO - Scraping NCAA statistics for Quincy Carter
+2024-07-10 13:16:37,241 - INFO - Scraping team statisitcs for 1998 Georgia
+2024-07-10 13:16:47,727 - INFO - Scraping team statisitcs for 1999 Georgia
+2024-07-10 13:16:58,118 - INFO - Scraping team statisitcs for 2000 Georgia
+2024-07-10 13:17:08,641 - INFO - Scraping NFL statistics for Marques Tuiasosopo
+2024-07-10 13:17:08,641 - INFO - Scraping NCAA statistics for Marques Tuiasosopo
+2024-07-10 13:17:24,647 - INFO - Scraping team statisitcs for 1997 Washington
+2024-07-10 13:17:35,126 - INFO - Scraping team statisitcs for 1998 Washington
+2024-07-10 13:17:45,568 - INFO - Scraping team statisitcs for 1999 Washington
+2024-07-10 13:17:55,964 - INFO - Scraping team statisitcs for 2000 Washington
+2024-07-10 13:18:06,574 - INFO - Scraping NFL statistics for Chris Weinke
+2024-07-10 13:18:06,574 - INFO - Scraping NCAA statistics for Chris Weinke
+2024-07-10 13:27:56,462 - INFO - Scraping team statisitcs for 1997 Florida St.
+2024-07-10 14:03:40,702 - INFO - Initializing NFL Draft Scraper
+2024-07-10 14:03:40,702 - INFO - Initializing NCAA Statistics Scraper
+2024-07-10 14:03:40,702 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-10 14:03:46,256 - INFO - Scraping NFL statistics for Michael Vick
+2024-07-10 14:03:46,256 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-10 14:03:57,032 - INFO - Scraping team statisitcs for 1999 Virginia Tech
+2024-07-10 14:04:07,645 - INFO - Scraping team statisitcs for 2000 Virginia Tech
+2024-07-10 14:04:18,305 - INFO - Scraping NFL statistics for Drew Brees
+2024-07-10 14:04:18,305 - INFO - Scraping NCAA statistics for Drew Brees
+2024-07-10 14:04:29,290 - INFO - Scraping team statisitcs for 1997 Purdue
+2024-07-10 14:04:39,800 - INFO - Scraping team statisitcs for 1998 Purdue
+2024-07-10 14:04:50,473 - INFO - Scraping team statisitcs for 1999 Purdue
+2024-07-10 14:05:01,870 - INFO - Scraping team statisitcs for 2000 Purdue
+2024-07-10 14:05:12,628 - INFO - Scraping NFL statistics for Quincy Carter
+2024-07-10 14:05:12,628 - INFO - Scraping NCAA statistics for Quincy Carter
+2024-07-10 14:05:23,415 - INFO - Scraping team statisitcs for 1998 Georgia
+2024-07-10 14:05:35,006 - INFO - Scraping team statisitcs for 1999 Georgia
+2024-07-10 14:05:46,226 - INFO - Scraping team statisitcs for 2000 Georgia
+2024-07-10 14:05:57,772 - INFO - Scraping NFL statistics for Marques Tuiasosopo
+2024-07-10 14:05:57,772 - INFO - Scraping NCAA statistics for Marques Tuiasosopo
+2024-07-10 14:06:09,605 - INFO - Scraping team statisitcs for 1997 Washington
+2024-07-10 14:06:20,339 - INFO - Scraping team statisitcs for 1998 Washington
+2024-07-10 14:06:30,717 - INFO - Scraping team statisitcs for 1999 Washington
+2024-07-10 14:06:41,377 - INFO - Scraping team statisitcs for 2000 Washington
+2024-07-10 14:06:52,066 - INFO - Scraping NFL statistics for Chris Weinke
+2024-07-10 14:06:52,066 - INFO - Scraping NCAA statistics for Chris Weinke
+2024-07-10 14:07:02,747 - INFO - Scraping team statisitcs for 1997 Florida St.
+2024-07-10 14:07:13,385 - INFO - Scraping team statisitcs for 1998 Florida St.
+2024-07-10 14:07:27,896 - INFO - Scraping team statisitcs for 1999 Florida St.
+2024-07-10 14:14:20,191 - INFO - Initializing NFL Draft Scraper
+2024-07-10 14:14:20,191 - INFO - Initializing NCAA Statistics Scraper
+2024-07-10 14:14:20,191 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-10 14:14:25,599 - INFO - Scraping NFL statistics for Michael Vick
+2024-07-10 14:14:25,599 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-10 14:14:58,728 - INFO - Initializing NFL Draft Scraper
+2024-07-10 14:14:58,728 - INFO - Initializing NCAA Statistics Scraper
+2024-07-10 14:14:58,728 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-10 14:15:04,086 - INFO - Scraping NFL statistics for Michael Vick
+2024-07-10 14:15:04,086 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-10 14:15:14,658 - INFO - Scraping team statisitcs for 1999 Virginia Tech
+2024-07-10 14:15:25,059 - INFO - Scraping team statisitcs for 2000 Virginia Tech
+2024-07-10 14:15:35,501 - INFO - Scraping NFL statistics for Drew Brees
+2024-07-10 14:15:35,502 - INFO - Scraping NCAA statistics for Drew Brees
+2024-07-10 14:15:46,198 - INFO - Scraping team statisitcs for 1997 Purdue
+2024-07-10 14:15:56,666 - INFO - Scraping team statisitcs for 1998 Purdue
+2024-07-10 14:16:07,051 - INFO - Scraping team statisitcs for 1999 Purdue
+2024-07-10 14:16:17,339 - INFO - Scraping team statisitcs for 2000 Purdue
+2024-07-10 14:16:27,811 - INFO - Scraping NFL statistics for Quincy Carter
+2024-07-10 14:16:27,811 - INFO - Scraping NCAA statistics for Quincy Carter
+2024-07-10 14:16:38,389 - INFO - Scraping team statisitcs for 1998 Georgia
+2024-07-10 14:16:48,876 - INFO - Scraping team statisitcs for 1999 Georgia
+2024-07-10 14:16:59,316 - INFO - Scraping team statisitcs for 2000 Georgia
+2024-07-10 14:17:10,072 - INFO - Scraping NFL statistics for Marques Tuiasosopo
+2024-07-10 14:17:10,072 - INFO - Scraping NCAA statistics for Marques Tuiasosopo
+2024-07-10 14:17:20,713 - INFO - Scraping team statisitcs for 1997 Washington
+2024-07-10 14:17:32,144 - INFO - Scraping team statisitcs for 1998 Washington
+2024-07-10 14:17:42,643 - INFO - Scraping team statisitcs for 1999 Washington
+2024-07-10 14:17:53,205 - INFO - Scraping team statisitcs for 2000 Washington
+2024-07-10 14:18:03,605 - INFO - Scraping NFL statistics for Chris Weinke
+2024-07-10 14:18:03,605 - INFO - Scraping NCAA statistics for Chris Weinke
+2024-07-10 14:18:14,244 - INFO - Scraping team statisitcs for 1997 Florida St.
+2024-07-10 14:18:24,669 - INFO - Scraping team statisitcs for 1998 Florida St.
+2024-07-10 14:18:35,063 - INFO - Scraping team statisitcs for 1999 Florida St.
+2024-07-10 14:18:45,467 - INFO - Scraping team statisitcs for 2000 Florida St.
+2024-07-10 14:18:55,836 - INFO - Scraping NFL statistics for Sage Rosenfels
+2024-07-10 14:18:55,836 - INFO - Scraping NCAA statistics for Sage Rosenfels
+2024-07-10 14:19:06,701 - INFO - Scraping team statisitcs for 1997 Iowa St.
+2024-07-10 14:21:14,378 - INFO - Initializing NFL Draft Scraper
+2024-07-10 14:21:14,378 - INFO - Initializing NCAA Statistics Scraper
+2024-07-10 14:21:14,378 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-10 14:21:20,104 - INFO - Scraping NFL statistics for Michael Vick
+2024-07-10 14:21:20,104 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-10 14:21:30,743 - INFO - Scraping team statisitcs for 1999 Virginia Tech
+2024-07-10 14:21:41,070 - INFO - Scraping team statisitcs for 2000 Virginia Tech
+2024-07-10 14:21:51,425 - INFO - Scraping NFL statistics for Drew Brees
+2024-07-10 14:21:51,425 - INFO - Scraping NCAA statistics for Drew Brees
+2024-07-10 14:22:02,003 - INFO - Scraping team statisitcs for 1997 Purdue
+2024-07-10 14:22:12,378 - INFO - Scraping team statisitcs for 1998 Purdue
+2024-07-10 14:22:22,711 - INFO - Scraping team statisitcs for 1999 Purdue
+2024-07-10 14:22:33,028 - INFO - Scraping team statisitcs for 2000 Purdue
+2024-07-10 14:22:43,411 - INFO - Scraping NFL statistics for Quincy Carter
+2024-07-10 14:22:43,411 - INFO - Scraping NCAA statistics for Quincy Carter
+2024-07-10 14:22:53,951 - INFO - Scraping team statisitcs for 1998 Georgia
+2024-07-10 14:23:04,335 - INFO - Scraping team statisitcs for 1999 Georgia
+2024-07-10 14:23:14,913 - INFO - Scraping team statisitcs for 2000 Georgia
+2024-07-10 14:23:25,451 - INFO - Scraping NFL statistics for Marques Tuiasosopo
+2024-07-10 14:23:25,451 - INFO - Scraping NCAA statistics for Marques Tuiasosopo
+2024-07-10 14:23:36,053 - INFO - Scraping team statisitcs for 1997 Washington
+2024-07-10 14:23:46,373 - INFO - Scraping team statisitcs for 1998 Washington
+2024-07-10 14:23:56,710 - INFO - Scraping team statisitcs for 1999 Washington
+2024-07-10 14:24:07,136 - INFO - Scraping team statisitcs for 2000 Washington
+2024-07-10 14:24:17,497 - INFO - Scraping NFL statistics for Chris Weinke
+2024-07-10 14:24:17,497 - INFO - Scraping NCAA statistics for Chris Weinke
+2024-07-10 14:24:28,067 - INFO - Scraping team statisitcs for 1997 Florida St.
+2024-07-10 14:24:38,614 - INFO - Scraping team statisitcs for 1998 Florida St.
+2024-07-10 14:24:49,063 - INFO - Scraping team statisitcs for 1999 Florida St.
+2024-07-10 14:24:59,393 - INFO - Scraping team statisitcs for 2000 Florida St.
+2024-07-10 14:25:10,106 - INFO - Scraping NFL statistics for Sage Rosenfels
+2024-07-10 14:25:10,106 - INFO - Scraping NCAA statistics for Sage Rosenfels
+2024-07-10 14:25:21,417 - INFO - Scraping team statisitcs for 1997 Iowa St.
+2024-07-10 14:28:43,708 - INFO - Initializing NFL Draft Scraper
+2024-07-10 14:28:43,708 - INFO - Initializing NCAA Statistics Scraper
+2024-07-10 14:28:43,708 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-10 14:28:49,174 - INFO - Scraping NFL statistics for Michael Vick
+2024-07-10 14:28:49,174 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-10 14:28:59,933 - INFO - Scraping team statisitcs for 1999 Virginia Tech
+2024-07-10 14:29:10,269 - INFO - Scraping team statisitcs for 2000 Virginia Tech
+2024-07-10 14:29:20,608 - INFO - Scraping NFL statistics for Drew Brees
+2024-07-10 14:29:20,608 - INFO - Scraping NCAA statistics for Drew Brees
+2024-07-10 14:29:31,218 - INFO - Scraping team statisitcs for 1997 Purdue
+2024-07-10 14:29:41,778 - INFO - Scraping team statisitcs for 1998 Purdue
+2024-07-10 14:29:52,095 - INFO - Scraping team statisitcs for 1999 Purdue
+2024-07-10 14:30:02,385 - INFO - Scraping team statisitcs for 2000 Purdue
+2024-07-10 14:30:13,044 - INFO - Scraping NFL statistics for Quincy Carter
+2024-07-10 14:30:13,044 - INFO - Scraping NCAA statistics for Quincy Carter
+2024-07-10 14:30:24,205 - INFO - Scraping team statisitcs for 1998 Georgia
+2024-07-10 14:30:34,666 - INFO - Scraping team statisitcs for 1999 Georgia
+2024-07-10 14:30:45,150 - INFO - Scraping team statisitcs for 2000 Georgia
+2024-07-10 14:30:55,501 - INFO - Scraping NFL statistics for Marques Tuiasosopo
+2024-07-10 14:30:55,501 - INFO - Scraping NCAA statistics for Marques Tuiasosopo
+2024-07-10 14:31:06,673 - INFO - Scraping team statisitcs for 1997 Washington
+2024-07-10 14:31:17,091 - INFO - Scraping team statisitcs for 1998 Washington
+2024-07-10 14:31:27,483 - INFO - Scraping team statisitcs for 1999 Washington
+2024-07-10 14:31:37,905 - INFO - Scraping team statisitcs for 2000 Washington
+2024-07-10 14:31:48,229 - INFO - Scraping NFL statistics for Chris Weinke
+2024-07-10 14:31:48,229 - INFO - Scraping NCAA statistics for Chris Weinke
+2024-07-10 14:31:58,802 - INFO - Scraping team statisitcs for 1997 Florida St.
+2024-07-10 14:32:09,226 - INFO - Scraping team statisitcs for 1998 Florida St.
+2024-07-10 14:32:19,622 - INFO - Scraping team statisitcs for 1999 Florida St.
+2024-07-10 14:32:29,961 - INFO - Scraping team statisitcs for 2000 Florida St.
+2024-07-10 14:32:40,312 - INFO - Scraping NFL statistics for Sage Rosenfels
+2024-07-10 14:32:40,312 - INFO - Scraping NCAA statistics for Sage Rosenfels
+2024-07-10 14:32:51,019 - INFO - Scraping team statisitcs for 1997 Iowa St.
+2024-07-10 14:33:02,405 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1997-schedule.html
+2024-07-10 14:33:02,406 - INFO - Scraping team statisitcs for 1998 Iowa St.
+2024-07-10 14:33:12,892 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1998-schedule.html
+2024-07-10 14:33:12,894 - INFO - Scraping team statisitcs for 1999 Iowa St.
+2024-07-10 14:33:23,251 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1999-schedule.html
+2024-07-10 14:33:23,252 - INFO - Scraping team statisitcs for 2000 Iowa St.
+2024-07-10 14:33:33,806 - INFO - Scraping NFL statistics for Jesse Palmer
+2024-07-10 14:33:33,806 - INFO - Scraping NCAA statistics for Jesse Palmer
+2024-07-10 14:33:44,565 - INFO - Scraping team statisitcs for 1997 Florida
+2024-07-10 14:33:55,226 - INFO - Scraping team statisitcs for 1998 Florida
+2024-07-10 14:34:05,648 - INFO - Scraping team statisitcs for 1999 Florida
+2024-07-10 14:34:16,040 - INFO - Scraping team statisitcs for 2000 Florida
+2024-07-10 14:34:26,432 - INFO - Scraping NFL statistics for Mike McMahon
+2024-07-10 14:34:26,432 - INFO - Scraping NCAA statistics for Mike McMahon
+2024-07-10 14:34:37,107 - INFO - Scraping team statisitcs for 1997 Rutgers
+2024-07-10 14:34:47,739 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1997-schedule.html
+2024-07-10 14:34:47,740 - INFO - Scraping team statisitcs for 1998 Rutgers
+2024-07-10 14:34:58,139 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1998-schedule.html
+2024-07-10 14:34:58,140 - INFO - Scraping team statisitcs for 1999 Rutgers
+2024-07-10 14:35:08,512 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1999-schedule.html
+2024-07-10 14:35:08,513 - INFO - Scraping team statisitcs for 2000 Rutgers
+2024-07-10 14:35:18,904 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/2000-schedule.html
+2024-07-10 14:35:18,906 - INFO - Scraping NFL statistics for A.J. Feeley
+2024-07-10 14:35:18,906 - INFO - Scraping NCAA statistics for A.J. Feeley
+2024-07-10 14:35:29,464 - INFO - Scraping team statisitcs for 1997 Oregon
+2024-07-10 14:35:39,866 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/oregon/1997-schedule.html
+2024-07-10 14:35:39,868 - INFO - Scraping team statisitcs for 1998 Oregon
+2024-07-10 14:35:50,276 - INFO - Scraping team statisitcs for 1999 Oregon
+2024-07-10 14:36:00,707 - INFO - Scraping team statisitcs for 2000 Oregon
+2024-07-10 14:36:11,134 - INFO - Scraping NFL statistics for Josh Booty
+2024-07-10 14:36:11,134 - INFO - Scraping NCAA statistics for Josh Booty
+2024-07-10 14:36:22,050 - INFO - Scraping team statisitcs for 1999 LSU
+2024-07-10 14:36:32,552 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-state/1999-schedule.html
+2024-07-10 14:36:32,553 - INFO - Scraping team statisitcs for 2000 LSU
+2024-07-10 14:36:42,956 - INFO - Scraping NFL statistics for Josh Heupel
+2024-07-10 14:36:42,956 - INFO - Scraping NCAA statistics for Josh Heupel
+2024-07-10 14:36:53,581 - INFO - Scraping team statisitcs for 1999 Oklahoma
+2024-07-10 14:37:04,124 - INFO - Scraping team statisitcs for 2000 Oklahoma
+2024-07-10 14:37:14,538 - INFO - Saving data to file: ncaa_drafted_qbs.csv
+2024-07-10 14:51:18,055 - INFO - Initializing NFL Draft Scraper
+2024-07-10 14:51:18,055 - INFO - Initializing NCAA Statistics Scraper
+2024-07-10 14:51:18,055 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-10 14:51:41,321 - INFO - Initializing NFL Draft Scraper
+2024-07-10 14:51:41,321 - INFO - Initializing NCAA Statistics Scraper
+2024-07-10 14:51:41,321 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-10 14:51:46,801 - INFO - Scraping NFL statistics for Michael Vick
+2024-07-10 14:51:46,801 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-10 14:51:57,799 - INFO - Scraping team statisitcs for 1999 Virginia Tech
+2024-07-10 14:52:08,576 - INFO - Scraping team statisitcs for 2000 Virginia Tech
+2024-07-10 14:52:19,234 - INFO - Scraping NFL statistics for Drew Brees
+2024-07-10 14:52:19,234 - INFO - Scraping NCAA statistics for Drew Brees
+2024-07-10 14:52:29,825 - INFO - Scraping team statisitcs for 1997 Purdue
+2024-07-10 14:52:40,216 - INFO - Scraping team statisitcs for 1998 Purdue
+2024-07-10 14:52:50,681 - INFO - Scraping team statisitcs for 1999 Purdue
+2024-07-10 14:53:01,416 - INFO - Scraping team statisitcs for 2000 Purdue
+2024-07-10 14:53:12,071 - INFO - Scraping NFL statistics for Quincy Carter
+2024-07-10 14:53:12,071 - INFO - Scraping NCAA statistics for Quincy Carter
+2024-07-10 14:53:22,686 - INFO - Scraping team statisitcs for 1998 Georgia
+2024-07-10 14:53:33,256 - INFO - Scraping team statisitcs for 1999 Georgia
+2024-07-10 14:53:46,163 - INFO - Scraping team statisitcs for 2000 Georgia
+2024-07-10 14:53:56,931 - INFO - Scraping NFL statistics for Marques Tuiasosopo
+2024-07-10 14:53:56,932 - INFO - Scraping NCAA statistics for Marques Tuiasosopo
+2024-07-10 14:54:07,693 - INFO - Scraping team statisitcs for 1997 Washington
+2024-07-10 14:54:18,133 - INFO - Scraping team statisitcs for 1998 Washington
+2024-07-10 14:54:28,631 - INFO - Scraping team statisitcs for 1999 Washington
+2024-07-10 14:54:39,289 - INFO - Scraping team statisitcs for 2000 Washington
+2024-07-10 14:54:49,835 - INFO - Scraping NFL statistics for Chris Weinke
+2024-07-10 14:54:49,835 - INFO - Scraping NCAA statistics for Chris Weinke
+2024-07-10 14:55:00,808 - INFO - Scraping team statisitcs for 1997 Florida St.
+2024-07-10 14:55:11,552 - INFO - Scraping team statisitcs for 1998 Florida St.
+2024-07-10 14:55:22,448 - INFO - Scraping team statisitcs for 1999 Florida St.
+2024-07-10 14:55:32,964 - INFO - Scraping team statisitcs for 2000 Florida St.
+2024-07-10 14:55:43,828 - INFO - Scraping NFL statistics for Sage Rosenfels
+2024-07-10 14:55:43,828 - INFO - Scraping NCAA statistics for Sage Rosenfels
+2024-07-10 14:55:54,637 - INFO - Scraping team statisitcs for 1997 Iowa St.
+2024-07-10 14:56:05,341 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1997-schedule.html
+2024-07-10 14:56:05,342 - INFO - Scraping team statisitcs for 1998 Iowa St.
+2024-07-10 14:56:16,254 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1998-schedule.html
+2024-07-10 14:56:16,256 - INFO - Scraping team statisitcs for 1999 Iowa St.
+2024-07-10 14:56:27,716 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1999-schedule.html
+2024-07-10 14:56:27,717 - INFO - Scraping team statisitcs for 2000 Iowa St.
+2024-07-10 14:56:39,043 - INFO - Scraping NFL statistics for Jesse Palmer
+2024-07-10 14:56:39,043 - INFO - Scraping NCAA statistics for Jesse Palmer
+2024-07-10 14:56:50,951 - INFO - Scraping team statisitcs for 1997 Florida
+2024-07-10 14:57:01,462 - INFO - Scraping team statisitcs for 1998 Florida
+2024-07-10 14:57:12,006 - INFO - Scraping team statisitcs for 1999 Florida
+2024-07-10 14:57:22,536 - INFO - Scraping team statisitcs for 2000 Florida
+2024-07-10 14:57:33,057 - INFO - Scraping NFL statistics for Mike McMahon
+2024-07-10 14:57:33,057 - INFO - Scraping NCAA statistics for Mike McMahon
+2024-07-10 14:57:43,964 - INFO - Scraping team statisitcs for 1997 Rutgers
+2024-07-10 14:57:55,102 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1997-schedule.html
+2024-07-10 14:57:55,102 - INFO - Scraping team statisitcs for 1998 Rutgers
+2024-07-10 14:58:05,750 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1998-schedule.html
+2024-07-10 14:58:05,751 - INFO - Scraping team statisitcs for 1999 Rutgers
+2024-07-10 14:58:16,610 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1999-schedule.html
+2024-07-10 14:58:16,611 - INFO - Scraping team statisitcs for 2000 Rutgers
+2024-07-10 14:58:27,175 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/2000-schedule.html
+2024-07-10 14:58:27,176 - INFO - Scraping NFL statistics for A.J. Feeley
+2024-07-10 14:58:27,176 - INFO - Scraping NCAA statistics for A.J. Feeley
+2024-07-10 14:58:37,916 - INFO - Scraping team statisitcs for 1997 Oregon
+2024-07-10 14:58:48,585 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/oregon/1997-schedule.html
+2024-07-10 14:58:48,587 - INFO - Scraping team statisitcs for 1998 Oregon
+2024-07-10 14:58:59,177 - INFO - Scraping team statisitcs for 1999 Oregon
+2024-07-10 14:59:09,850 - INFO - Scraping team statisitcs for 2000 Oregon
+2024-07-10 14:59:20,414 - INFO - Scraping NFL statistics for Josh Booty
+2024-07-10 14:59:20,414 - INFO - Scraping NCAA statistics for Josh Booty
+2024-07-10 14:59:31,056 - INFO - Scraping team statisitcs for 1999 LSU
+2024-07-10 14:59:41,402 - INFO - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-state/1999-schedule.html
+2024-07-10 14:59:41,403 - INFO - Scraping team statisitcs for 2000 LSU
+2024-07-10 14:59:52,014 - INFO - Scraping NFL statistics for Josh Heupel
+2024-07-10 14:59:52,014 - INFO - Scraping NCAA statistics for Josh Heupel
+2024-07-10 15:00:03,137 - INFO - Scraping team statisitcs for 1999 Oklahoma
+2024-07-10 15:00:13,672 - INFO - Scraping team statisitcs for 2000 Oklahoma
+2024-07-10 15:00:24,085 - INFO - Saving data to file: ncaa_drafted_qbs.csv

@@ -1,4 +1,7 @@
 from nfl_draft_scraper import NFLDraftScraper
+import warnings
+
+warnings.filterwarnings("ignore")
 
 
 if __name__ == "__main__":

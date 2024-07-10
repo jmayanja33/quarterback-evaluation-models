@@ -10,34 +10,35 @@ import requests
 import collections
 import time
 import os
+import io
 collections.Callable = collections.abc.Callable
 
 load_dotenv()
 
 
-def initialize_driver():
-    """Function to initialize a selenium web driver service"""
-
-    # Initialize service
-    service = Service(os.getenv('CHROME_DRIVER_PATH'))
-
-    # Set service options
-    options = webdriver.ChromeOptions()
-    options.add_argument('--ignore-certificate-errors')
-    options.add_argument('--incognito')
-    options.add_argument('--headless')
-
-    prefs = {"profile.managed_default_content_settings.images": 2,
-             "profile.managed_default_content_settings.stylesheets": 2}
-    options.add_experimental_option("prefs", prefs)
-
-    # Initialize driver
-    driver = webdriver.Chrome(options=options, service=service)
-    driver.set_page_load_timeout(60)
-    driver.set_script_timeout(60)
-
-    # Return webdriver service
-    return webdriver.Chrome(options=options, service=service)
+# def initialize_driver():
+#     """Function to initialize a selenium web driver service"""
+#
+#     # Initialize service
+#     service = Service(os.getenv('CHROME_DRIVER_PATH'))
+#
+#     # Set service options
+#     options = webdriver.ChromeOptions()
+#     options.add_argument('--ignore-certificate-errors')
+#     options.add_argument('--incognito')
+#     options.add_argument('--headless')
+#
+#     prefs = {"profile.managed_default_content_settings.images": 2,
+#              "profile.managed_default_content_settings.stylesheets": 2}
+#     options.add_experimental_option("prefs", prefs)
+#
+#     # Initialize driver
+#     driver = webdriver.Chrome(options=options, service=service)
+#     driver.set_page_load_timeout(60)
+#     driver.set_script_timeout(60)
+#
+#     # Return webdriver service
+#     return webdriver.Chrome(options=options, service=service)
 
 
 class Scraper:
@@ -45,67 +46,84 @@ class Scraper:
 
     def __init__(self, start_year=2001, end_year=2022):
         self.logger = Logger()
-        self.driver = initialize_driver()
-        self.session = requests.session()
+        # self.driver = initialize_driver()
+        # self.session = requests.session()
         self.soup = None
         self.years = [i for i in range(start_year, end_year)]
         self.columns_to_index = dict()
+        self.driver_queries = 0
 
-    def send_request(self, url, selenium_needed=False, use_requests=False, header=None):
+    def send_request(self, url, use_pandas=False, header=None, table_id=None):
         """Function to send request for data to be scraped"""
         # response = self.session.get(url).text
-        if selenium_needed:
-            num_retries = 10
-            num_attempts = 0
+        # if selenium_needed:
+        #     if self.driver_queries == 5:
+        #         self.driver.refresh()
+        #
+        #     num_retries = 10
+        #     num_attempts = 0
+        #
+        #     while num_attempts < num_retries:
+        #         num_attempts += 1
+        #
+        #         try:
+        #             self.driver.get(url)
+        #             self.soup = BeautifulSoup(self.driver.page_source, 'html.parser')
+        #             self.driver_queries += 1
+        #             return
+        #         except TimeoutException as e:
+        #             self.logger.error(f"Timeout error attempting to reach: {url}")
+        #             self.logger.info(f"Refreshing driver (refresh {num_attempts}/10)")
+        #             self.driver.refresh()
+        #
+        #     self.logger.error(f"Exiting; Unable to reach: {url}")
+        #     sys.exit()
 
-            while num_attempts < num_retries:
-                num_attempts += 1
+        # Get html response
+        response = requests.get(url).text
 
-                try:
-                    self.driver.get(url)
-                    self.soup = BeautifulSoup(self.driver.page_source, 'html.parser')
-                    return
-                except TimeoutException as e:
-                    self.logger.error(f"Timeout error attempting to reach: {url}")
-                    self.logger.info(f"Refreshing driver (refresh {num_attempts}/10")
-                    self.driver.refresh()
+        # Pause for 5 seconds to avoid exceeding rate limit
+        time.sleep(5)
 
-            self.logger.error(f"Exiting; Unable to reach: {url}")
-            sys.exit()
+        # Return pandas dataframes
+        if use_pandas:
+            # Format html to render javascript
+            cleaned_response = response.replace("<!--", "").replace("-->", "")
+            self.soup = BeautifulSoup(cleaned_response, 'html.parser')
 
-        elif use_requests:
-            response = self.session.get(url).text
-            self.soup = BeautifulSoup(response, 'html.parser')
+            # Find table
+            table_html = str(self.find_table(table_id))
+            try:
+                return pd.read_html(io.StringIO(table_html), encoding="utf-8", header=header)[0]
+            # Handle no table found
+            except ValueError:
+                self.logger.info(f"Error; unable to find {table_id} table with pandas at: {url}")
+                return
 
-            # Pause for 5 seconds to avoid exceeding rate limit
-            time.sleep(5)
+        # Return regular text to beautiful soup object
+        self.soup = BeautifulSoup(response, 'html.parser')
+        return
 
-            return
-
-        else:
-            dfs = pd.read_html(url, encoding="utf-8", header=header)
-
-            # Pause for 5 seconds to avoid exceeding rate limit
-            time.sleep(5)
-
-            # Look for 2 tables, return 1 if the second is not found
-            if len(dfs) == 0:
-                return dfs[0], None
-            else:
-                return dfs[1], dfs[0]
+        # else:
+        #     dfs = pd.read_html(url, encoding="utf-8", header=header)
+        #
+        #     # Pause for 5 seconds to avoid exceeding rate limit
+        #     time.sleep(5)
+        #
+        #     # Look for 2 tables, return 1 if the second is not found
+        #     if len(dfs) == 0:
+        #         return dfs[0], None
+        #     else:
+        #         return dfs[1], dfs[0]
 
     def find_table(self, table_id):
         """Function to find a table by its id in the soup result"""
         return self.soup.find('table', id=table_id)
 
-    def extract_column_value(self, columns, column, table_type="None"):
+    def extract_column_value(self, columns, column):
         """Function to extract row value from table in the soup results"""
-        if table_type in {"passing", "rushing"}:
-            value_type = self.columns_to_index[table_type][column]['type']
-            value_index = self.columns_to_index[table_type][column]['index']
-        else:
-            value_type = self.columns_to_index[column]['type']
-            value_index = self.columns_to_index[column]['index']
+        value_type = self.columns_to_index[column]['type']
+        value_index = self.columns_to_index[column]['index']
 
         # Extract the value if it is present
         try:

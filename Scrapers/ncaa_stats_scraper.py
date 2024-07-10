@@ -1,6 +1,7 @@
 from scraper import Scraper
 from columns import ncaa_csv_columns
 from ncaa_scraper_helpers import *
+from college_url_formats import format_college_for_url
 from dotenv import load_dotenv
 import pandas as pd
 import io
@@ -12,7 +13,7 @@ class NCAAStatsScraper(Scraper):
 
     def __init__(self):
         super().__init__()
-        self.data = [0 for i in range(len(ncaa_csv_columns))]
+        self.data = []
         self.logger.info("Initializing NCAA Statistics Scraper")
 
     def get_college_stats(self, player, player_id, college, player_url):
@@ -22,22 +23,20 @@ class NCAAStatsScraper(Scraper):
 
         # Get player statistics
         if player_url is None:
-            for i in range(4, 20):
-                self.data[i] = -1
-            self.data[20] = -1
+            self.except_missing_data_point()
 
         else:
-            self.send_request(player_url, selenium_needed=True)
-
             # Load passing df as pandas dataframe
-            passing_html = str(self.find_table("passing"))
-            passing_df = pd.read_html(io.StringIO(passing_html), encoding="utf-8", header=1)[0]
-
-            rushing_html = str(self.find_table("rushing"))
-            rushing_df = pd.read_html(io.StringIO(rushing_html), encoding="utf-8", header=1)[0]
+            passing_df = self.send_request(player_url, table_id="passing", use_pandas=True, header=1)
+            rushing_df = self.send_request(player_url, table_id="rushing", use_pandas=True, header=1)
             self.scrape_player_stats(passing_df, rushing_df)
 
         return self.data
+
+    def except_missing_data_point(self):
+        """Function to fill in placeholders for missing data"""
+        for i in range(4, 21):
+            self.data[i] = -1
 
     def scrape_player_stats(self, passing_df, rushing_df):
         """Function to scrape player stats"""
@@ -75,27 +74,36 @@ class NCAAStatsScraper(Scraper):
         """Function to get a quarterback's team statistics for a certain season"""
 
         # Initialize rank
-        rank = -1
+        rank = 999
 
         # Extract college stats
         for year in player_years:
             # Get yearly statistics
             self.logger.info(f"Scraping team statisitcs for {year} {college}")
-            url = f"https://www.sports-reference.com/cfb/schools/{college.lower().replace(' ', '-')}/{year}-schedule.html"
-            team_df, rank_df = self.send_request(url)
+            url = f"https://www.sports-reference.com/cfb/schools/{format_college_for_url(college)}/{year}-schedule.html"
+            team_df = self.send_request(url, table_id="schedule", use_pandas=True)
+            rank_df = self.send_request(url, table_id="polls", use_pandas=True)
 
-            # Scrape stats
-            wins, losses, conference_wins, conference_losses, points_for, points_against = scrape_season(team_df, self.data[3])
-            if rank_df is not None:
-                rank = scrape_ranking(rank_df, rank)
+            if team_df is not None:
 
-            # Initialize object to save data point
-            data_point = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                          wins, losses, rank, conference_wins, conference_losses, points_for, points_against, 0]
+                # Scrape stats
+                wins, losses, conference_wins, conference_losses, points_for, points_against = scrape_season(team_df, self.data[3])
+                if rank_df is not None:
+                    rank = scrape_ranking(rank_df, rank)
 
-            # Update data
-            for i in range(14, 21):
-                self.data[i] += data_point[i]
+                # Initialize object to save data point
+                data_point = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                              wins, losses, rank, conference_wins, conference_losses, points_for, points_against, 0]
+
+                # Update data
+                for i in range(14, 21):
+                    self.data[i] += data_point[i]
+
+            # Handle missing data
+            else:
+                self.logger.error(f"Unable to scrape team data for {year} {college}; Url: {url}")
+                for i in range(4, 21):
+                    self.data[i] = -1
 
 
 
