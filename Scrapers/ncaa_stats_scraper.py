@@ -35,7 +35,7 @@ class NCAAStatsScraper(Scraper):
 
     def except_missing_data_point(self):
         """Function to fill in placeholders for missing data"""
-        for i in range(4, 21):
+        for i in range(4, 22):
             self.data[i] = -1
 
     def scrape_player_stats(self, passing_df, rushing_df):
@@ -47,8 +47,13 @@ class NCAAStatsScraper(Scraper):
     def scrape_passing_stats(self, table):
         """Function to get passing statistics for a quarterback"""
 
-        # Scrape years played and conference
-        player_years = list(table["Year"][:-1])
+        # Scrape years played
+        player_years = []
+        for i in list(table["Year"][:-1]):
+            year = str(i).replace("*", "")
+            player_years.append(int(year))
+
+        # Assign years played and conference
         self.data[4] = len(player_years)   # Years played
         self.data[3] = scrape_conference(table)   # Conference
 
@@ -110,8 +115,6 @@ class NCAAStatsScraper(Scraper):
             # Handle missing data
             else:
                 self.logger.error(f"Unable to scrape team data for {year} {college}; Url: {url}")
-                for i in range(4, 21):
+                for i in range(4, 22):
                     self.data[i] = -1
-
-
 

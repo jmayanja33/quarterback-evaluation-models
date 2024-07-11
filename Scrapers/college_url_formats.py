@@ -1,10 +1,14 @@
 special_cases = {
-    "LSU": "louisiana-state",
+    "Ala-Birmingham": "alabama-birmingham",
+    "Boston Col.": "boston-college",
+    "Bowling Green": "bowling-green-state",
     "BYU": "brigham-young",
+    "La-Monroe": "louisiana-monroe",
+    "LSU": "louisiana-state",
+    "UNLV": "nevada-las-vegas",
     "TCU": "texas-christian",
     "USC": "southern-california",
-    "Ala-Birmingham": "alabama-birmingham",
-    "La-Monroe": "louisiana-monroe"
+    "Southern Miss": "southern-mississippi",
 }
 
 
@@ -20,5 +24,6 @@ def format_college_for_url(college):
     formatted_college = formatted_college.replace("&", "")
     formatted_college = formatted_college.replace(",", "")
     formatted_college = formatted_college.replace("/", "")
+    formatted_college = formatted_college.replace("'", "")
 
     return formatted_college.lower()

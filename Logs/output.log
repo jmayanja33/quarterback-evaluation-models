@@ -34342,3 +34342,1243 @@
 2024-07-10 16:12:43,458 - INFO - Scraping team statisitcs for 2000 Oklahoma
 2024-07-10 16:12:53,861 - INFO - Saving data to file: nfl_draft_qbs.csv
 2024-07-10 16:12:53,863 - INFO - Saving data to file: ncaa_drafted_qbs.csv
+2024-07-10 21:26:26,327 - INFO - Initializing NFL Draft Scraper
+2024-07-10 21:26:26,328 - INFO - Initializing NCAA Statistics Scraper
+2024-07-10 21:26:26,328 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-10 21:26:31,726 - INFO - Scraping NFL statistics for Michael Vick
+2024-07-10 21:26:31,726 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-10 21:26:42,401 - INFO - Scraping team statisitcs for 1999 Virginia Tech
+2024-07-10 21:26:52,777 - INFO - Scraping team statisitcs for 2000 Virginia Tech
+2024-07-10 21:27:03,340 - INFO - Scraping NFL statistics for Drew Brees
+2024-07-10 21:27:03,340 - INFO - Scraping NCAA statistics for Drew Brees
+2024-07-10 21:27:14,315 - INFO - Scraping team statisitcs for 1997 Purdue
+2024-07-10 21:27:24,661 - INFO - Scraping team statisitcs for 1998 Purdue
+2024-07-10 21:27:35,762 - INFO - Scraping team statisitcs for 1999 Purdue
+2024-07-10 21:27:46,194 - INFO - Scraping team statisitcs for 2000 Purdue
+2024-07-10 21:27:56,579 - INFO - Scraping NFL statistics for Quincy Carter
+2024-07-10 21:27:56,579 - INFO - Scraping NCAA statistics for Quincy Carter
+2024-07-10 21:28:07,463 - INFO - Scraping team statisitcs for 1998 Georgia
+2024-07-10 21:28:18,136 - INFO - Scraping team statisitcs for 1999 Georgia
+2024-07-10 21:28:28,572 - INFO - Scraping team statisitcs for 2000 Georgia
+2024-07-10 21:28:39,438 - INFO - Scraping NFL statistics for Marques Tuiasosopo
+2024-07-10 21:28:39,438 - INFO - Scraping NCAA statistics for Marques Tuiasosopo
+2024-07-10 21:28:50,170 - INFO - Scraping team statisitcs for 1997 Washington
+2024-07-10 21:29:00,744 - INFO - Scraping team statisitcs for 1998 Washington
+2024-07-10 21:29:11,143 - INFO - Scraping team statisitcs for 1999 Washington
+2024-07-10 21:29:21,659 - INFO - Scraping team statisitcs for 2000 Washington
+2024-07-10 21:29:32,184 - INFO - Scraping NFL statistics for Chris Weinke
+2024-07-10 21:29:32,184 - INFO - Scraping NCAA statistics for Chris Weinke
+2024-07-10 21:29:43,263 - INFO - Scraping team statisitcs for 1997 Florida St.
+2024-07-10 21:29:53,925 - INFO - Scraping team statisitcs for 1998 Florida St.
+2024-07-10 21:30:04,382 - INFO - Scraping team statisitcs for 1999 Florida St.
+2024-07-10 21:30:14,821 - INFO - Scraping team statisitcs for 2000 Florida St.
+2024-07-10 21:30:25,234 - INFO - Scraping NFL statistics for Sage Rosenfels
+2024-07-10 21:30:25,234 - INFO - Scraping NCAA statistics for Sage Rosenfels
+2024-07-10 21:30:36,082 - INFO - Scraping team statisitcs for 1997 Iowa St.
+2024-07-10 21:30:46,683 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1997-schedule.html
+2024-07-10 21:30:46,686 - INFO - Scraping team statisitcs for 1998 Iowa St.
+2024-07-10 21:30:57,465 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1998-schedule.html
+2024-07-10 21:30:57,466 - INFO - Scraping team statisitcs for 1999 Iowa St.
+2024-07-10 21:31:08,117 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1999-schedule.html
+2024-07-10 21:31:08,119 - INFO - Scraping team statisitcs for 2000 Iowa St.
+2024-07-10 21:31:18,544 - INFO - Scraping NFL statistics for Jesse Palmer
+2024-07-10 21:31:18,544 - INFO - Scraping NCAA statistics for Jesse Palmer
+2024-07-10 21:31:29,287 - INFO - Scraping team statisitcs for 1997 Florida
+2024-07-10 21:31:39,739 - INFO - Scraping team statisitcs for 1998 Florida
+2024-07-10 21:31:50,382 - INFO - Scraping team statisitcs for 1999 Florida
+2024-07-10 21:32:00,831 - INFO - Scraping team statisitcs for 2000 Florida
+2024-07-10 21:32:11,228 - INFO - Scraping NFL statistics for Mike McMahon
+2024-07-10 21:32:11,228 - INFO - Scraping NCAA statistics for Mike McMahon
+2024-07-10 21:32:22,014 - INFO - Scraping team statisitcs for 1997 Rutgers
+2024-07-10 21:32:32,591 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1997-schedule.html
+2024-07-10 21:32:32,592 - INFO - Scraping team statisitcs for 1998 Rutgers
+2024-07-10 21:32:43,118 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1998-schedule.html
+2024-07-10 21:32:43,120 - INFO - Scraping team statisitcs for 1999 Rutgers
+2024-07-10 21:32:53,846 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1999-schedule.html
+2024-07-10 21:32:53,847 - INFO - Scraping team statisitcs for 2000 Rutgers
+2024-07-10 21:33:04,261 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/2000-schedule.html
+2024-07-10 21:33:04,263 - INFO - Scraping NFL statistics for A.J. Feeley
+2024-07-10 21:33:04,263 - INFO - Scraping NCAA statistics for A.J. Feeley
+2024-07-10 21:33:14,968 - INFO - Scraping team statisitcs for 1997 Oregon
+2024-07-10 21:33:25,432 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/oregon/1997-schedule.html
+2024-07-10 21:33:25,434 - INFO - Scraping team statisitcs for 1998 Oregon
+2024-07-10 21:33:36,008 - INFO - Scraping team statisitcs for 1999 Oregon
+2024-07-10 21:33:46,547 - INFO - Scraping team statisitcs for 2000 Oregon
+2024-07-10 21:33:57,180 - INFO - Scraping NFL statistics for Josh Booty
+2024-07-10 21:33:57,180 - INFO - Scraping NCAA statistics for Josh Booty
+2024-07-10 21:34:08,078 - INFO - Scraping team statisitcs for 1999 LSU
+2024-07-10 21:34:18,519 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-state/1999-schedule.html
+2024-07-10 21:34:18,521 - INFO - Scraping team statisitcs for 2000 LSU
+2024-07-10 21:34:29,127 - INFO - Scraping NFL statistics for Josh Heupel
+2024-07-10 21:34:29,128 - INFO - Scraping NCAA statistics for Josh Heupel
+2024-07-10 21:34:40,125 - INFO - Scraping team statisitcs for 1999 Oklahoma
+2024-07-10 21:34:50,607 - INFO - Scraping team statisitcs for 2000 Oklahoma
+2024-07-10 21:35:01,094 - INFO - Scraping NFL draft data for quarterbacks for year: 2002
+2024-07-10 21:35:06,782 - INFO - Scraping NFL statistics for David Carr
+2024-07-10 21:35:06,782 - INFO - Scraping NCAA statistics for David Carr
+2024-07-10 21:35:17,508 - INFO - Scraping team statisitcs for 1997 Fresno St.
+2024-07-10 21:35:28,381 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/fresno-state/1997-schedule.html
+2024-07-10 21:35:28,382 - INFO - Scraping team statisitcs for 1998 Fresno St.
+2024-07-10 21:35:38,765 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/fresno-state/1998-schedule.html
+2024-07-10 21:35:38,766 - INFO - Scraping team statisitcs for 2000 Fresno St.
+2024-07-10 21:35:49,201 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/fresno-state/2000-schedule.html
+2024-07-10 21:35:49,202 - INFO - Scraping team statisitcs for 2001 Fresno St.
+2024-07-10 21:35:59,971 - INFO - Scraping NFL statistics for Joey Harrington
+2024-07-10 21:35:59,971 - INFO - Scraping NCAA statistics for Joey Harrington
+2024-07-10 21:36:10,898 - INFO - Scraping team statisitcs for 1998 Oregon
+2024-07-10 21:36:21,270 - INFO - Scraping team statisitcs for 1999 Oregon
+2024-07-10 21:36:31,738 - INFO - Scraping team statisitcs for 2000 Oregon
+2024-07-10 21:36:42,099 - INFO - Scraping team statisitcs for 2001 Oregon
+2024-07-10 21:36:52,581 - INFO - Scraping NFL statistics for Patrick Ramsey
+2024-07-10 21:36:52,581 - INFO - Scraping NCAA statistics for Patrick Ramsey
+2024-07-10 21:37:03,251 - INFO - Scraping team statisitcs for 1998 Tulane
+2024-07-10 21:37:14,058 - INFO - Scraping team statisitcs for 1999 Tulane
+2024-07-10 21:37:24,592 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/tulane/1999-schedule.html
+2024-07-10 21:37:24,594 - INFO - Scraping team statisitcs for 2000 Tulane
+2024-07-10 21:37:35,076 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/tulane/2000-schedule.html
+2024-07-10 21:37:35,078 - INFO - Scraping team statisitcs for 2001 Tulane
+2024-07-10 21:37:45,687 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/tulane/2001-schedule.html
+2024-07-10 21:37:45,691 - INFO - Scraping NFL statistics for Josh McCown
+2024-07-10 21:37:45,691 - INFO - Scraping NCAA statistics for Josh McCown
+2024-07-10 21:37:56,515 - INFO - Scraping team statisitcs for 1998 Sam Houston St.
+2024-07-10 21:38:01,694 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/sam-houston-state/1998-schedule.html
+2024-07-10 21:38:06,893 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/sam-houston-state/1998-schedule.html
+2024-07-10 21:38:06,893 - ERROR - Unable to scrape team data for 1998 Sam Houston St.; Url: https://www.sports-reference.com/cfb/schools/sam-houston-state/1998-schedule.html
+2024-07-10 21:38:06,893 - INFO - Scraping team statisitcs for 1999 Sam Houston St.
+2024-07-10 21:38:12,316 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/sam-houston-state/1999-schedule.html
+2024-07-10 21:38:17,528 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/sam-houston-state/1999-schedule.html
+2024-07-10 21:38:17,529 - ERROR - Unable to scrape team data for 1999 Sam Houston St.; Url: https://www.sports-reference.com/cfb/schools/sam-houston-state/1999-schedule.html
+2024-07-10 21:38:17,529 - INFO - Scraping team statisitcs for 2000 Sam Houston St.
+2024-07-10 21:38:22,716 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/sam-houston-state/2000-schedule.html
+2024-07-10 21:38:28,180 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/sam-houston-state/2000-schedule.html
+2024-07-10 21:38:28,180 - ERROR - Unable to scrape team data for 2000 Sam Houston St.; Url: https://www.sports-reference.com/cfb/schools/sam-houston-state/2000-schedule.html
+2024-07-10 21:38:28,183 - INFO - Scraping NFL statistics for David Garrard
+2024-07-10 21:38:28,183 - INFO - Scraping NCAA statistics for David Garrard
+2024-07-10 21:38:39,125 - INFO - Scraping team statisitcs for 1998 East Carolina
+2024-07-10 21:38:49,600 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/east-carolina/1998-schedule.html
+2024-07-10 21:38:49,601 - INFO - Scraping team statisitcs for 1999 East Carolina
+2024-07-10 21:39:00,177 - INFO - Scraping team statisitcs for 2000 East Carolina
+2024-07-10 21:39:10,689 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/east-carolina/2000-schedule.html
+2024-07-10 21:39:10,690 - INFO - Scraping team statisitcs for 2001 East Carolina
+2024-07-10 21:39:21,209 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/east-carolina/2001-schedule.html
+2024-07-10 21:39:21,211 - INFO - Scraping NFL statistics for Rohan Davey
+2024-07-10 21:39:21,211 - INFO - Scraping NCAA statistics for Rohan Davey
+2024-07-10 21:39:32,246 - INFO - Scraping team statisitcs for 1998 LSU
+2024-07-10 21:39:42,757 - INFO - Scraping team statisitcs for 1999 LSU
+2024-07-10 21:39:53,403 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-state/1999-schedule.html
+2024-07-10 21:39:53,405 - INFO - Scraping team statisitcs for 2000 LSU
+2024-07-10 21:40:03,897 - INFO - Scraping team statisitcs for 2001 LSU
+2024-07-10 21:40:14,632 - INFO - Scraping NFL statistics for Randy Fasani
+2024-07-10 21:40:14,632 - INFO - Scraping NCAA statistics for Randy Fasani
+2024-07-10 21:40:25,618 - INFO - Scraping team statisitcs for 1998 Stanford
+2024-07-10 21:40:36,247 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/stanford/1998-schedule.html
+2024-07-10 21:40:36,248 - INFO - Scraping team statisitcs for 1999 Stanford
+2024-07-10 21:40:46,689 - INFO - Scraping team statisitcs for 2000 Stanford
+2024-07-10 21:40:57,112 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/stanford/2000-schedule.html
+2024-07-10 21:40:57,113 - INFO - Scraping team statisitcs for 2001 Stanford
+2024-07-10 21:41:07,506 - INFO - Scraping NFL statistics for Kurt Kittner
+2024-07-10 21:41:07,506 - INFO - Scraping NCAA statistics for Kurt Kittner
+2024-07-10 21:41:18,274 - INFO - Scraping team statisitcs for 1998 Illinois
+2024-07-10 21:41:28,700 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/illinois/1998-schedule.html
+2024-07-10 21:41:28,702 - INFO - Scraping team statisitcs for 1999 Illinois
+2024-07-10 21:41:39,587 - INFO - Scraping team statisitcs for 2000 Illinois
+2024-07-10 21:41:50,051 - INFO - Scraping team statisitcs for 2001 Illinois
+2024-07-10 21:42:00,454 - INFO - Scraping NFL statistics for Brandon Doman
+2024-07-10 21:42:00,454 - INFO - Scraping NCAA statistics for Brandon Doman
+2024-07-10 21:42:11,138 - INFO - Scraping team statisitcs for 1998 BYU
+2024-07-10 21:42:21,683 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/brigham-young/1998-schedule.html
+2024-07-10 21:42:21,684 - INFO - Scraping team statisitcs for 1999 BYU
+2024-07-10 21:42:32,070 - INFO - Scraping team statisitcs for 2000 BYU
+2024-07-10 21:42:42,532 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/brigham-young/2000-schedule.html
+2024-07-10 21:42:42,533 - INFO - Scraping team statisitcs for 2001 BYU
+2024-07-10 21:42:52,978 - INFO - Scraping NFL statistics for Craig Nall
+2024-07-10 21:42:52,978 - INFO - Scraping NCAA statistics for Craig Nall
+2024-07-10 21:43:03,714 - INFO - Scraping team statisitcs for 1998 LSU
+2024-07-10 21:43:14,488 - INFO - Scraping team statisitcs for 1999 LSU
+2024-07-10 21:43:25,090 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-state/1999-schedule.html
+2024-07-10 21:43:25,091 - INFO - Scraping team statisitcs for 2000 LSU
+2024-07-10 21:43:35,572 - INFO - Scraping NFL statistics for J.T. O'Sullivan
+2024-07-10 21:52:09,510 - INFO - Initializing NFL Draft Scraper
+2024-07-10 21:52:09,510 - INFO - Initializing NCAA Statistics Scraper
+2024-07-10 21:52:09,510 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-10 21:52:14,909 - INFO - Scraping NFL statistics for Michael Vick
+2024-07-10 21:52:14,909 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-10 21:52:25,865 - INFO - Scraping team statisitcs for 1999 Virginia Tech
+2024-07-10 21:52:36,255 - INFO - Scraping team statisitcs for 2000 Virginia Tech
+2024-07-10 21:52:46,654 - INFO - Scraping NFL statistics for Drew Brees
+2024-07-10 21:52:46,654 - INFO - Scraping NCAA statistics for Drew Brees
+2024-07-10 21:52:57,414 - INFO - Scraping team statisitcs for 1997 Purdue
+2024-07-10 21:53:07,825 - INFO - Scraping team statisitcs for 1998 Purdue
+2024-07-10 21:53:18,278 - INFO - Scraping team statisitcs for 1999 Purdue
+2024-07-10 21:53:28,617 - INFO - Scraping team statisitcs for 2000 Purdue
+2024-07-10 21:53:39,033 - INFO - Scraping NFL statistics for Quincy Carter
+2024-07-10 21:53:39,034 - INFO - Scraping NCAA statistics for Quincy Carter
+2024-07-10 21:53:49,596 - INFO - Scraping team statisitcs for 1998 Georgia
+2024-07-10 21:53:59,975 - INFO - Scraping team statisitcs for 1999 Georgia
+2024-07-10 21:54:10,424 - INFO - Scraping team statisitcs for 2000 Georgia
+2024-07-10 21:54:20,744 - INFO - Scraping NFL statistics for Marques Tuiasosopo
+2024-07-10 21:54:20,744 - INFO - Scraping NCAA statistics for Marques Tuiasosopo
+2024-07-10 21:54:31,580 - INFO - Scraping team statisitcs for 1997 Washington
+2024-07-10 21:54:42,356 - INFO - Scraping team statisitcs for 1998 Washington
+2024-07-10 21:54:52,792 - INFO - Scraping team statisitcs for 1999 Washington
+2024-07-10 21:55:03,347 - INFO - Scraping team statisitcs for 2000 Washington
+2024-07-10 21:55:13,691 - INFO - Scraping NFL statistics for Chris Weinke
+2024-07-10 21:55:13,691 - INFO - Scraping NCAA statistics for Chris Weinke
+2024-07-10 21:55:24,690 - INFO - Scraping team statisitcs for 1997 Florida St.
+2024-07-10 21:55:35,131 - INFO - Scraping team statisitcs for 1998 Florida St.
+2024-07-10 21:55:45,728 - INFO - Scraping team statisitcs for 1999 Florida St.
+2024-07-10 21:55:56,242 - INFO - Scraping team statisitcs for 2000 Florida St.
+2024-07-10 21:56:06,551 - INFO - Scraping NFL statistics for Sage Rosenfels
+2024-07-10 21:56:06,551 - INFO - Scraping NCAA statistics for Sage Rosenfels
+2024-07-10 21:56:17,295 - INFO - Scraping team statisitcs for 1997 Iowa St.
+2024-07-10 21:56:27,625 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1997-schedule.html
+2024-07-10 21:56:27,627 - INFO - Scraping team statisitcs for 1998 Iowa St.
+2024-07-10 21:56:37,933 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1998-schedule.html
+2024-07-10 21:56:37,934 - INFO - Scraping team statisitcs for 1999 Iowa St.
+2024-07-10 21:56:48,498 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1999-schedule.html
+2024-07-10 21:56:48,499 - INFO - Scraping team statisitcs for 2000 Iowa St.
+2024-07-10 21:56:58,856 - INFO - Scraping NFL statistics for Jesse Palmer
+2024-07-10 21:56:58,856 - INFO - Scraping NCAA statistics for Jesse Palmer
+2024-07-10 21:57:09,384 - INFO - Scraping team statisitcs for 1997 Florida
+2024-07-10 21:57:19,770 - INFO - Scraping team statisitcs for 1998 Florida
+2024-07-10 21:57:30,084 - INFO - Scraping team statisitcs for 1999 Florida
+2024-07-10 21:57:40,382 - INFO - Scraping team statisitcs for 2000 Florida
+2024-07-10 21:57:50,980 - INFO - Scraping NFL statistics for Mike McMahon
+2024-07-10 21:57:50,980 - INFO - Scraping NCAA statistics for Mike McMahon
+2024-07-10 21:58:01,565 - INFO - Scraping team statisitcs for 1997 Rutgers
+2024-07-10 21:58:11,866 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1997-schedule.html
+2024-07-10 21:58:11,867 - INFO - Scraping team statisitcs for 1998 Rutgers
+2024-07-10 21:58:22,313 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1998-schedule.html
+2024-07-10 21:58:22,314 - INFO - Scraping team statisitcs for 1999 Rutgers
+2024-07-10 21:58:32,818 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1999-schedule.html
+2024-07-10 21:58:32,819 - INFO - Scraping team statisitcs for 2000 Rutgers
+2024-07-10 21:58:43,304 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/2000-schedule.html
+2024-07-10 21:58:43,306 - INFO - Scraping NFL statistics for A.J. Feeley
+2024-07-10 21:58:43,306 - INFO - Scraping NCAA statistics for A.J. Feeley
+2024-07-10 21:58:53,921 - INFO - Scraping team statisitcs for 1997 Oregon
+2024-07-10 21:59:04,548 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/oregon/1997-schedule.html
+2024-07-10 21:59:04,549 - INFO - Scraping team statisitcs for 1998 Oregon
+2024-07-10 21:59:14,863 - INFO - Scraping team statisitcs for 1999 Oregon
+2024-07-10 21:59:25,193 - INFO - Scraping team statisitcs for 2000 Oregon
+2024-07-10 21:59:35,481 - INFO - Scraping NFL statistics for Josh Booty
+2024-07-10 21:59:35,481 - INFO - Scraping NCAA statistics for Josh Booty
+2024-07-10 21:59:45,924 - INFO - Scraping team statisitcs for 1999 LSU
+2024-07-10 21:59:56,482 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-state/1999-schedule.html
+2024-07-10 21:59:56,483 - INFO - Scraping team statisitcs for 2000 LSU
+2024-07-10 22:00:06,833 - INFO - Scraping NFL statistics for Josh Heupel
+2024-07-10 22:00:06,833 - INFO - Scraping NCAA statistics for Josh Heupel
+2024-07-10 22:00:17,322 - INFO - Scraping team statisitcs for 1999 Oklahoma
+2024-07-10 22:00:27,666 - INFO - Scraping team statisitcs for 2000 Oklahoma
+2024-07-10 22:00:37,996 - INFO - Scraping NFL draft data for quarterbacks for year: 2002
+2024-07-10 22:00:43,330 - INFO - Scraping NFL statistics for David Carr
+2024-07-10 22:00:43,330 - INFO - Scraping NCAA statistics for David Carr
+2024-07-10 22:00:53,840 - INFO - Scraping team statisitcs for 1997 Fresno St.
+2024-07-10 22:01:04,149 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/fresno-state/1997-schedule.html
+2024-07-10 22:01:04,150 - INFO - Scraping team statisitcs for 1998 Fresno St.
+2024-07-10 22:01:14,829 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/fresno-state/1998-schedule.html
+2024-07-10 22:01:14,830 - INFO - Scraping team statisitcs for 2000 Fresno St.
+2024-07-10 22:01:25,211 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/fresno-state/2000-schedule.html
+2024-07-10 22:01:25,213 - INFO - Scraping team statisitcs for 2001 Fresno St.
+2024-07-10 22:01:35,543 - INFO - Scraping NFL statistics for Joey Harrington
+2024-07-10 22:01:35,543 - INFO - Scraping NCAA statistics for Joey Harrington
+2024-07-10 22:01:46,173 - INFO - Scraping team statisitcs for 1998 Oregon
+2024-07-10 22:01:56,554 - INFO - Scraping team statisitcs for 1999 Oregon
+2024-07-10 22:02:06,960 - INFO - Scraping team statisitcs for 2000 Oregon
+2024-07-10 22:02:17,281 - INFO - Scraping team statisitcs for 2001 Oregon
+2024-07-10 22:02:27,644 - INFO - Scraping NFL statistics for Patrick Ramsey
+2024-07-10 22:02:27,644 - INFO - Scraping NCAA statistics for Patrick Ramsey
+2024-07-10 22:02:38,091 - INFO - Scraping team statisitcs for 1998 Tulane
+2024-07-10 22:02:48,503 - INFO - Scraping team statisitcs for 1999 Tulane
+2024-07-10 22:02:58,892 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/tulane/1999-schedule.html
+2024-07-10 22:02:58,893 - INFO - Scraping team statisitcs for 2000 Tulane
+2024-07-10 22:03:09,224 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/tulane/2000-schedule.html
+2024-07-10 22:03:09,225 - INFO - Scraping team statisitcs for 2001 Tulane
+2024-07-10 22:03:19,771 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/tulane/2001-schedule.html
+2024-07-10 22:03:19,774 - INFO - Scraping NFL statistics for Josh McCown
+2024-07-10 22:03:19,774 - INFO - Scraping NCAA statistics for Josh McCown
+2024-07-10 22:03:30,328 - INFO - Scraping team statisitcs for 1998 Sam Houston St.
+2024-07-10 22:03:35,653 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/sam-houston-state/1998-schedule.html
+2024-07-10 22:03:40,842 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/sam-houston-state/1998-schedule.html
+2024-07-10 22:03:40,843 - ERROR - Unable to scrape team data for 1998 Sam Houston St.; Url: https://www.sports-reference.com/cfb/schools/sam-houston-state/1998-schedule.html
+2024-07-10 22:03:40,843 - INFO - Scraping team statisitcs for 1999 Sam Houston St.
+2024-07-10 22:03:46,420 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/sam-houston-state/1999-schedule.html
+2024-07-10 22:03:51,627 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/sam-houston-state/1999-schedule.html
+2024-07-10 22:03:51,627 - ERROR - Unable to scrape team data for 1999 Sam Houston St.; Url: https://www.sports-reference.com/cfb/schools/sam-houston-state/1999-schedule.html
+2024-07-10 22:03:51,627 - INFO - Scraping team statisitcs for 2000 Sam Houston St.
+2024-07-10 22:03:56,776 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/sam-houston-state/2000-schedule.html
+2024-07-10 22:04:01,912 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/sam-houston-state/2000-schedule.html
+2024-07-10 22:04:01,912 - ERROR - Unable to scrape team data for 2000 Sam Houston St.; Url: https://www.sports-reference.com/cfb/schools/sam-houston-state/2000-schedule.html
+2024-07-10 22:04:01,913 - INFO - Scraping NFL statistics for David Garrard
+2024-07-10 22:04:01,913 - INFO - Scraping NCAA statistics for David Garrard
+2024-07-10 22:04:12,444 - INFO - Scraping team statisitcs for 1998 East Carolina
+2024-07-10 22:04:22,803 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/east-carolina/1998-schedule.html
+2024-07-10 22:04:22,804 - INFO - Scraping team statisitcs for 1999 East Carolina
+2024-07-10 22:04:33,096 - INFO - Scraping team statisitcs for 2000 East Carolina
+2024-07-10 22:04:43,366 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/east-carolina/2000-schedule.html
+2024-07-10 22:04:43,367 - INFO - Scraping team statisitcs for 2001 East Carolina
+2024-07-10 22:04:53,839 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/east-carolina/2001-schedule.html
+2024-07-10 22:04:53,841 - INFO - Scraping NFL statistics for Rohan Davey
+2024-07-10 22:04:53,841 - INFO - Scraping NCAA statistics for Rohan Davey
+2024-07-10 22:05:05,006 - INFO - Scraping team statisitcs for 1998 LSU
+2024-07-10 22:05:15,497 - INFO - Scraping team statisitcs for 1999 LSU
+2024-07-10 22:05:25,829 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-state/1999-schedule.html
+2024-07-10 22:05:25,831 - INFO - Scraping team statisitcs for 2000 LSU
+2024-07-10 22:05:36,460 - INFO - Scraping team statisitcs for 2001 LSU
+2024-07-10 22:05:46,763 - INFO - Scraping NFL statistics for Randy Fasani
+2024-07-10 22:05:46,763 - INFO - Scraping NCAA statistics for Randy Fasani
+2024-07-10 22:05:57,204 - INFO - Scraping team statisitcs for 1998 Stanford
+2024-07-10 22:06:07,503 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/stanford/1998-schedule.html
+2024-07-10 22:06:07,504 - INFO - Scraping team statisitcs for 1999 Stanford
+2024-07-10 22:06:17,853 - INFO - Scraping team statisitcs for 2000 Stanford
+2024-07-10 22:06:28,571 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/stanford/2000-schedule.html
+2024-07-10 22:06:28,572 - INFO - Scraping team statisitcs for 2001 Stanford
+2024-07-10 22:06:39,040 - INFO - Scraping NFL statistics for Kurt Kittner
+2024-07-10 22:06:39,040 - INFO - Scraping NCAA statistics for Kurt Kittner
+2024-07-10 22:06:49,602 - INFO - Scraping team statisitcs for 1998 Illinois
+2024-07-10 22:06:59,927 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/illinois/1998-schedule.html
+2024-07-10 22:06:59,929 - INFO - Scraping team statisitcs for 1999 Illinois
+2024-07-10 22:07:10,221 - INFO - Scraping team statisitcs for 2000 Illinois
+2024-07-10 22:07:20,542 - INFO - Scraping team statisitcs for 2001 Illinois
+2024-07-10 22:07:31,049 - INFO - Scraping NFL statistics for Brandon Doman
+2024-07-10 22:07:31,050 - INFO - Scraping NCAA statistics for Brandon Doman
+2024-07-10 22:07:42,107 - INFO - Scraping team statisitcs for 1998 BYU
+2024-07-10 22:07:52,465 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/brigham-young/1998-schedule.html
+2024-07-10 22:07:52,467 - INFO - Scraping team statisitcs for 1999 BYU
+2024-07-10 22:08:02,803 - INFO - Scraping team statisitcs for 2000 BYU
+2024-07-10 22:08:13,153 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/brigham-young/2000-schedule.html
+2024-07-10 22:08:13,154 - INFO - Scraping team statisitcs for 2001 BYU
+2024-07-10 22:08:23,429 - INFO - Scraping NFL statistics for Craig Nall
+2024-07-10 22:08:23,429 - INFO - Scraping NCAA statistics for Craig Nall
+2024-07-10 22:08:33,910 - INFO - Scraping team statisitcs for 1998 LSU
+2024-07-10 22:08:44,385 - INFO - Scraping team statisitcs for 1999 LSU
+2024-07-10 22:08:54,670 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-state/1999-schedule.html
+2024-07-10 22:08:54,671 - INFO - Scraping team statisitcs for 2000 LSU
+2024-07-10 22:09:04,978 - INFO - Scraping NFL statistics for J.T. O'Sullivan
+2024-07-10 22:09:04,978 - INFO - Scraping NCAA statistics for J.T. O'Sullivan
+2024-07-10 22:09:04,979 - INFO - Scraping NFL statistics for Steve Bellisari
+2024-07-10 22:09:04,979 - INFO - Scraping NCAA statistics for Steve Bellisari
+2024-07-10 22:09:15,588 - INFO - Scraping team statisitcs for 1998 Ohio St.
+2024-07-10 22:09:25,986 - INFO - Scraping team statisitcs for 1999 Ohio St.
+2024-07-10 22:09:36,395 - INFO - Scraping team statisitcs for 2000 Ohio St.
+2024-07-10 22:09:46,738 - INFO - Scraping team statisitcs for 2001 Ohio St.
+2024-07-10 22:09:57,647 - INFO - Scraping NFL statistics for Seth Burford
+2024-07-10 22:09:57,647 - INFO - Scraping NCAA statistics for Seth Burford
+2024-07-10 22:09:57,648 - INFO - Scraping NFL statistics for Jeff Kelly
+2024-07-10 22:09:57,648 - INFO - Scraping NCAA statistics for Jeff Kelly
+2024-07-10 22:10:08,174 - INFO - Scraping team statisitcs for 1998 Southern Miss
+2024-07-10 22:10:13,334 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/southern-miss/1998-schedule.html
+2024-07-10 22:10:18,465 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/southern-miss/1998-schedule.html
+2024-07-10 22:10:18,465 - ERROR - Unable to scrape team data for 1998 Southern Miss; Url: https://www.sports-reference.com/cfb/schools/southern-miss/1998-schedule.html
+2024-07-10 22:10:18,465 - INFO - Scraping team statisitcs for 1999 Southern Miss
+2024-07-10 22:10:23,632 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/southern-miss/1999-schedule.html
+2024-07-10 22:10:28,765 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/southern-miss/1999-schedule.html
+2024-07-10 22:10:28,765 - ERROR - Unable to scrape team data for 1999 Southern Miss; Url: https://www.sports-reference.com/cfb/schools/southern-miss/1999-schedule.html
+2024-07-10 22:10:28,765 - INFO - Scraping team statisitcs for 2000 Southern Miss
+2024-07-10 22:10:33,912 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/southern-miss/2000-schedule.html
+2024-07-10 22:10:39,048 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/southern-miss/2000-schedule.html
+2024-07-10 22:10:39,049 - ERROR - Unable to scrape team data for 2000 Southern Miss; Url: https://www.sports-reference.com/cfb/schools/southern-miss/2000-schedule.html
+2024-07-10 22:10:39,049 - INFO - Scraping team statisitcs for 2001 Southern Miss
+2024-07-10 22:10:44,213 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/southern-miss/2001-schedule.html
+2024-07-10 22:10:49,463 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/southern-miss/2001-schedule.html
+2024-07-10 22:10:49,463 - ERROR - Unable to scrape team data for 2001 Southern Miss; Url: https://www.sports-reference.com/cfb/schools/southern-miss/2001-schedule.html
+2024-07-10 22:10:49,464 - INFO - Scraping NFL statistics for Wes Pate
+2024-07-10 22:10:49,464 - INFO - Scraping NCAA statistics for Wes Pate
+2024-07-10 22:10:49,466 - INFO - Scraping NFL draft data for quarterbacks for year: 2003
+2024-07-10 22:10:55,369 - INFO - Scraping NFL statistics for Carson Palmer
+2024-07-10 22:10:55,369 - INFO - Scraping NCAA statistics for Carson Palmer
+2024-07-10 22:11:06,795 - INFO - Scraping team statisitcs for 1998 USC
+2024-07-10 22:11:17,278 - INFO - Scraping team statisitcs for 1999 USC
+2024-07-10 22:11:27,867 - INFO - Scraping team statisitcs for 2000 USC
+2024-07-10 22:11:38,314 - INFO - Scraping team statisitcs for 2001 USC
+2024-07-10 22:11:48,669 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/southern-california/2001-schedule.html
+2024-07-10 22:11:48,670 - INFO - Scraping team statisitcs for *2002 USC
+2024-07-10 22:11:53,828 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/southern-california/*2002-schedule.html
+2024-07-10 22:11:58,945 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/southern-california/*2002-schedule.html
+2024-07-10 22:11:58,945 - ERROR - Unable to scrape team data for *2002 USC; Url: https://www.sports-reference.com/cfb/schools/southern-california/*2002-schedule.html
+2024-07-10 22:11:58,946 - INFO - Scraping NFL statistics for Byron Leftwich
+2024-07-10 22:11:58,946 - INFO - Scraping NCAA statistics for Byron Leftwich
+2024-07-10 22:12:09,535 - INFO - Scraping team statisitcs for 1998 Marshall
+2024-07-10 22:12:19,994 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/marshall/1998-schedule.html
+2024-07-10 22:12:19,995 - INFO - Scraping team statisitcs for 1999 Marshall
+2024-07-10 22:12:30,333 - INFO - Scraping team statisitcs for 2000 Marshall
+2024-07-10 22:12:40,743 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/marshall/2000-schedule.html
+2024-07-10 22:12:40,744 - INFO - Scraping team statisitcs for 2001 Marshall
+2024-07-10 22:12:51,114 - INFO - Scraping team statisitcs for *2002 Marshall
+2024-07-10 22:12:56,404 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/marshall/*2002-schedule.html
+2024-07-10 22:13:01,526 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/marshall/*2002-schedule.html
+2024-07-10 22:13:01,526 - ERROR - Unable to scrape team data for *2002 Marshall; Url: https://www.sports-reference.com/cfb/schools/marshall/*2002-schedule.html
+2024-07-10 22:13:01,527 - INFO - Scraping NFL statistics for Kyle Boller
+2024-07-10 22:13:01,527 - INFO - Scraping NCAA statistics for Kyle Boller
+2024-07-10 22:13:12,442 - INFO - Scraping team statisitcs for 1999 California
+2024-07-10 22:13:22,887 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/california/1999-schedule.html
+2024-07-10 22:13:22,888 - INFO - Scraping team statisitcs for 2000 California
+2024-07-10 22:13:33,330 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/california/2000-schedule.html
+2024-07-10 22:13:33,332 - INFO - Scraping team statisitcs for 2001 California
+2024-07-10 22:13:43,752 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/california/2001-schedule.html
+2024-07-10 22:13:43,753 - INFO - Scraping team statisitcs for 2002 California
+2024-07-10 22:13:54,112 - INFO - Scraping NFL statistics for Rex Grossman
+2024-07-10 22:13:54,112 - INFO - Scraping NCAA statistics for Rex Grossman
+2024-07-10 22:14:04,704 - INFO - Scraping team statisitcs for 2000 Florida
+2024-07-10 22:14:15,090 - INFO - Scraping team statisitcs for 2001 Florida
+2024-07-10 22:14:25,432 - INFO - Scraping team statisitcs for *2002 Florida
+2024-07-10 22:14:30,605 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/florida/*2002-schedule.html
+2024-07-10 22:14:35,731 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/florida/*2002-schedule.html
+2024-07-10 22:14:35,731 - ERROR - Unable to scrape team data for *2002 Florida; Url: https://www.sports-reference.com/cfb/schools/florida/*2002-schedule.html
+2024-07-10 22:14:35,734 - INFO - Scraping NFL statistics for Dave Ragone
+2024-07-10 22:14:35,734 - INFO - Scraping NCAA statistics for Dave Ragone
+2024-07-10 22:14:46,277 - INFO - Scraping team statisitcs for 1999 Louisville
+2024-07-10 22:14:56,627 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisville/1999-schedule.html
+2024-07-10 22:14:56,628 - INFO - Scraping team statisitcs for 2000 Louisville
+2024-07-10 22:15:07,007 - INFO - Scraping team statisitcs for 2001 Louisville
+2024-07-10 22:15:17,664 - INFO - Scraping team statisitcs for *2002 Louisville
+2024-07-10 22:15:22,841 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/louisville/*2002-schedule.html
+2024-07-10 22:15:27,959 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisville/*2002-schedule.html
+2024-07-10 22:15:27,959 - ERROR - Unable to scrape team data for *2002 Louisville; Url: https://www.sports-reference.com/cfb/schools/louisville/*2002-schedule.html
+2024-07-10 22:15:27,960 - INFO - Scraping NFL statistics for Chris Simms
+2024-07-10 22:15:27,960 - INFO - Scraping NCAA statistics for Chris Simms
+2024-07-10 22:15:38,542 - INFO - Scraping team statisitcs for 1999 Texas
+2024-07-10 22:15:48,893 - INFO - Scraping team statisitcs for 2000 Texas
+2024-07-10 22:15:59,297 - INFO - Scraping team statisitcs for 2001 Texas
+2024-07-10 22:16:09,653 - INFO - Scraping team statisitcs for *2002 Texas
+2024-07-10 22:16:14,800 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/texas/*2002-schedule.html
+2024-07-10 22:16:20,156 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/texas/*2002-schedule.html
+2024-07-10 22:16:20,156 - ERROR - Unable to scrape team data for *2002 Texas; Url: https://www.sports-reference.com/cfb/schools/texas/*2002-schedule.html
+2024-07-10 22:16:20,157 - INFO - Scraping NFL statistics for Seneca Wallace
+2024-07-10 22:16:20,157 - INFO - Scraping NCAA statistics for Seneca Wallace
+2024-07-10 22:16:30,700 - INFO - Scraping team statisitcs for 2001 Iowa St.
+2024-07-10 22:16:41,103 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/2001-schedule.html
+2024-07-10 22:16:41,104 - INFO - Scraping team statisitcs for *2002 Iowa St.
+2024-07-10 22:16:46,348 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/*2002-schedule.html
+2024-07-10 22:16:51,658 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/*2002-schedule.html
+2024-07-10 22:16:51,659 - ERROR - Unable to scrape team data for *2002 Iowa St.; Url: https://www.sports-reference.com/cfb/schools/iowa-state/*2002-schedule.html
+2024-07-10 22:16:51,661 - INFO - Scraping NFL statistics for Brian St. Pierre
+2024-07-10 22:16:51,661 - INFO - Scraping NCAA statistics for Brian St. Pierre
+2024-07-10 22:17:02,440 - INFO - Scraping team statisitcs for 1999 Boston Col.
+2024-07-10 22:17:07,718 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/boston-col/1999-schedule.html
+2024-07-10 22:17:12,952 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/boston-col/1999-schedule.html
+2024-07-10 22:17:12,952 - ERROR - Unable to scrape team data for 1999 Boston Col.; Url: https://www.sports-reference.com/cfb/schools/boston-col/1999-schedule.html
+2024-07-10 22:17:12,952 - INFO - Scraping team statisitcs for 2000 Boston Col.
+2024-07-10 22:17:18,192 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/boston-col/2000-schedule.html
+2024-07-10 22:17:23,456 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/boston-col/2000-schedule.html
+2024-07-10 22:17:23,456 - ERROR - Unable to scrape team data for 2000 Boston Col.; Url: https://www.sports-reference.com/cfb/schools/boston-col/2000-schedule.html
+2024-07-10 22:17:23,456 - INFO - Scraping team statisitcs for 2001 Boston Col.
+2024-07-10 22:17:28,829 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/boston-col/2001-schedule.html
+2024-07-10 22:17:33,973 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/boston-col/2001-schedule.html
+2024-07-10 22:17:33,973 - ERROR - Unable to scrape team data for 2001 Boston Col.; Url: https://www.sports-reference.com/cfb/schools/boston-col/2001-schedule.html
+2024-07-10 22:17:33,973 - INFO - Scraping team statisitcs for *2002 Boston Col.
+2024-07-10 22:17:39,269 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/boston-col/*2002-schedule.html
+2024-07-10 22:17:44,401 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/boston-col/*2002-schedule.html
+2024-07-10 22:17:44,401 - ERROR - Unable to scrape team data for *2002 Boston Col.; Url: https://www.sports-reference.com/cfb/schools/boston-col/*2002-schedule.html
+2024-07-10 22:17:44,403 - INFO - Scraping NFL statistics for Drew Henson
+2024-07-10 22:17:44,403 - INFO - Scraping NCAA statistics for Drew Henson
+2024-07-10 22:17:55,016 - INFO - Scraping team statisitcs for 1998 Michigan
+2024-07-10 22:18:05,334 - INFO - Scraping team statisitcs for 1999 Michigan
+2024-07-10 22:18:15,699 - INFO - Scraping team statisitcs for 2000 Michigan
+2024-07-10 22:18:26,028 - INFO - Scraping NFL statistics for Brooks Bollinger
+2024-07-10 22:18:26,028 - INFO - Scraping NCAA statistics for Brooks Bollinger
+2024-07-10 22:18:37,012 - INFO - Scraping team statisitcs for 1999 Wisconsin
+2024-07-10 22:18:47,383 - INFO - Scraping team statisitcs for 2000 Wisconsin
+2024-07-10 22:18:57,755 - INFO - Scraping team statisitcs for 2001 Wisconsin
+2024-07-10 22:19:08,100 - INFO - Scraping team statisitcs for *2002 Wisconsin
+2024-07-10 22:19:13,302 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/wisconsin/*2002-schedule.html
+2024-07-10 22:19:18,442 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/wisconsin/*2002-schedule.html
+2024-07-10 22:19:18,442 - ERROR - Unable to scrape team data for *2002 Wisconsin; Url: https://www.sports-reference.com/cfb/schools/wisconsin/*2002-schedule.html
+2024-07-10 22:19:18,442 - INFO - Scraping NFL statistics for Kliff Kingsbury
+2024-07-10 22:19:18,442 - INFO - Scraping NCAA statistics for Kliff Kingsbury
+2024-07-10 22:19:29,007 - INFO - Scraping team statisitcs for 1999 Texas Tech
+2024-07-10 22:19:39,756 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/texas-tech/1999-schedule.html
+2024-07-10 22:19:39,758 - INFO - Scraping team statisitcs for 2000 Texas Tech
+2024-07-10 22:19:50,100 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/texas-tech/2000-schedule.html
+2024-07-10 22:19:50,101 - INFO - Scraping team statisitcs for 2001 Texas Tech
+2024-07-10 22:20:00,454 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/texas-tech/2001-schedule.html
+2024-07-10 22:20:00,455 - INFO - Scraping team statisitcs for *2002 Texas Tech
+2024-07-10 22:20:05,645 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/texas-tech/*2002-schedule.html
+2024-07-10 22:20:10,769 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/texas-tech/*2002-schedule.html
+2024-07-10 22:20:10,769 - ERROR - Unable to scrape team data for *2002 Texas Tech; Url: https://www.sports-reference.com/cfb/schools/texas-tech/*2002-schedule.html
+2024-07-10 22:20:10,770 - INFO - Scraping NFL statistics for Gibran Hamdan
+2024-07-10 22:20:10,770 - INFO - Scraping NCAA statistics for Gibran Hamdan
+2024-07-10 22:20:21,461 - INFO - Scraping team statisitcs for 2000 Indiana
+2024-07-10 22:20:31,827 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/indiana/2000-schedule.html
+2024-07-10 22:20:31,828 - INFO - Scraping team statisitcs for 2001 Indiana
+2024-07-10 22:20:42,174 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/indiana/2001-schedule.html
+2024-07-10 22:20:42,176 - INFO - Scraping team statisitcs for 2002 Indiana
+2024-07-10 22:20:52,707 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/indiana/2002-schedule.html
+2024-07-10 22:20:52,708 - INFO - Scraping NFL statistics for Ken Dorsey
+2024-07-10 22:20:52,708 - INFO - Scraping NCAA statistics for Ken Dorsey
+2024-07-10 22:21:03,330 - INFO - Scraping team statisitcs for 1999 Miami (FL)
+2024-07-10 22:21:13,717 - INFO - Scraping team statisitcs for 2000 Miami (FL)
+2024-07-10 22:21:23,992 - INFO - Scraping team statisitcs for 2001 Miami (FL)
+2024-07-10 22:21:34,276 - INFO - Scraping team statisitcs for *2002 Miami (FL)
+2024-07-10 22:21:39,431 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/miami-fl/*2002-schedule.html
+2024-07-10 22:21:44,589 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/miami-fl/*2002-schedule.html
+2024-07-10 22:21:44,589 - ERROR - Unable to scrape team data for *2002 Miami (FL); Url: https://www.sports-reference.com/cfb/schools/miami-fl/*2002-schedule.html
+2024-07-10 22:21:44,590 - INFO - Scraping NFL draft data for quarterbacks for year: 2004
+2024-07-10 22:21:50,357 - INFO - Scraping NFL statistics for Eli Manning
+2024-07-10 22:21:50,357 - INFO - Scraping NCAA statistics for Eli Manning
+2024-07-10 22:22:00,951 - INFO - Scraping team statisitcs for 2000 Mississippi
+2024-07-10 22:22:11,333 - INFO - Scraping team statisitcs for 2001 Mississippi
+2024-07-10 22:22:21,697 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/mississippi/2001-schedule.html
+2024-07-10 22:22:21,699 - INFO - Scraping team statisitcs for *2002 Mississippi
+2024-07-10 22:22:26,854 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/mississippi/*2002-schedule.html
+2024-07-10 22:22:31,981 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/mississippi/*2002-schedule.html
+2024-07-10 22:22:31,982 - ERROR - Unable to scrape team data for *2002 Mississippi; Url: https://www.sports-reference.com/cfb/schools/mississippi/*2002-schedule.html
+2024-07-10 22:22:31,982 - INFO - Scraping team statisitcs for *2003 Mississippi
+2024-07-10 22:22:37,151 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/mississippi/*2003-schedule.html
+2024-07-10 22:22:42,285 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/mississippi/*2003-schedule.html
+2024-07-10 22:22:42,285 - ERROR - Unable to scrape team data for *2003 Mississippi; Url: https://www.sports-reference.com/cfb/schools/mississippi/*2003-schedule.html
+2024-07-10 22:22:42,285 - INFO - Scraping NFL statistics for Philip Rivers
+2024-07-10 22:22:42,285 - INFO - Scraping NCAA statistics for Philip Rivers
+2024-07-10 22:22:52,851 - INFO - Scraping team statisitcs for 2000 North Carolina St.
+2024-07-10 22:23:03,330 - INFO - Scraping team statisitcs for 2001 North Carolina St.
+2024-07-10 22:23:13,821 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/north-carolina-state/2001-schedule.html
+2024-07-10 22:23:13,822 - INFO - Scraping team statisitcs for *2002 North Carolina St.
+2024-07-10 22:23:18,984 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/north-carolina-state/*2002-schedule.html
+2024-07-10 22:23:24,106 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/north-carolina-state/*2002-schedule.html
+2024-07-10 22:23:24,106 - ERROR - Unable to scrape team data for *2002 North Carolina St.; Url: https://www.sports-reference.com/cfb/schools/north-carolina-state/*2002-schedule.html
+2024-07-10 22:23:24,106 - INFO - Scraping team statisitcs for *2003 North Carolina St.
+2024-07-10 22:23:29,264 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/north-carolina-state/*2003-schedule.html
+2024-07-10 22:23:34,395 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/north-carolina-state/*2003-schedule.html
+2024-07-10 22:23:34,395 - ERROR - Unable to scrape team data for *2003 North Carolina St.; Url: https://www.sports-reference.com/cfb/schools/north-carolina-state/*2003-schedule.html
+2024-07-10 22:23:34,396 - INFO - Scraping NFL statistics for Ben Roethlisberger
+2024-07-10 22:23:34,396 - INFO - Scraping NCAA statistics for Ben Roethlisberger
+2024-07-10 22:23:45,249 - INFO - Scraping team statisitcs for 2001 Miami (OH)
+2024-07-10 22:23:55,673 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/miami-oh/2001-schedule.html
+2024-07-10 22:23:55,674 - INFO - Scraping team statisitcs for 2002 Miami (OH)
+2024-07-10 22:24:06,416 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/miami-oh/2002-schedule.html
+2024-07-10 22:24:06,418 - INFO - Scraping team statisitcs for *2003 Miami (OH)
+2024-07-10 22:24:11,574 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/miami-oh/*2003-schedule.html
+2024-07-10 22:24:16,723 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/miami-oh/*2003-schedule.html
+2024-07-10 22:24:16,723 - ERROR - Unable to scrape team data for *2003 Miami (OH); Url: https://www.sports-reference.com/cfb/schools/miami-oh/*2003-schedule.html
+2024-07-10 22:24:16,724 - INFO - Scraping NFL statistics for J.P. Losman
+2024-07-10 22:24:16,724 - INFO - Scraping NCAA statistics for J.P. Losman
+2024-07-10 22:24:27,285 - INFO - Scraping team statisitcs for 2000 Tulane
+2024-07-10 22:24:37,558 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/tulane/2000-schedule.html
+2024-07-10 22:24:37,559 - INFO - Scraping team statisitcs for 2001 Tulane
+2024-07-10 22:24:47,910 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/tulane/2001-schedule.html
+2024-07-10 22:24:47,912 - INFO - Scraping team statisitcs for *2002 Tulane
+2024-07-10 22:24:53,087 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/tulane/*2002-schedule.html
+2024-07-10 22:24:58,221 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/tulane/*2002-schedule.html
+2024-07-10 22:24:58,221 - ERROR - Unable to scrape team data for *2002 Tulane; Url: https://www.sports-reference.com/cfb/schools/tulane/*2002-schedule.html
+2024-07-10 22:24:58,221 - INFO - Scraping team statisitcs for 2003 Tulane
+2024-07-10 22:25:08,702 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/tulane/2003-schedule.html
+2024-07-10 22:25:08,705 - INFO - Scraping NFL statistics for Matt Schaub
+2024-07-10 22:25:08,705 - INFO - Scraping NCAA statistics for Matt Schaub
+2024-07-10 22:25:19,370 - INFO - Scraping team statisitcs for 2000 Virginia
+2024-07-10 22:25:29,832 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/virginia/2000-schedule.html
+2024-07-10 22:25:29,833 - INFO - Scraping team statisitcs for 2001 Virginia
+2024-07-10 22:25:40,268 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/virginia/2001-schedule.html
+2024-07-10 22:25:40,269 - INFO - Scraping team statisitcs for *2002 Virginia
+2024-07-10 22:25:45,435 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/virginia/*2002-schedule.html
+2024-07-10 22:25:50,589 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/virginia/*2002-schedule.html
+2024-07-10 22:25:50,589 - ERROR - Unable to scrape team data for *2002 Virginia; Url: https://www.sports-reference.com/cfb/schools/virginia/*2002-schedule.html
+2024-07-10 22:25:50,590 - INFO - Scraping team statisitcs for *2003 Virginia
+2024-07-10 22:25:55,747 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/virginia/*2003-schedule.html
+2024-07-10 22:26:00,864 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/virginia/*2003-schedule.html
+2024-07-10 22:26:00,864 - ERROR - Unable to scrape team data for *2003 Virginia; Url: https://www.sports-reference.com/cfb/schools/virginia/*2003-schedule.html
+2024-07-10 22:26:00,866 - INFO - Scraping NFL statistics for Luke McCown
+2024-07-10 22:26:00,866 - INFO - Scraping NCAA statistics for Luke McCown
+2024-07-10 22:26:11,907 - INFO - Scraping team statisitcs for 2000 Louisiana Tech
+2024-07-10 22:26:22,331 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-tech/2000-schedule.html
+2024-07-10 22:26:22,333 - INFO - Scraping team statisitcs for 2001 Louisiana Tech
+2024-07-10 22:26:32,640 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-tech/2001-schedule.html
+2024-07-10 22:26:32,642 - INFO - Scraping team statisitcs for 2002 Louisiana Tech
+2024-07-10 22:26:43,012 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-tech/2002-schedule.html
+2024-07-10 22:26:43,013 - INFO - Scraping team statisitcs for 2003 Louisiana Tech
+2024-07-10 22:26:53,389 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-tech/2003-schedule.html
+2024-07-10 22:26:53,391 - INFO - Scraping NFL statistics for Craig Krenzel
+2024-07-10 22:26:53,391 - INFO - Scraping NCAA statistics for Craig Krenzel
+2024-07-10 22:27:03,973 - INFO - Scraping team statisitcs for 2000 Ohio St.
+2024-07-10 22:27:14,371 - INFO - Scraping team statisitcs for 2001 Ohio St.
+2024-07-10 22:27:24,693 - INFO - Scraping team statisitcs for *2002 Ohio St.
+2024-07-10 22:27:29,858 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/ohio-state/*2002-schedule.html
+2024-07-10 22:27:35,010 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/ohio-state/*2002-schedule.html
+2024-07-10 22:27:35,010 - ERROR - Unable to scrape team data for *2002 Ohio St.; Url: https://www.sports-reference.com/cfb/schools/ohio-state/*2002-schedule.html
+2024-07-10 22:27:35,010 - INFO - Scraping team statisitcs for *2003 Ohio St.
+2024-07-10 22:27:40,183 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/ohio-state/*2003-schedule.html
+2024-07-10 22:27:45,346 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/ohio-state/*2003-schedule.html
+2024-07-10 22:27:45,347 - ERROR - Unable to scrape team data for *2003 Ohio St.; Url: https://www.sports-reference.com/cfb/schools/ohio-state/*2003-schedule.html
+2024-07-10 22:27:45,349 - INFO - Scraping NFL statistics for Andy Hall
+2024-07-10 22:27:45,349 - INFO - Scraping NCAA statistics for Andy Hall
+2024-07-10 22:27:56,030 - INFO - Scraping team statisitcs for 2000 Delaware
+2024-07-10 22:28:01,174 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/delaware/2000-schedule.html
+2024-07-10 22:28:06,307 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/delaware/2000-schedule.html
+2024-07-10 22:28:06,307 - ERROR - Unable to scrape team data for 2000 Delaware; Url: https://www.sports-reference.com/cfb/schools/delaware/2000-schedule.html
+2024-07-10 22:28:06,307 - INFO - Scraping team statisitcs for 2001 Delaware
+2024-07-10 22:28:11,503 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/delaware/2001-schedule.html
+2024-07-10 22:28:16,678 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/delaware/2001-schedule.html
+2024-07-10 22:28:16,678 - ERROR - Unable to scrape team data for 2001 Delaware; Url: https://www.sports-reference.com/cfb/schools/delaware/2001-schedule.html
+2024-07-10 22:28:16,678 - INFO - Scraping NFL statistics for Josh Harris
+2024-07-10 22:28:16,678 - INFO - Scraping NCAA statistics for Josh Harris
+2024-07-10 22:28:27,783 - INFO - Scraping team statisitcs for 2000 Bowling Green
+2024-07-10 22:28:32,957 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/bowling-green/2000-schedule.html
+2024-07-10 22:28:38,091 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/bowling-green/2000-schedule.html
+2024-07-10 22:28:38,092 - ERROR - Unable to scrape team data for 2000 Bowling Green; Url: https://www.sports-reference.com/cfb/schools/bowling-green/2000-schedule.html
+2024-07-10 22:28:38,092 - INFO - Scraping team statisitcs for 2001 Bowling Green
+2024-07-10 22:28:43,282 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/bowling-green/2001-schedule.html
+2024-07-10 22:28:48,412 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/bowling-green/2001-schedule.html
+2024-07-10 22:28:48,412 - ERROR - Unable to scrape team data for 2001 Bowling Green; Url: https://www.sports-reference.com/cfb/schools/bowling-green/2001-schedule.html
+2024-07-10 22:28:48,412 - INFO - Scraping team statisitcs for 2002 Bowling Green
+2024-07-10 22:28:53,599 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/bowling-green/2002-schedule.html
+2024-07-10 22:28:58,730 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/bowling-green/2002-schedule.html
+2024-07-10 22:28:58,731 - ERROR - Unable to scrape team data for 2002 Bowling Green; Url: https://www.sports-reference.com/cfb/schools/bowling-green/2002-schedule.html
+2024-07-10 22:28:58,731 - INFO - Scraping team statisitcs for *2003 Bowling Green
+2024-07-10 22:29:03,898 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/bowling-green/*2003-schedule.html
+2024-07-10 22:29:09,032 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/bowling-green/*2003-schedule.html
+2024-07-10 22:29:09,032 - ERROR - Unable to scrape team data for *2003 Bowling Green; Url: https://www.sports-reference.com/cfb/schools/bowling-green/*2003-schedule.html
+2024-07-10 22:29:09,032 - INFO - Scraping NFL statistics for Jim Sorgi
+2024-07-10 22:29:09,032 - INFO - Scraping NCAA statistics for Jim Sorgi
+2024-07-10 22:29:19,631 - INFO - Scraping team statisitcs for 2000 Wisconsin
+2024-07-10 22:29:30,334 - INFO - Scraping team statisitcs for 2001 Wisconsin
+2024-07-10 22:29:40,705 - INFO - Scraping team statisitcs for *2002 Wisconsin
+2024-07-10 22:29:45,916 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/wisconsin/*2002-schedule.html
+2024-07-10 22:29:51,100 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/wisconsin/*2002-schedule.html
+2024-07-10 22:29:51,101 - ERROR - Unable to scrape team data for *2002 Wisconsin; Url: https://www.sports-reference.com/cfb/schools/wisconsin/*2002-schedule.html
+2024-07-10 22:29:51,101 - INFO - Scraping team statisitcs for *2003 Wisconsin
+2024-07-10 22:29:56,488 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/wisconsin/*2003-schedule.html
+2024-07-10 22:30:01,682 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/wisconsin/*2003-schedule.html
+2024-07-10 22:30:01,683 - ERROR - Unable to scrape team data for *2003 Wisconsin; Url: https://www.sports-reference.com/cfb/schools/wisconsin/*2003-schedule.html
+2024-07-10 22:30:01,683 - INFO - Scraping NFL statistics for Jeff Smoker
+2024-07-10 22:30:01,683 - INFO - Scraping NCAA statistics for Jeff Smoker
+2024-07-10 22:30:12,733 - INFO - Scraping team statisitcs for 2000 Michigan St.
+2024-07-10 22:30:23,820 - INFO - Scraping team statisitcs for 2001 Michigan St.
+2024-07-10 22:30:34,233 - INFO - Scraping team statisitcs for 2002 Michigan St.
+2024-07-10 22:30:44,604 - INFO - Scraping team statisitcs for *2003 Michigan St.
+2024-07-10 22:30:49,789 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/michigan-state/*2003-schedule.html
+2024-07-10 22:30:54,916 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/michigan-state/*2003-schedule.html
+2024-07-10 22:30:54,916 - ERROR - Unable to scrape team data for *2003 Michigan St.; Url: https://www.sports-reference.com/cfb/schools/michigan-state/*2003-schedule.html
+2024-07-10 22:30:54,916 - INFO - Scraping NFL statistics for John Navarre
+2024-07-10 22:30:54,917 - INFO - Scraping NCAA statistics for John Navarre
+2024-07-10 22:31:05,543 - INFO - Scraping team statisitcs for 2000 Michigan
+2024-07-10 22:31:15,840 - INFO - Scraping team statisitcs for 2001 Michigan
+2024-07-10 22:31:26,312 - INFO - Scraping team statisitcs for *2002 Michigan
+2024-07-10 22:31:31,474 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/michigan/*2002-schedule.html
+2024-07-10 22:31:36,875 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/michigan/*2002-schedule.html
+2024-07-10 22:31:36,875 - ERROR - Unable to scrape team data for *2002 Michigan; Url: https://www.sports-reference.com/cfb/schools/michigan/*2002-schedule.html
+2024-07-10 22:31:36,875 - INFO - Scraping team statisitcs for *2003 Michigan
+2024-07-10 22:31:42,080 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/michigan/*2003-schedule.html
+2024-07-10 22:31:47,288 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/michigan/*2003-schedule.html
+2024-07-10 22:31:47,289 - ERROR - Unable to scrape team data for *2003 Michigan; Url: https://www.sports-reference.com/cfb/schools/michigan/*2003-schedule.html
+2024-07-10 22:31:47,290 - INFO - Scraping NFL statistics for Cody Pickett
+2024-07-10 22:31:47,290 - INFO - Scraping NCAA statistics for Cody Pickett
+2024-07-10 22:31:58,053 - INFO - Scraping team statisitcs for 1999 Washington
+2024-07-10 22:32:08,466 - INFO - Scraping team statisitcs for 2000 Washington
+2024-07-10 22:32:18,848 - INFO - Scraping team statisitcs for 2001 Washington
+2024-07-10 22:32:29,211 - INFO - Scraping team statisitcs for *2002 Washington
+2024-07-10 22:32:34,388 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/washington/*2002-schedule.html
+2024-07-10 22:32:39,546 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/washington/*2002-schedule.html
+2024-07-10 22:32:39,547 - ERROR - Unable to scrape team data for *2002 Washington; Url: https://www.sports-reference.com/cfb/schools/washington/*2002-schedule.html
+2024-07-10 22:32:39,547 - INFO - Scraping team statisitcs for 2003 Washington
+2024-07-10 22:32:49,901 - INFO - Scraping NFL statistics for Casey Bramlet
+2024-07-10 22:32:49,901 - INFO - Scraping NCAA statistics for Casey Bramlet
+2024-07-10 22:32:49,901 - INFO - Scraping NFL statistics for Matt Mauck
+2024-07-10 22:32:49,901 - INFO - Scraping NCAA statistics for Matt Mauck
+2024-07-10 22:33:00,560 - INFO - Scraping team statisitcs for 2001 LSU
+2024-07-10 22:33:10,928 - INFO - Scraping team statisitcs for *2002 LSU
+2024-07-10 22:33:16,102 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-state/*2002-schedule.html
+2024-07-10 22:33:21,239 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-state/*2002-schedule.html
+2024-07-10 22:33:21,240 - ERROR - Unable to scrape team data for *2002 LSU; Url: https://www.sports-reference.com/cfb/schools/louisiana-state/*2002-schedule.html
+2024-07-10 22:33:21,240 - INFO - Scraping team statisitcs for *2003 LSU
+2024-07-10 22:33:26,417 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-state/*2003-schedule.html
+2024-07-10 22:33:31,564 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-state/*2003-schedule.html
+2024-07-10 22:33:31,564 - ERROR - Unable to scrape team data for *2003 LSU; Url: https://www.sports-reference.com/cfb/schools/louisiana-state/*2003-schedule.html
+2024-07-10 22:33:31,565 - INFO - Scraping NFL statistics for B.J. Symons
+2024-07-10 22:33:31,566 - INFO - Scraping NCAA statistics for B.J. Symons
+2024-07-10 22:33:42,267 - INFO - Scraping team statisitcs for 2000 Texas Tech
+2024-07-10 22:33:53,144 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/texas-tech/2000-schedule.html
+2024-07-10 22:33:53,146 - INFO - Scraping team statisitcs for 2001 Texas Tech
+2024-07-10 22:34:03,510 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/texas-tech/2001-schedule.html
+2024-07-10 22:34:03,512 - INFO - Scraping team statisitcs for *2002 Texas Tech
+2024-07-10 22:34:08,695 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/texas-tech/*2002-schedule.html
+2024-07-10 22:34:13,891 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/texas-tech/*2002-schedule.html
+2024-07-10 22:34:13,891 - ERROR - Unable to scrape team data for *2002 Texas Tech; Url: https://www.sports-reference.com/cfb/schools/texas-tech/*2002-schedule.html
+2024-07-10 22:34:13,891 - INFO - Scraping team statisitcs for *2003 Texas Tech
+2024-07-10 22:34:19,088 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/texas-tech/*2003-schedule.html
+2024-07-10 22:34:24,264 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/texas-tech/*2003-schedule.html
+2024-07-10 22:34:24,265 - ERROR - Unable to scrape team data for *2003 Texas Tech; Url: https://www.sports-reference.com/cfb/schools/texas-tech/*2003-schedule.html
+2024-07-10 22:34:24,265 - INFO - Scraping NFL statistics for Bradlee Van Pelt
+2024-07-10 22:34:24,265 - INFO - Scraping NCAA statistics for Bradlee Van Pelt
+2024-07-10 22:34:35,175 - INFO - Scraping team statisitcs for 2001 Colorado St.
+2024-07-10 22:34:45,601 - INFO - Scraping team statisitcs for *2002 Colorado St.
+2024-07-10 22:34:51,290 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/colorado-state/*2002-schedule.html
+2024-07-10 22:34:56,448 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/colorado-state/*2002-schedule.html
+2024-07-10 22:34:56,448 - ERROR - Unable to scrape team data for *2002 Colorado St.; Url: https://www.sports-reference.com/cfb/schools/colorado-state/*2002-schedule.html
+2024-07-10 22:34:56,448 - INFO - Scraping team statisitcs for *2003 Colorado St.
+2024-07-10 22:35:01,627 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/colorado-state/*2003-schedule.html
+2024-07-10 22:35:06,784 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/colorado-state/*2003-schedule.html
+2024-07-10 22:35:06,785 - ERROR - Unable to scrape team data for *2003 Colorado St.; Url: https://www.sports-reference.com/cfb/schools/colorado-state/*2003-schedule.html
+2024-07-10 22:35:06,785 - INFO - Scraping NFL draft data for quarterbacks for year: 2005
+2024-07-10 22:35:12,209 - INFO - Scraping NFL statistics for Alex Smith
+2024-07-10 22:35:12,209 - INFO - Scraping NCAA statistics for Alex Smith
+2024-07-10 22:35:22,865 - INFO - Scraping team statisitcs for 2002 Utah
+2024-07-10 22:35:33,264 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/utah/2002-schedule.html
+2024-07-10 22:35:33,266 - INFO - Scraping team statisitcs for *2003 Utah
+2024-07-10 22:35:38,436 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/utah/*2003-schedule.html
+2024-07-10 22:35:43,559 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/utah/*2003-schedule.html
+2024-07-10 22:35:43,559 - ERROR - Unable to scrape team data for *2003 Utah; Url: https://www.sports-reference.com/cfb/schools/utah/*2003-schedule.html
+2024-07-10 22:35:43,559 - INFO - Scraping team statisitcs for *2004 Utah
+2024-07-10 22:35:48,734 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/utah/*2004-schedule.html
+2024-07-10 22:35:53,860 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/utah/*2004-schedule.html
+2024-07-10 22:35:53,860 - ERROR - Unable to scrape team data for *2004 Utah; Url: https://www.sports-reference.com/cfb/schools/utah/*2004-schedule.html
+2024-07-10 22:35:53,861 - INFO - Scraping NFL statistics for Aaron Rodgers
+2024-07-10 22:35:53,861 - INFO - Scraping NCAA statistics for Aaron Rodgers
+2024-07-10 22:36:04,473 - INFO - Scraping team statisitcs for *2003 California
+2024-07-10 22:36:09,621 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/california/*2003-schedule.html
+2024-07-10 22:36:14,791 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/california/*2003-schedule.html
+2024-07-10 22:36:14,791 - ERROR - Unable to scrape team data for *2003 California; Url: https://www.sports-reference.com/cfb/schools/california/*2003-schedule.html
+2024-07-10 22:36:14,791 - INFO - Scraping team statisitcs for *2004 California
+2024-07-10 22:36:19,975 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/california/*2004-schedule.html
+2024-07-10 22:36:25,101 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/california/*2004-schedule.html
+2024-07-10 22:36:25,102 - ERROR - Unable to scrape team data for *2004 California; Url: https://www.sports-reference.com/cfb/schools/california/*2004-schedule.html
+2024-07-10 22:36:25,102 - INFO - Scraping NFL statistics for Jason Campbell
+2024-07-10 22:36:25,102 - INFO - Scraping NCAA statistics for Jason Campbell
+2024-07-10 22:36:35,782 - INFO - Scraping team statisitcs for 2001 Auburn
+2024-07-10 22:36:46,248 - INFO - Scraping team statisitcs for *2002 Auburn
+2024-07-10 22:36:51,426 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/auburn/*2002-schedule.html
+2024-07-10 22:36:56,565 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/auburn/*2002-schedule.html
+2024-07-10 22:36:56,565 - ERROR - Unable to scrape team data for *2002 Auburn; Url: https://www.sports-reference.com/cfb/schools/auburn/*2002-schedule.html
+2024-07-10 22:36:56,565 - INFO - Scraping team statisitcs for *2003 Auburn
+2024-07-10 22:37:01,977 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/auburn/*2003-schedule.html
+2024-07-10 22:37:07,138 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/auburn/*2003-schedule.html
+2024-07-10 22:37:07,138 - ERROR - Unable to scrape team data for *2003 Auburn; Url: https://www.sports-reference.com/cfb/schools/auburn/*2003-schedule.html
+2024-07-10 22:37:07,138 - INFO - Scraping team statisitcs for *2004 Auburn
+2024-07-10 22:37:12,302 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/auburn/*2004-schedule.html
+2024-07-10 22:37:17,428 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/auburn/*2004-schedule.html
+2024-07-10 22:37:17,428 - ERROR - Unable to scrape team data for *2004 Auburn; Url: https://www.sports-reference.com/cfb/schools/auburn/*2004-schedule.html
+2024-07-10 22:37:17,432 - INFO - Scraping NFL statistics for Charlie Frye
+2024-07-10 22:37:17,432 - INFO - Scraping NCAA statistics for Charlie Frye
+2024-07-10 22:37:28,051 - INFO - Scraping team statisitcs for 2001 Akron
+2024-07-10 22:37:38,549 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/akron/2001-schedule.html
+2024-07-10 22:37:38,551 - INFO - Scraping team statisitcs for 2002 Akron
+2024-07-10 22:37:48,957 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/akron/2002-schedule.html
+2024-07-10 22:37:48,958 - INFO - Scraping team statisitcs for 2003 Akron
+2024-07-10 22:37:59,376 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/akron/2003-schedule.html
+2024-07-10 22:37:59,377 - INFO - Scraping team statisitcs for 2004 Akron
+2024-07-10 22:38:09,745 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/akron/2004-schedule.html
+2024-07-10 22:38:09,746 - INFO - Scraping NFL statistics for Andrew Walter
+2024-07-10 22:38:09,746 - INFO - Scraping NCAA statistics for Andrew Walter
+2024-07-10 22:38:20,584 - INFO - Scraping team statisitcs for 2001 Arizona St.
+2024-07-10 22:38:30,954 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/arizona-state/2001-schedule.html
+2024-07-10 22:38:30,956 - INFO - Scraping team statisitcs for *2002 Arizona St.
+2024-07-10 22:38:36,141 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/arizona-state/*2002-schedule.html
+2024-07-10 22:38:41,279 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/arizona-state/*2002-schedule.html
+2024-07-10 22:38:41,280 - ERROR - Unable to scrape team data for *2002 Arizona St.; Url: https://www.sports-reference.com/cfb/schools/arizona-state/*2002-schedule.html
+2024-07-10 22:38:41,280 - INFO - Scraping team statisitcs for 2003 Arizona St.
+2024-07-10 22:38:51,708 - INFO - Scraping team statisitcs for *2004 Arizona St.
+2024-07-10 22:38:56,920 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/arizona-state/*2004-schedule.html
+2024-07-10 22:39:02,094 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/arizona-state/*2004-schedule.html
+2024-07-10 22:39:02,094 - ERROR - Unable to scrape team data for *2004 Arizona St.; Url: https://www.sports-reference.com/cfb/schools/arizona-state/*2004-schedule.html
+2024-07-10 22:39:02,096 - INFO - Scraping NFL statistics for David Greene
+2024-07-10 22:39:02,096 - INFO - Scraping NCAA statistics for David Greene
+2024-07-10 22:39:13,095 - INFO - Scraping team statisitcs for 2001 Georgia
+2024-07-10 22:39:23,440 - INFO - Scraping team statisitcs for *2002 Georgia
+2024-07-10 22:39:28,623 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/georgia/*2002-schedule.html
+2024-07-10 22:39:33,763 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/georgia/*2002-schedule.html
+2024-07-10 22:39:33,763 - ERROR - Unable to scrape team data for *2002 Georgia; Url: https://www.sports-reference.com/cfb/schools/georgia/*2002-schedule.html
+2024-07-10 22:39:33,763 - INFO - Scraping team statisitcs for *2003 Georgia
+2024-07-10 22:39:38,944 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/georgia/*2003-schedule.html
+2024-07-10 22:39:44,079 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/georgia/*2003-schedule.html
+2024-07-10 22:39:44,079 - ERROR - Unable to scrape team data for *2003 Georgia; Url: https://www.sports-reference.com/cfb/schools/georgia/*2003-schedule.html
+2024-07-10 22:39:44,079 - INFO - Scraping team statisitcs for *2004 Georgia
+2024-07-10 22:39:49,260 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/georgia/*2004-schedule.html
+2024-07-10 22:39:54,385 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/georgia/*2004-schedule.html
+2024-07-10 22:39:54,386 - ERROR - Unable to scrape team data for *2004 Georgia; Url: https://www.sports-reference.com/cfb/schools/georgia/*2004-schedule.html
+2024-07-10 22:39:54,388 - INFO - Scraping NFL statistics for Kyle Orton
+2024-07-10 22:39:54,388 - INFO - Scraping NCAA statistics for Kyle Orton
+2024-07-10 22:40:05,036 - INFO - Scraping team statisitcs for 2001 Purdue
+2024-07-10 22:40:17,007 - INFO - Scraping team statisitcs for *2002 Purdue
+2024-07-10 22:40:22,186 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/purdue/*2002-schedule.html
+2024-07-10 22:40:27,314 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/purdue/*2002-schedule.html
+2024-07-10 22:40:27,315 - ERROR - Unable to scrape team data for *2002 Purdue; Url: https://www.sports-reference.com/cfb/schools/purdue/*2002-schedule.html
+2024-07-10 22:40:27,315 - INFO - Scraping team statisitcs for *2003 Purdue
+2024-07-10 22:40:32,473 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/purdue/*2003-schedule.html
+2024-07-10 22:40:37,652 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/purdue/*2003-schedule.html
+2024-07-10 22:40:37,652 - ERROR - Unable to scrape team data for *2003 Purdue; Url: https://www.sports-reference.com/cfb/schools/purdue/*2003-schedule.html
+2024-07-10 22:40:37,652 - INFO - Scraping team statisitcs for *2004 Purdue
+2024-07-10 22:40:42,837 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/purdue/*2004-schedule.html
+2024-07-10 22:40:47,970 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/purdue/*2004-schedule.html
+2024-07-10 22:40:47,970 - ERROR - Unable to scrape team data for *2004 Purdue; Url: https://www.sports-reference.com/cfb/schools/purdue/*2004-schedule.html
+2024-07-10 22:40:47,972 - INFO - Scraping NFL statistics for Stefan Lefors
+2024-07-10 22:40:47,972 - INFO - Scraping NCAA statistics for Stefan Lefors
+2024-07-10 22:40:58,532 - INFO - Scraping team statisitcs for 2001 Louisville
+2024-07-10 22:41:09,003 - INFO - Scraping team statisitcs for *2002 Louisville
+2024-07-10 22:41:14,155 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/louisville/*2002-schedule.html
+2024-07-10 22:41:19,319 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisville/*2002-schedule.html
+2024-07-10 22:41:19,319 - ERROR - Unable to scrape team data for *2002 Louisville; Url: https://www.sports-reference.com/cfb/schools/louisville/*2002-schedule.html
+2024-07-10 22:41:19,319 - INFO - Scraping team statisitcs for *2003 Louisville
+2024-07-10 22:41:24,852 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/louisville/*2003-schedule.html
+2024-07-10 22:41:30,031 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisville/*2003-schedule.html
+2024-07-10 22:41:30,031 - ERROR - Unable to scrape team data for *2003 Louisville; Url: https://www.sports-reference.com/cfb/schools/louisville/*2003-schedule.html
+2024-07-10 22:41:30,031 - INFO - Scraping team statisitcs for *2004 Louisville
+2024-07-10 22:41:35,205 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/louisville/*2004-schedule.html
+2024-07-10 22:41:40,645 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisville/*2004-schedule.html
+2024-07-10 22:41:40,646 - ERROR - Unable to scrape team data for *2004 Louisville; Url: https://www.sports-reference.com/cfb/schools/louisville/*2004-schedule.html
+2024-07-10 22:41:40,648 - INFO - Scraping NFL statistics for Dan Orlovsky
+2024-07-10 22:41:40,648 - INFO - Scraping NCAA statistics for Dan Orlovsky
+2024-07-10 22:41:51,224 - INFO - Scraping team statisitcs for 2001 Connecticut
+2024-07-10 22:42:01,626 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/connecticut/2001-schedule.html
+2024-07-10 22:42:01,627 - INFO - Scraping team statisitcs for 2002 Connecticut
+2024-07-10 22:42:11,998 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/connecticut/2002-schedule.html
+2024-07-10 22:42:11,999 - INFO - Scraping team statisitcs for 2003 Connecticut
+2024-07-10 22:42:22,532 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/connecticut/2003-schedule.html
+2024-07-10 22:42:22,532 - INFO - Scraping team statisitcs for *2004 Connecticut
+2024-07-10 22:42:27,952 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/connecticut/*2004-schedule.html
+2024-07-10 22:42:33,077 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/connecticut/*2004-schedule.html
+2024-07-10 22:42:33,077 - ERROR - Unable to scrape team data for *2004 Connecticut; Url: https://www.sports-reference.com/cfb/schools/connecticut/*2004-schedule.html
+2024-07-10 22:42:33,077 - INFO - Scraping NFL statistics for Adrian McPherson
+2024-07-10 22:42:33,077 - INFO - Scraping NCAA statistics for Adrian McPherson
+2024-07-10 22:42:33,079 - INFO - Scraping NFL statistics for Derek Anderson
+2024-07-10 22:42:33,079 - INFO - Scraping NCAA statistics for Derek Anderson
+2024-07-10 22:42:43,670 - INFO - Scraping team statisitcs for 2001 Oregon St.
+2024-07-10 22:42:54,069 - INFO - Scraping team statisitcs for *2002 Oregon St.
+2024-07-10 22:42:59,202 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/oregon-state/*2002-schedule.html
+2024-07-10 22:43:04,328 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/oregon-state/*2002-schedule.html
+2024-07-10 22:43:04,328 - ERROR - Unable to scrape team data for *2002 Oregon St.; Url: https://www.sports-reference.com/cfb/schools/oregon-state/*2002-schedule.html
+2024-07-10 22:43:04,328 - INFO - Scraping team statisitcs for *2003 Oregon St.
+2024-07-10 22:43:09,471 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/oregon-state/*2003-schedule.html
+2024-07-10 22:43:14,616 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/oregon-state/*2003-schedule.html
+2024-07-10 22:43:14,616 - ERROR - Unable to scrape team data for *2003 Oregon St.; Url: https://www.sports-reference.com/cfb/schools/oregon-state/*2003-schedule.html
+2024-07-10 22:43:14,616 - INFO - Scraping team statisitcs for *2004 Oregon St.
+2024-07-10 22:43:19,782 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/oregon-state/*2004-schedule.html
+2024-07-10 22:43:24,931 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/oregon-state/*2004-schedule.html
+2024-07-10 22:43:24,931 - ERROR - Unable to scrape team data for *2004 Oregon St.; Url: https://www.sports-reference.com/cfb/schools/oregon-state/*2004-schedule.html
+2024-07-10 22:43:24,932 - INFO - Scraping NFL statistics for James Kilian
+2024-07-10 22:43:24,932 - INFO - Scraping NCAA statistics for James Kilian
+2024-07-10 22:43:35,830 - INFO - Scraping team statisitcs for 2001 Tulsa
+2024-07-10 22:43:46,188 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/tulsa/2001-schedule.html
+2024-07-10 22:43:46,190 - INFO - Scraping team statisitcs for 2002 Tulsa
+2024-07-10 22:43:56,497 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/tulsa/2002-schedule.html
+2024-07-10 22:43:56,498 - INFO - Scraping team statisitcs for *2003 Tulsa
+2024-07-10 22:44:01,668 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/tulsa/*2003-schedule.html
+2024-07-10 22:44:06,857 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/tulsa/*2003-schedule.html
+2024-07-10 22:44:06,857 - ERROR - Unable to scrape team data for *2003 Tulsa; Url: https://www.sports-reference.com/cfb/schools/tulsa/*2003-schedule.html
+2024-07-10 22:44:06,857 - INFO - Scraping team statisitcs for 2004 Tulsa
+2024-07-10 22:44:17,355 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/tulsa/2004-schedule.html
+2024-07-10 22:44:17,357 - INFO - Scraping NFL statistics for Matt Cassel
+2024-07-10 22:44:17,357 - INFO - Scraping NCAA statistics for Matt Cassel
+2024-07-10 22:44:28,421 - INFO - Scraping team statisitcs for 2001 USC
+2024-07-10 22:44:38,982 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/southern-california/2001-schedule.html
+2024-07-10 22:44:38,984 - INFO - Scraping team statisitcs for *2002 USC
+2024-07-10 22:44:44,164 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/southern-california/*2002-schedule.html
+2024-07-10 22:44:49,308 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/southern-california/*2002-schedule.html
+2024-07-10 22:44:49,308 - ERROR - Unable to scrape team data for *2002 USC; Url: https://www.sports-reference.com/cfb/schools/southern-california/*2002-schedule.html
+2024-07-10 22:44:49,308 - INFO - Scraping team statisitcs for *2003 USC
+2024-07-10 22:44:54,504 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/southern-california/*2003-schedule.html
+2024-07-10 22:44:59,650 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/southern-california/*2003-schedule.html
+2024-07-10 22:44:59,650 - ERROR - Unable to scrape team data for *2003 USC; Url: https://www.sports-reference.com/cfb/schools/southern-california/*2003-schedule.html
+2024-07-10 22:44:59,650 - INFO - Scraping team statisitcs for *2004 USC
+2024-07-10 22:45:04,855 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/southern-california/*2004-schedule.html
+2024-07-10 22:45:10,131 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/southern-california/*2004-schedule.html
+2024-07-10 22:45:10,131 - ERROR - Unable to scrape team data for *2004 USC; Url: https://www.sports-reference.com/cfb/schools/southern-california/*2004-schedule.html
+2024-07-10 22:45:10,134 - INFO - Scraping NFL statistics for Ryan Fitzpatrick
+2024-07-10 22:45:10,134 - INFO - Scraping NCAA statistics for Ryan Fitzpatrick
+2024-07-10 22:45:10,135 - INFO - Scraping NFL draft data for quarterbacks for year: 2006
+2024-07-10 22:45:15,516 - INFO - Scraping NFL statistics for Vince Young
+2024-07-10 22:45:15,516 - INFO - Scraping NCAA statistics for Vince Young
+2024-07-10 22:45:26,294 - INFO - Scraping team statisitcs for *2003 Texas
+2024-07-10 22:45:31,461 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/texas/*2003-schedule.html
+2024-07-10 22:45:36,602 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/texas/*2003-schedule.html
+2024-07-10 22:45:36,603 - ERROR - Unable to scrape team data for *2003 Texas; Url: https://www.sports-reference.com/cfb/schools/texas/*2003-schedule.html
+2024-07-10 22:45:36,603 - INFO - Scraping team statisitcs for *2004 Texas
+2024-07-10 22:45:42,181 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/texas/*2004-schedule.html
+2024-07-10 22:45:47,344 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/texas/*2004-schedule.html
+2024-07-10 22:45:47,344 - ERROR - Unable to scrape team data for *2004 Texas; Url: https://www.sports-reference.com/cfb/schools/texas/*2004-schedule.html
+2024-07-10 22:45:47,344 - INFO - Scraping team statisitcs for *2005 Texas
+2024-07-10 22:45:52,501 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/texas/*2005-schedule.html
+2024-07-10 22:45:57,705 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/texas/*2005-schedule.html
+2024-07-10 22:45:57,705 - ERROR - Unable to scrape team data for *2005 Texas; Url: https://www.sports-reference.com/cfb/schools/texas/*2005-schedule.html
+2024-07-10 22:45:57,706 - INFO - Scraping NFL statistics for Matt Leinart
+2024-07-10 22:45:57,706 - INFO - Scraping NCAA statistics for Matt Leinart
+2024-07-10 22:46:08,198 - INFO - Scraping team statisitcs for *2003 USC
+2024-07-10 22:46:13,332 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/southern-california/*2003-schedule.html
+2024-07-10 22:46:18,489 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/southern-california/*2003-schedule.html
+2024-07-10 22:46:18,490 - ERROR - Unable to scrape team data for *2003 USC; Url: https://www.sports-reference.com/cfb/schools/southern-california/*2003-schedule.html
+2024-07-10 22:46:18,490 - INFO - Scraping team statisitcs for *2004 USC
+2024-07-10 22:46:23,651 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/southern-california/*2004-schedule.html
+2024-07-10 22:46:28,778 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/southern-california/*2004-schedule.html
+2024-07-10 22:46:28,778 - ERROR - Unable to scrape team data for *2004 USC; Url: https://www.sports-reference.com/cfb/schools/southern-california/*2004-schedule.html
+2024-07-10 22:46:28,779 - INFO - Scraping team statisitcs for *2005 USC
+2024-07-10 22:46:33,997 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/southern-california/*2005-schedule.html
+2024-07-10 22:46:39,133 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/southern-california/*2005-schedule.html
+2024-07-10 22:46:39,133 - ERROR - Unable to scrape team data for *2005 USC; Url: https://www.sports-reference.com/cfb/schools/southern-california/*2005-schedule.html
+2024-07-10 22:46:39,133 - INFO - Scraping NFL statistics for Jay Cutler
+2024-07-10 22:46:39,133 - INFO - Scraping NCAA statistics for Jay Cutler
+2024-07-10 22:46:49,682 - INFO - Scraping team statisitcs for 2002 Vanderbilt
+2024-07-10 22:47:00,194 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/vanderbilt/2002-schedule.html
+2024-07-10 22:47:00,195 - INFO - Scraping team statisitcs for 2003 Vanderbilt
+2024-07-10 22:47:10,676 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/vanderbilt/2003-schedule.html
+2024-07-10 22:47:10,677 - INFO - Scraping team statisitcs for 2004 Vanderbilt
+2024-07-10 22:47:21,169 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/vanderbilt/2004-schedule.html
+2024-07-10 22:47:21,170 - INFO - Scraping team statisitcs for 2005 Vanderbilt
+2024-07-10 22:47:31,557 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/vanderbilt/2005-schedule.html
+2024-07-10 22:47:31,560 - INFO - Scraping NFL statistics for Kellen Clemens
+2024-07-10 22:47:31,561 - INFO - Scraping NCAA statistics for Kellen Clemens
+2024-07-10 22:47:42,269 - INFO - Scraping team statisitcs for *2002 Oregon
+2024-07-10 22:48:17,008 - INFO - Initializing NFL Draft Scraper
+2024-07-10 22:48:17,008 - INFO - Initializing NCAA Statistics Scraper
+2024-07-10 22:48:17,008 - INFO - Scraping NFL draft data for quarterbacks for year: 2001
+2024-07-10 22:48:22,416 - INFO - Scraping NFL statistics for Michael Vick
+2024-07-10 22:48:22,416 - INFO - Scraping NCAA statistics for Michael Vick
+2024-07-10 22:48:32,860 - INFO - Scraping team statisitcs for 1999 Virginia Tech
+2024-07-10 22:48:43,141 - INFO - Scraping team statisitcs for 2000 Virginia Tech
+2024-07-10 22:48:53,414 - INFO - Scraping NFL statistics for Drew Brees
+2024-07-10 22:48:53,414 - INFO - Scraping NCAA statistics for Drew Brees
+2024-07-10 22:49:04,253 - INFO - Scraping team statisitcs for 1997 Purdue
+2024-07-10 22:49:14,549 - INFO - Scraping team statisitcs for 1998 Purdue
+2024-07-10 22:49:24,815 - INFO - Scraping team statisitcs for 1999 Purdue
+2024-07-10 22:49:35,161 - INFO - Scraping team statisitcs for 2000 Purdue
+2024-07-10 22:49:45,465 - INFO - Scraping NFL statistics for Quincy Carter
+2024-07-10 22:49:45,468 - INFO - Scraping NCAA statistics for Quincy Carter
+2024-07-10 22:49:55,937 - INFO - Scraping team statisitcs for 1998 Georgia
+2024-07-10 22:50:06,584 - INFO - Scraping team statisitcs for 1999 Georgia
+2024-07-10 22:50:16,945 - INFO - Scraping team statisitcs for 2000 Georgia
+2024-07-10 22:50:27,235 - INFO - Scraping NFL statistics for Marques Tuiasosopo
+2024-07-10 22:50:27,236 - INFO - Scraping NCAA statistics for Marques Tuiasosopo
+2024-07-10 22:50:37,757 - INFO - Scraping team statisitcs for 1997 Washington
+2024-07-10 22:50:48,277 - INFO - Scraping team statisitcs for 1998 Washington
+2024-07-10 22:50:58,837 - INFO - Scraping team statisitcs for 1999 Washington
+2024-07-10 22:51:09,462 - INFO - Scraping team statisitcs for 2000 Washington
+2024-07-10 22:51:19,903 - INFO - Scraping NFL statistics for Chris Weinke
+2024-07-10 22:51:19,903 - INFO - Scraping NCAA statistics for Chris Weinke
+2024-07-10 22:51:30,383 - INFO - Scraping team statisitcs for 1997 Florida St.
+2024-07-10 22:51:40,709 - INFO - Scraping team statisitcs for 1998 Florida St.
+2024-07-10 22:51:51,040 - INFO - Scraping team statisitcs for 1999 Florida St.
+2024-07-10 22:52:01,389 - INFO - Scraping team statisitcs for 2000 Florida St.
+2024-07-10 22:52:11,670 - INFO - Scraping NFL statistics for Sage Rosenfels
+2024-07-10 22:52:11,670 - INFO - Scraping NCAA statistics for Sage Rosenfels
+2024-07-10 22:52:22,439 - INFO - Scraping team statisitcs for 1997 Iowa St.
+2024-07-10 22:52:32,765 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1997-schedule.html
+2024-07-10 22:52:32,766 - INFO - Scraping team statisitcs for 1998 Iowa St.
+2024-07-10 22:52:43,069 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1998-schedule.html
+2024-07-10 22:52:43,072 - INFO - Scraping team statisitcs for 1999 Iowa St.
+2024-07-10 22:52:53,371 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/1999-schedule.html
+2024-07-10 22:52:53,372 - INFO - Scraping team statisitcs for 2000 Iowa St.
+2024-07-10 22:53:03,752 - INFO - Scraping NFL statistics for Jesse Palmer
+2024-07-10 22:53:03,753 - INFO - Scraping NCAA statistics for Jesse Palmer
+2024-07-10 22:53:14,284 - INFO - Scraping team statisitcs for 1997 Florida
+2024-07-10 22:53:24,889 - INFO - Scraping team statisitcs for 1998 Florida
+2024-07-10 22:53:35,207 - INFO - Scraping team statisitcs for 1999 Florida
+2024-07-10 22:53:45,561 - INFO - Scraping team statisitcs for 2000 Florida
+2024-07-10 22:53:55,861 - INFO - Scraping NFL statistics for Mike McMahon
+2024-07-10 22:53:55,861 - INFO - Scraping NCAA statistics for Mike McMahon
+2024-07-10 22:54:06,341 - INFO - Scraping team statisitcs for 1997 Rutgers
+2024-07-10 22:54:16,655 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1997-schedule.html
+2024-07-10 22:54:16,655 - INFO - Scraping team statisitcs for 1998 Rutgers
+2024-07-10 22:54:27,178 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1998-schedule.html
+2024-07-10 22:54:27,180 - INFO - Scraping team statisitcs for 1999 Rutgers
+2024-07-10 22:54:37,570 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/1999-schedule.html
+2024-07-10 22:54:37,572 - INFO - Scraping team statisitcs for 2000 Rutgers
+2024-07-10 22:54:47,898 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/rutgers/2000-schedule.html
+2024-07-10 22:54:47,900 - INFO - Scraping NFL statistics for A.J. Feeley
+2024-07-10 22:54:47,900 - INFO - Scraping NCAA statistics for A.J. Feeley
+2024-07-10 22:54:58,462 - INFO - Scraping team statisitcs for 1997 Oregon
+2024-07-10 22:55:08,779 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/oregon/1997-schedule.html
+2024-07-10 22:55:08,781 - INFO - Scraping team statisitcs for 1998 Oregon
+2024-07-10 22:55:19,102 - INFO - Scraping team statisitcs for 1999 Oregon
+2024-07-10 22:55:29,841 - INFO - Scraping team statisitcs for 2000 Oregon
+2024-07-10 22:55:40,180 - INFO - Scraping NFL statistics for Josh Booty
+2024-07-10 22:55:40,180 - INFO - Scraping NCAA statistics for Josh Booty
+2024-07-10 22:55:50,661 - INFO - Scraping team statisitcs for 1999 LSU
+2024-07-10 22:56:01,011 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-state/1999-schedule.html
+2024-07-10 22:56:01,012 - INFO - Scraping team statisitcs for 2000 LSU
+2024-07-10 22:56:11,358 - INFO - Scraping NFL statistics for Josh Heupel
+2024-07-10 22:56:11,358 - INFO - Scraping NCAA statistics for Josh Heupel
+2024-07-10 22:56:21,935 - INFO - Scraping team statisitcs for 1999 Oklahoma
+2024-07-10 22:56:32,305 - INFO - Scraping team statisitcs for 2000 Oklahoma
+2024-07-10 22:56:42,847 - INFO - Scraping NFL draft data for quarterbacks for year: 2002
+2024-07-10 22:56:48,259 - INFO - Scraping NFL statistics for David Carr
+2024-07-10 22:56:48,259 - INFO - Scraping NCAA statistics for David Carr
+2024-07-10 22:56:58,789 - INFO - Scraping team statisitcs for 1997 Fresno St.
+2024-07-10 22:57:09,128 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/fresno-state/1997-schedule.html
+2024-07-10 22:57:09,130 - INFO - Scraping team statisitcs for 1998 Fresno St.
+2024-07-10 22:57:19,511 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/fresno-state/1998-schedule.html
+2024-07-10 22:57:19,513 - INFO - Scraping team statisitcs for 2000 Fresno St.
+2024-07-10 22:57:30,164 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/fresno-state/2000-schedule.html
+2024-07-10 22:57:30,166 - INFO - Scraping team statisitcs for 2001 Fresno St.
+2024-07-10 22:57:40,787 - INFO - Scraping NFL statistics for Joey Harrington
+2024-07-10 22:57:40,787 - INFO - Scraping NCAA statistics for Joey Harrington
+2024-07-10 22:57:51,360 - INFO - Scraping team statisitcs for 1998 Oregon
+2024-07-10 22:58:01,903 - INFO - Scraping team statisitcs for 1999 Oregon
+2024-07-10 22:58:12,374 - INFO - Scraping team statisitcs for 2000 Oregon
+2024-07-10 22:58:22,710 - INFO - Scraping team statisitcs for 2001 Oregon
+2024-07-10 22:58:33,042 - INFO - Scraping NFL statistics for Patrick Ramsey
+2024-07-10 22:58:33,042 - INFO - Scraping NCAA statistics for Patrick Ramsey
+2024-07-10 22:58:43,541 - INFO - Scraping team statisitcs for 1998 Tulane
+2024-07-10 22:58:54,784 - INFO - Scraping team statisitcs for 1999 Tulane
+2024-07-10 22:59:05,183 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/tulane/1999-schedule.html
+2024-07-10 22:59:05,185 - INFO - Scraping team statisitcs for 2000 Tulane
+2024-07-10 22:59:15,670 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/tulane/2000-schedule.html
+2024-07-10 22:59:15,672 - INFO - Scraping team statisitcs for 2001 Tulane
+2024-07-10 22:59:26,717 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/tulane/2001-schedule.html
+2024-07-10 22:59:26,721 - INFO - Scraping NFL statistics for Josh McCown
+2024-07-10 22:59:26,721 - INFO - Scraping NCAA statistics for Josh McCown
+2024-07-10 22:59:37,351 - INFO - Scraping team statisitcs for 1998 Sam Houston St.
+2024-07-10 22:59:42,515 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/sam-houston-state/1998-schedule.html
+2024-07-10 22:59:47,647 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/sam-houston-state/1998-schedule.html
+2024-07-10 22:59:47,647 - ERROR - Unable to scrape team data for 1998 Sam Houston St.; Url: https://www.sports-reference.com/cfb/schools/sam-houston-state/1998-schedule.html
+2024-07-10 22:59:47,647 - INFO - Scraping team statisitcs for 1999 Sam Houston St.
+2024-07-10 22:59:52,962 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/sam-houston-state/1999-schedule.html
+2024-07-10 22:59:58,249 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/sam-houston-state/1999-schedule.html
+2024-07-10 22:59:58,250 - ERROR - Unable to scrape team data for 1999 Sam Houston St.; Url: https://www.sports-reference.com/cfb/schools/sam-houston-state/1999-schedule.html
+2024-07-10 22:59:58,250 - INFO - Scraping team statisitcs for 2000 Sam Houston St.
+2024-07-10 23:00:03,802 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/sam-houston-state/2000-schedule.html
+2024-07-10 23:00:09,146 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/sam-houston-state/2000-schedule.html
+2024-07-10 23:00:09,146 - ERROR - Unable to scrape team data for 2000 Sam Houston St.; Url: https://www.sports-reference.com/cfb/schools/sam-houston-state/2000-schedule.html
+2024-07-10 23:00:09,149 - INFO - Scraping NFL statistics for David Garrard
+2024-07-10 23:00:09,149 - INFO - Scraping NCAA statistics for David Garrard
+2024-07-10 23:00:19,797 - INFO - Scraping team statisitcs for 1998 East Carolina
+2024-07-10 23:00:30,109 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/east-carolina/1998-schedule.html
+2024-07-10 23:00:30,111 - INFO - Scraping team statisitcs for 1999 East Carolina
+2024-07-10 23:00:40,610 - INFO - Scraping team statisitcs for 2000 East Carolina
+2024-07-10 23:00:51,142 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/east-carolina/2000-schedule.html
+2024-07-10 23:00:51,142 - INFO - Scraping team statisitcs for 2001 East Carolina
+2024-07-10 23:01:01,612 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/east-carolina/2001-schedule.html
+2024-07-10 23:01:01,614 - INFO - Scraping NFL statistics for Rohan Davey
+2024-07-10 23:01:01,615 - INFO - Scraping NCAA statistics for Rohan Davey
+2024-07-10 23:01:13,052 - INFO - Scraping team statisitcs for 1998 LSU
+2024-07-10 23:01:23,662 - INFO - Scraping team statisitcs for 1999 LSU
+2024-07-10 23:01:34,103 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-state/1999-schedule.html
+2024-07-10 23:01:34,105 - INFO - Scraping team statisitcs for 2000 LSU
+2024-07-10 23:01:44,582 - INFO - Scraping team statisitcs for 2001 LSU
+2024-07-10 23:01:55,088 - INFO - Scraping NFL statistics for Randy Fasani
+2024-07-10 23:01:55,088 - INFO - Scraping NCAA statistics for Randy Fasani
+2024-07-10 23:02:05,752 - INFO - Scraping team statisitcs for 1998 Stanford
+2024-07-10 23:02:17,382 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/stanford/1998-schedule.html
+2024-07-10 23:02:17,385 - INFO - Scraping team statisitcs for 1999 Stanford
+2024-07-10 23:02:27,982 - INFO - Scraping team statisitcs for 2000 Stanford
+2024-07-10 23:02:38,573 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/stanford/2000-schedule.html
+2024-07-10 23:02:38,575 - INFO - Scraping team statisitcs for 2001 Stanford
+2024-07-10 23:02:49,088 - INFO - Scraping NFL statistics for Kurt Kittner
+2024-07-10 23:02:49,088 - INFO - Scraping NCAA statistics for Kurt Kittner
+2024-07-10 23:02:59,885 - INFO - Scraping team statisitcs for 1998 Illinois
+2024-07-10 23:03:10,478 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/illinois/1998-schedule.html
+2024-07-10 23:03:10,480 - INFO - Scraping team statisitcs for 1999 Illinois
+2024-07-10 23:03:21,095 - INFO - Scraping team statisitcs for 2000 Illinois
+2024-07-10 23:03:31,566 - INFO - Scraping team statisitcs for 2001 Illinois
+2024-07-10 23:03:42,052 - INFO - Scraping NFL statistics for Brandon Doman
+2024-07-10 23:03:42,052 - INFO - Scraping NCAA statistics for Brandon Doman
+2024-07-10 23:03:52,918 - INFO - Scraping team statisitcs for 1998 BYU
+2024-07-10 23:04:03,512 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/brigham-young/1998-schedule.html
+2024-07-10 23:04:03,513 - INFO - Scraping team statisitcs for 1999 BYU
+2024-07-10 23:04:13,975 - INFO - Scraping team statisitcs for 2000 BYU
+2024-07-10 23:04:24,532 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/brigham-young/2000-schedule.html
+2024-07-10 23:04:24,534 - INFO - Scraping team statisitcs for 2001 BYU
+2024-07-10 23:04:34,964 - INFO - Scraping NFL statistics for Craig Nall
+2024-07-10 23:04:34,964 - INFO - Scraping NCAA statistics for Craig Nall
+2024-07-10 23:04:45,737 - INFO - Scraping team statisitcs for 1998 LSU
+2024-07-10 23:04:56,193 - INFO - Scraping team statisitcs for 1999 LSU
+2024-07-10 23:05:06,589 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-state/1999-schedule.html
+2024-07-10 23:05:06,590 - INFO - Scraping team statisitcs for 2000 LSU
+2024-07-10 23:05:18,030 - INFO - Scraping NFL statistics for J.T. O'Sullivan
+2024-07-10 23:05:18,030 - INFO - Scraping NCAA statistics for J.T. O'Sullivan
+2024-07-10 23:05:18,031 - INFO - Scraping NFL statistics for Steve Bellisari
+2024-07-10 23:05:18,031 - INFO - Scraping NCAA statistics for Steve Bellisari
+2024-07-10 23:05:28,602 - INFO - Scraping team statisitcs for 1998 Ohio St.
+2024-07-10 23:05:39,470 - INFO - Scraping team statisitcs for 1999 Ohio St.
+2024-07-10 23:05:50,026 - INFO - Scraping team statisitcs for 2000 Ohio St.
+2024-07-10 23:06:00,500 - INFO - Scraping team statisitcs for 2001 Ohio St.
+2024-07-10 23:06:10,963 - INFO - Scraping NFL statistics for Seth Burford
+2024-07-10 23:06:10,963 - INFO - Scraping NCAA statistics for Seth Burford
+2024-07-10 23:06:10,963 - INFO - Scraping NFL statistics for Jeff Kelly
+2024-07-10 23:06:10,963 - INFO - Scraping NCAA statistics for Jeff Kelly
+2024-07-10 23:06:21,625 - INFO - Scraping team statisitcs for 1998 Southern Miss
+2024-07-10 23:06:32,090 - INFO - Scraping team statisitcs for 1999 Southern Miss
+2024-07-10 23:06:42,990 - INFO - Scraping team statisitcs for 2000 Southern Miss
+2024-07-10 23:06:53,436 - INFO - Scraping team statisitcs for 2001 Southern Miss
+2024-07-10 23:07:03,912 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/southern-mississippi/2001-schedule.html
+2024-07-10 23:07:03,913 - INFO - Scraping NFL statistics for Wes Pate
+2024-07-10 23:07:03,914 - INFO - Scraping NCAA statistics for Wes Pate
+2024-07-10 23:07:03,915 - INFO - Scraping NFL draft data for quarterbacks for year: 2003
+2024-07-10 23:07:09,360 - INFO - Scraping NFL statistics for Carson Palmer
+2024-07-10 23:07:09,360 - INFO - Scraping NCAA statistics for Carson Palmer
+2024-07-10 23:07:20,244 - INFO - Scraping team statisitcs for 1998 USC
+2024-07-10 23:12:55,110 - INFO - Scraping team statisitcs for 1999 USC
+2024-07-10 23:13:05,616 - INFO - Scraping team statisitcs for 2000 USC
+2024-07-10 23:13:16,225 - INFO - Scraping team statisitcs for 2001 USC
+2024-07-10 23:13:26,965 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/southern-california/2001-schedule.html
+2024-07-10 23:13:26,967 - INFO - Scraping team statisitcs for 2002 USC
+2024-07-10 23:13:37,366 - INFO - Scraping NFL statistics for Byron Leftwich
+2024-07-10 23:13:37,366 - INFO - Scraping NCAA statistics for Byron Leftwich
+2024-07-10 23:13:47,940 - INFO - Scraping team statisitcs for 1998 Marshall
+2024-07-10 23:13:58,250 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/marshall/1998-schedule.html
+2024-07-10 23:13:58,252 - INFO - Scraping team statisitcs for 1999 Marshall
+2024-07-10 23:14:08,630 - INFO - Scraping team statisitcs for 2000 Marshall
+2024-07-10 23:14:18,973 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/marshall/2000-schedule.html
+2024-07-10 23:14:18,975 - INFO - Scraping team statisitcs for 2001 Marshall
+2024-07-10 23:14:29,619 - INFO - Scraping team statisitcs for 2002 Marshall
+2024-07-10 23:14:40,052 - INFO - Scraping NFL statistics for Kyle Boller
+2024-07-10 23:14:40,052 - INFO - Scraping NCAA statistics for Kyle Boller
+2024-07-10 23:14:50,622 - INFO - Scraping team statisitcs for 1999 California
+2024-07-10 23:15:00,967 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/california/1999-schedule.html
+2024-07-10 23:15:00,969 - INFO - Scraping team statisitcs for 2000 California
+2024-07-10 23:15:11,317 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/california/2000-schedule.html
+2024-07-10 23:15:11,319 - INFO - Scraping team statisitcs for 2001 California
+2024-07-10 23:15:21,671 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/california/2001-schedule.html
+2024-07-10 23:15:21,673 - INFO - Scraping team statisitcs for 2002 California
+2024-07-10 23:15:32,259 - INFO - Scraping NFL statistics for Rex Grossman
+2024-07-10 23:15:32,259 - INFO - Scraping NCAA statistics for Rex Grossman
+2024-07-10 23:15:42,870 - INFO - Scraping team statisitcs for 2000 Florida
+2024-07-10 23:15:53,225 - INFO - Scraping team statisitcs for 2001 Florida
+2024-07-10 23:16:03,563 - INFO - Scraping team statisitcs for 2002 Florida
+2024-07-10 23:16:13,983 - INFO - Scraping NFL statistics for Dave Ragone
+2024-07-10 23:16:13,983 - INFO - Scraping NCAA statistics for Dave Ragone
+2024-07-10 23:16:24,473 - INFO - Scraping team statisitcs for 1999 Louisville
+2024-07-10 23:16:35,097 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisville/1999-schedule.html
+2024-07-10 23:16:35,099 - INFO - Scraping team statisitcs for 2000 Louisville
+2024-07-10 23:16:45,463 - INFO - Scraping team statisitcs for 2001 Louisville
+2024-07-10 23:16:55,781 - INFO - Scraping team statisitcs for 2002 Louisville
+2024-07-10 23:17:06,220 - INFO - Scraping NFL statistics for Chris Simms
+2024-07-10 23:17:06,220 - INFO - Scraping NCAA statistics for Chris Simms
+2024-07-10 23:17:16,735 - INFO - Scraping team statisitcs for 1999 Texas
+2024-07-10 23:17:27,062 - INFO - Scraping team statisitcs for 2000 Texas
+2024-07-10 23:17:37,390 - INFO - Scraping team statisitcs for 2001 Texas
+2024-07-10 23:17:47,887 - INFO - Scraping team statisitcs for 2002 Texas
+2024-07-10 23:17:58,272 - INFO - Scraping NFL statistics for Seneca Wallace
+2024-07-10 23:17:58,273 - INFO - Scraping NCAA statistics for Seneca Wallace
+2024-07-10 23:18:08,847 - INFO - Scraping team statisitcs for 2001 Iowa St.
+2024-07-10 23:18:19,187 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/iowa-state/2001-schedule.html
+2024-07-10 23:18:19,189 - INFO - Scraping team statisitcs for 2002 Iowa St.
+2024-07-10 23:18:29,656 - INFO - Scraping NFL statistics for Brian St. Pierre
+2024-07-10 23:18:29,656 - INFO - Scraping NCAA statistics for Brian St. Pierre
+2024-07-10 23:18:40,152 - INFO - Scraping team statisitcs for 1999 Boston Col.
+2024-07-10 23:18:50,887 - INFO - Scraping team statisitcs for 2000 Boston Col.
+2024-07-10 23:19:01,277 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/boston-college/2000-schedule.html
+2024-07-10 23:19:01,278 - INFO - Scraping team statisitcs for 2001 Boston Col.
+2024-07-10 23:19:11,681 - INFO - Scraping team statisitcs for 2002 Boston Col.
+2024-07-10 23:19:22,087 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/boston-college/2002-schedule.html
+2024-07-10 23:19:22,089 - INFO - Scraping NFL statistics for Drew Henson
+2024-07-10 23:19:22,089 - INFO - Scraping NCAA statistics for Drew Henson
+2024-07-10 23:19:32,718 - INFO - Scraping team statisitcs for 1998 Michigan
+2024-07-10 23:19:43,119 - INFO - Scraping team statisitcs for 1999 Michigan
+2024-07-10 23:19:53,711 - INFO - Scraping team statisitcs for 2000 Michigan
+2024-07-10 23:20:04,072 - INFO - Scraping NFL statistics for Brooks Bollinger
+2024-07-10 23:20:04,072 - INFO - Scraping NCAA statistics for Brooks Bollinger
+2024-07-10 23:20:14,547 - INFO - Scraping team statisitcs for 1999 Wisconsin
+2024-07-10 23:20:24,875 - INFO - Scraping team statisitcs for 2000 Wisconsin
+2024-07-10 23:20:35,227 - INFO - Scraping team statisitcs for 2001 Wisconsin
+2024-07-10 23:20:45,686 - INFO - Scraping team statisitcs for 2002 Wisconsin
+2024-07-10 23:20:56,203 - INFO - Scraping NFL statistics for Kliff Kingsbury
+2024-07-10 23:20:56,204 - INFO - Scraping NCAA statistics for Kliff Kingsbury
+2024-07-10 23:21:07,169 - INFO - Scraping team statisitcs for 1999 Texas Tech
+2024-07-10 23:21:17,528 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/texas-tech/1999-schedule.html
+2024-07-10 23:21:17,530 - INFO - Scraping team statisitcs for 2000 Texas Tech
+2024-07-10 23:21:27,897 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/texas-tech/2000-schedule.html
+2024-07-10 23:21:27,899 - INFO - Scraping team statisitcs for 2001 Texas Tech
+2024-07-10 23:21:38,245 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/texas-tech/2001-schedule.html
+2024-07-10 23:21:38,247 - INFO - Scraping team statisitcs for 2002 Texas Tech
+2024-07-10 23:21:48,633 - INFO - Scraping NFL statistics for Gibran Hamdan
+2024-07-10 23:21:48,633 - INFO - Scraping NCAA statistics for Gibran Hamdan
+2024-07-10 23:21:59,122 - INFO - Scraping team statisitcs for 2000 Indiana
+2024-07-10 23:22:10,014 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/indiana/2000-schedule.html
+2024-07-10 23:22:10,016 - INFO - Scraping team statisitcs for 2001 Indiana
+2024-07-10 23:22:20,440 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/indiana/2001-schedule.html
+2024-07-10 23:22:20,441 - INFO - Scraping team statisitcs for 2002 Indiana
+2024-07-10 23:22:30,825 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/indiana/2002-schedule.html
+2024-07-10 23:22:30,828 - INFO - Scraping NFL statistics for Ken Dorsey
+2024-07-10 23:22:30,828 - INFO - Scraping NCAA statistics for Ken Dorsey
+2024-07-10 23:22:41,482 - INFO - Scraping team statisitcs for 1999 Miami (FL)
+2024-07-10 23:22:51,924 - INFO - Scraping team statisitcs for 2000 Miami (FL)
+2024-07-10 23:23:02,322 - INFO - Scraping team statisitcs for 2001 Miami (FL)
+2024-07-10 23:23:12,949 - INFO - Scraping team statisitcs for 2002 Miami (FL)
+2024-07-10 23:23:23,340 - INFO - Scraping NFL draft data for quarterbacks for year: 2004
+2024-07-10 23:23:28,880 - INFO - Scraping NFL statistics for Eli Manning
+2024-07-10 23:23:28,881 - INFO - Scraping NCAA statistics for Eli Manning
+2024-07-10 23:23:39,488 - INFO - Scraping team statisitcs for 2000 Mississippi
+2024-07-10 23:23:49,877 - INFO - Scraping team statisitcs for 2001 Mississippi
+2024-07-10 23:24:00,219 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/mississippi/2001-schedule.html
+2024-07-10 23:24:00,221 - INFO - Scraping team statisitcs for 2002 Mississippi
+2024-07-10 23:24:10,618 - INFO - Scraping team statisitcs for 2003 Mississippi
+2024-07-10 23:24:21,204 - INFO - Scraping NFL statistics for Philip Rivers
+2024-07-10 23:24:21,204 - INFO - Scraping NCAA statistics for Philip Rivers
+2024-07-10 23:24:31,740 - INFO - Scraping team statisitcs for 2000 North Carolina St.
+2024-07-10 23:24:42,272 - INFO - Scraping team statisitcs for 2001 North Carolina St.
+2024-07-10 23:24:52,620 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/north-carolina-state/2001-schedule.html
+2024-07-10 23:24:52,621 - INFO - Scraping team statisitcs for 2002 North Carolina St.
+2024-07-10 23:25:03,017 - INFO - Scraping team statisitcs for 2003 North Carolina St.
+2024-07-10 23:25:13,408 - INFO - Scraping NFL statistics for Ben Roethlisberger
+2024-07-10 23:25:13,408 - INFO - Scraping NCAA statistics for Ben Roethlisberger
+2024-07-10 23:25:24,368 - INFO - Scraping team statisitcs for 2001 Miami (OH)
+2024-07-10 23:25:34,692 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/miami-oh/2001-schedule.html
+2024-07-10 23:25:34,693 - INFO - Scraping team statisitcs for 2002 Miami (OH)
+2024-07-10 23:25:44,992 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/miami-oh/2002-schedule.html
+2024-07-10 23:25:44,993 - INFO - Scraping team statisitcs for 2003 Miami (OH)
+2024-07-10 23:25:55,359 - INFO - Scraping NFL statistics for J.P. Losman
+2024-07-10 23:25:55,359 - INFO - Scraping NCAA statistics for J.P. Losman
+2024-07-10 23:26:05,808 - INFO - Scraping team statisitcs for 2000 Tulane
+2024-07-10 23:26:16,152 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/tulane/2000-schedule.html
+2024-07-10 23:26:16,153 - INFO - Scraping team statisitcs for 2001 Tulane
+2024-07-10 23:26:26,504 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/tulane/2001-schedule.html
+2024-07-10 23:26:26,506 - INFO - Scraping team statisitcs for 2002 Tulane
+2024-07-10 23:26:36,931 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/tulane/2002-schedule.html
+2024-07-10 23:26:36,932 - INFO - Scraping team statisitcs for 2003 Tulane
+2024-07-10 23:26:47,379 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/tulane/2003-schedule.html
+2024-07-10 23:26:47,381 - INFO - Scraping NFL statistics for Matt Schaub
+2024-07-10 23:26:47,382 - INFO - Scraping NCAA statistics for Matt Schaub
+2024-07-10 23:26:57,903 - INFO - Scraping team statisitcs for 2000 Virginia
+2024-07-10 23:27:08,242 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/virginia/2000-schedule.html
+2024-07-10 23:27:08,244 - INFO - Scraping team statisitcs for 2001 Virginia
+2024-07-10 23:27:18,652 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/virginia/2001-schedule.html
+2024-07-10 23:27:18,654 - INFO - Scraping team statisitcs for 2002 Virginia
+2024-07-10 23:27:29,049 - INFO - Scraping team statisitcs for 2003 Virginia
+2024-07-10 23:27:39,870 - INFO - Scraping NFL statistics for Luke McCown
+2024-07-10 23:27:39,870 - INFO - Scraping NCAA statistics for Luke McCown
+2024-07-10 23:27:50,419 - INFO - Scraping team statisitcs for 2000 Louisiana Tech
+2024-07-10 23:28:00,762 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-tech/2000-schedule.html
+2024-07-10 23:28:00,764 - INFO - Scraping team statisitcs for 2001 Louisiana Tech
+2024-07-10 23:28:11,186 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-tech/2001-schedule.html
+2024-07-10 23:28:11,187 - INFO - Scraping team statisitcs for 2002 Louisiana Tech
+2024-07-10 23:28:21,504 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-tech/2002-schedule.html
+2024-07-10 23:28:21,506 - INFO - Scraping team statisitcs for 2003 Louisiana Tech
+2024-07-10 23:28:31,809 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/louisiana-tech/2003-schedule.html
+2024-07-10 23:28:31,813 - INFO - Scraping NFL statistics for Craig Krenzel
+2024-07-10 23:28:31,813 - INFO - Scraping NCAA statistics for Craig Krenzel
+2024-07-10 23:28:42,372 - INFO - Scraping team statisitcs for 2000 Ohio St.
+2024-07-10 23:28:52,704 - INFO - Scraping team statisitcs for 2001 Ohio St.
+2024-07-10 23:29:03,090 - INFO - Scraping team statisitcs for 2002 Ohio St.
+2024-07-10 23:29:13,468 - INFO - Scraping team statisitcs for 2003 Ohio St.
+2024-07-10 23:29:23,866 - INFO - Scraping NFL statistics for Andy Hall
+2024-07-10 23:29:23,866 - INFO - Scraping NCAA statistics for Andy Hall
+2024-07-10 23:29:34,307 - INFO - Scraping team statisitcs for 2000 Delaware
+2024-07-10 23:29:39,470 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/delaware/2000-schedule.html
+2024-07-10 23:29:44,987 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/delaware/2000-schedule.html
+2024-07-10 23:29:44,988 - ERROR - Unable to scrape team data for 2000 Delaware; Url: https://www.sports-reference.com/cfb/schools/delaware/2000-schedule.html
+2024-07-10 23:29:44,988 - INFO - Scraping team statisitcs for 2001 Delaware
+2024-07-10 23:29:50,206 - ERROR - Error; unable to find schedule table with pandas at: https://www.sports-reference.com/cfb/schools/delaware/2001-schedule.html
+2024-07-10 23:29:55,335 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/delaware/2001-schedule.html
+2024-07-10 23:29:55,335 - ERROR - Unable to scrape team data for 2001 Delaware; Url: https://www.sports-reference.com/cfb/schools/delaware/2001-schedule.html
+2024-07-10 23:29:55,335 - INFO - Scraping NFL statistics for Josh Harris
+2024-07-10 23:29:55,335 - INFO - Scraping NCAA statistics for Josh Harris
+2024-07-10 23:30:05,872 - INFO - Scraping team statisitcs for 2000 Bowling Green
+2024-07-10 23:30:16,182 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/bowling-green-state/2000-schedule.html
+2024-07-10 23:30:16,183 - INFO - Scraping team statisitcs for 2001 Bowling Green
+2024-07-10 23:30:26,723 - ERROR - Error; unable to find polls table with pandas at: https://www.sports-reference.com/cfb/schools/bowling-green-state/2001-schedule.html
+2024-07-10 23:30:26,724 - INFO - Scraping team statisitcs for 2002 Bowling Green
+2024-07-10 23:30:37,148 - INFO - Scraping team statisitcs for 2003 Bowling Green
+2024-07-10 23:30:47,714 - INFO - Scraping NFL statistics for Jim Sorgi
+2024-07-10 23:30:47,714 - INFO - Scraping NCAA statistics for Jim Sorgi
+2024-07-10 23:30:58,261 - INFO - Scraping team statisitcs for 2000 Wisconsin
+2024-07-10 23:31:08,565 - INFO - Scraping team statisitcs for 2001 Wisconsin
+2024-07-10 23:31:18,885 - INFO - Scraping team statisitcs for 2002 Wisconsin
+2024-07-10 23:31:29,207 - INFO - Scraping team statisitcs for 2003 Wisconsin
+2024-07-10 23:31:39,624 - INFO - Scraping NFL statistics for Jeff Smoker
+2024-07-10 23:31:39,624 - INFO - Scraping NCAA statistics for Jeff Smoker
+2024-07-10 23:31:50,130 - INFO - Scraping team statisitcs for 2000 Michigan St.
+2024-07-10 23:32:00,912 - INFO - Scraping team statisitcs for 2001 Michigan St.
+2024-07-10 23:32:11,217 - INFO - Scraping team statisitcs for 2002 Michigan St.
+2024-07-10 23:32:21,551 - INFO - Scraping team statisitcs for 2003 Michigan St.
+2024-07-10 23:32:31,986 - INFO - Scraping NFL statistics for John Navarre
+2024-07-10 23:32:31,986 - INFO - Scraping NCAA statistics for John Navarre
+2024-07-10 23:32:42,457 - INFO - Scraping team statisitcs for 2000 Michigan
+2024-07-10 23:32:52,768 - INFO - Scraping team statisitcs for 2001 Michigan
+2024-07-10 23:33:03,477 - INFO - Scraping team statisitcs for 2002 Michigan
+2024-07-10 23:33:13,887 - INFO - Scraping team statisitcs for 2003 Michigan
+2024-07-10 23:33:24,244 - INFO - Scraping NFL statistics for Cody Pickett
+2024-07-10 23:33:24,245 - INFO - Scraping NCAA statistics for Cody Pickett
+2024-07-10 23:33:34,758 - INFO - Scraping team statisitcs for 1999 Washington
+2024-07-10 23:33:45,177 - INFO - Scraping team statisitcs for 2000 Washington
+2024-07-10 23:33:55,502 - INFO - Scraping team statisitcs for 2001 Washington
+2024-07-10 23:34:06,169 - INFO - Scraping team statisitcs for 2002 Washington
+2024-07-10 23:34:16,478 - INFO - Scraping team statisitcs for 2003 Washington
+2024-07-10 23:34:26,779 - INFO - Scraping NFL statistics for Casey Bramlet
+2024-07-10 23:34:26,779 - INFO - Scraping NCAA statistics for Casey Bramlet
+2024-07-10 23:34:26,779 - INFO - Scraping NFL statistics for Matt Mauck
+2024-07-10 23:34:26,779 - INFO - Scraping NCAA statistics for Matt Mauck

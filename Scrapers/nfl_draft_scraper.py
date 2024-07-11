@@ -58,7 +58,13 @@ class NFLDraftScraper(Scraper):
 
                     # Get college data
                     college = table_columns[26].text.strip()
-                    college_stats_url = table_columns[27].next_element.attrs["href"]
+
+                    # Exception if college stats are not present
+                    try:
+                        college_stats_url = table_columns[27].next_element.attrs["href"]
+                    except AttributeError:
+                        college_stats_url = None
+
                     college_data_point = self.ncaa_scraper.get_college_stats(player, player_id, college, college_stats_url)
 
                     # Track data

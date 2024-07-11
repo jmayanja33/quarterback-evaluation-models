@@ -97,7 +97,7 @@ class Scraper:
                 return pd.read_html(io.StringIO(table_html), encoding="utf-8", header=header)[0]
             # Handle no table found
             except ValueError:
-                self.logger.info(f"Error; unable to find {table_id} table with pandas at: {url}")
+                self.logger.error(f"Error; unable to find {table_id} table with pandas at: {url}")
                 return
 
         # Return regular text to beautiful soup object
