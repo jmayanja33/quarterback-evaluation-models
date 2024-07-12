@@ -1,3 +1,5 @@
+from independents import independent_schools
+
 def scrape_season(stats, conference):
     """Function to scrape team data for a single season"""
     # Get wins, losses
@@ -9,20 +11,15 @@ def scrape_season(stats, conference):
     return wins, losses, conference_wins, conference_losses, points_for, points_against
 
 
-def scrape_conference(table):
+def scrape_conference(table, college, year):
     """Function to scrape the conference"""
-    # conference_count = int(table['Conf'].value_counts().max())
-    # Take most recent conference if the years are split
-    # if conference_count == 1 and len(set(table['Conf'])) > 1:
-    #     return table["Conf"].mode()
-    # # Take the conference
-    # else:
-    #     return table['Conf'].value_counts().idxmax()
-    try:
-        conference_count = int(table['Conf'].value_counts().max())
-        if conference_count < 6:
+    if college in independent_schools.keys():
+        if year in independent_schools[college]:
             return "Ind"
-        return table["Conf"].mode()[0]
+
+    try:
+        conference = table["Conf"].mode()[0]
+        return conference
 
     except Exception as e:
         return "MISSING"
@@ -31,9 +28,14 @@ def scrape_conference(table):
 def scrape_record(table, conference):
     """Function to scrape wins and losses"""
 
+    if len(table.columns) == 15:
+        wins_col = "Unnamed: 8"
+    else:
+        wins_col = "Unnamed: 7"
+
     # Scrape overall wins/losses
-    wins = scrape_game_result(table, 'Unnamed: 7', 'W')
-    losses = scrape_game_result(table, 'Unnamed: 7', 'L')
+    wins = scrape_game_result(table, wins_col, 'W')
+    losses = scrape_game_result(table, wins_col, 'L')
 
     # Scrape conference record
     if conference == "Ind":
@@ -41,8 +43,8 @@ def scrape_record(table, conference):
         conference_losses = 0
     else:
         filtered_table = table[table['Conf'] == conference]
-        conference_wins = scrape_game_result(filtered_table, 'Unnamed: 7', 'W')
-        conference_losses = scrape_game_result(filtered_table, 'Unnamed: 7', 'L')
+        conference_wins = scrape_game_result(filtered_table, wins_col, 'W')
+        conference_losses = scrape_game_result(filtered_table, wins_col, 'L')
 
     return wins, losses, conference_wins, conference_losses
 

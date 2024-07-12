@@ -77,7 +77,6 @@ class NCAAStatsScraper(Scraper):
 
         # Assign years played and conference
         self.data[4] = len(self.player_years)   # Years played
-        self.data[3] = scrape_conference(table)   # Conference
 
         # Scrape passing data
         self.data[5] = self.extract_column_value_pandas(table, "G", self.player_year_indexes)     # Games played
@@ -114,8 +113,11 @@ class NCAAStatsScraper(Scraper):
 
             if team_df is not None:
 
+                conference = scrape_conference(team_df, self.data[2], year)
+                self.data[3] = conference
+
                 # Scrape stats
-                wins, losses, conference_wins, conference_losses, points_for, points_against = scrape_season(team_df, self.data[3])
+                wins, losses, conference_wins, conference_losses, points_for, points_against = scrape_season(team_df, conference)
                 if rank_df is not None:
                     rank = scrape_ranking(rank_df, rank)
 
