@@ -143,13 +143,13 @@ class Scraper:
             else:
                 return "MISSING"
 
-    def extract_column_value_pandas(self, table, column, metric="sum"):
+    def extract_column_value_pandas(self, table, column, indexes, metric="sum"):
         """Function to extract data from an html table rendered by pandas"""
         try:
             if metric == "sum":
-                return sum(table[column].fillna(0)[:-1])
+                return sum(table[column][indexes].fillna(0))
             elif metric == "mean":
-                return table[column].fillna(0)[:-1].mean()
+                return table[column][indexes].fillna(0).mean()
 
         except Exception as e:
             return 0

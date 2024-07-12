@@ -14,12 +14,15 @@ class NCAAStatsScraper(Scraper):
     def __init__(self):
         super().__init__()
         self.data = []
+        self.player_years = []
+        self.player_year_indexes = []
+        self.player_schools = []
         self.logger.info("Initializing NCAA Statistics Scraper")
 
     def get_college_stats(self, player, player_id, college, player_url):
         """Function to get all college stats for a certain quarterback"""
         self.logger.info(f"Scraping NCAA statistics for {player}")
-        self.data = [player_id, player, college, None, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        self.data = [player_id, player, college, None, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
         # Get player statistics
         if player_url is None:
@@ -29,61 +32,80 @@ class NCAAStatsScraper(Scraper):
             # Load passing df as pandas dataframe
             passing_df = self.send_request(player_url, table_id="passing", use_pandas=True, header=1)
             rushing_df = self.send_request(player_url, table_id="rushing", use_pandas=True, header=1)
-            self.scrape_player_stats(passing_df, rushing_df)
+
+            # Scrape data
+            if passing_df is None or rushing_df is None:
+                self.except_missing_data_point()
+            else:
+                self.scrape_player_stats(passing_df, rushing_df)
 
         return self.data
 
     def except_missing_data_point(self):
         """Function to fill in placeholders for missing data"""
+        self.logger.error(f"Unable to scrape NCAA statistics for {self.data[1]}; No passing/rushing tables found")
         for i in range(4, 22):
-            self.data[i] = -1
+            self.data[i] = 0
+        self.data[22] = 4
 
     def scrape_player_stats(self, passing_df, rushing_df):
         """Function to scrape player stats"""
-        player_years = self.scrape_passing_stats(passing_df)
+        self.scrape_passing_stats(passing_df)
         self.scrape_rushing_stats(rushing_df)
-        self.scrape_team_stats(self.data[2], player_years)
+        self.scrape_team_stats()
 
     def scrape_passing_stats(self, table):
         """Function to get passing statistics for a quarterback"""
 
         # Scrape years played
-        player_years = []
-        for i in list(table["Year"][:-1]):
-            year = str(i).replace("*", "")
-            player_years.append(int(year))
+        self.player_years = []
+        self.player_schools = []
+        self.player_year_indexes = []
+        for i, val in enumerate(list(table["Year"])):
+            year = str(val).replace("*", "")
+            # Scrape the year
+            try:
+                self.player_years.append(int(year))
+                self.player_year_indexes.append(i)
+
+                # Add college in case of transfer
+                college = table["School"][i]
+                self.player_schools.append(college)
+            # Exclude strings in the column (ex. Career)
+            except ValueError:
+                continue
 
         # Assign years played and conference
-        self.data[4] = len(player_years)   # Years played
+        self.data[4] = len(self.player_years)   # Years played
         self.data[3] = scrape_conference(table)   # Conference
 
         # Scrape passing data
-        self.data[5] = self.extract_column_value_pandas(table, "G")     # Games played
-        self.data[6] = self.extract_column_value_pandas(table, "Cmp")   # Completions
-        self.data[7] = self.extract_column_value_pandas(table, "Att")   # Attempts
-        self.data[8] = self.extract_column_value_pandas(table, "Yds")   # Passing yards
-        self.data[9] = self.extract_column_value_pandas(table, "TD")    # Passing TDs
-        self.data[10] = self.extract_column_value_pandas(table, "Int")  # Interceptions
-        self.data[11] = self.extract_column_value_pandas(table, "Rate", metric="mean")   # Passer rating
-
-        return player_years
+        self.data[5] = self.extract_column_value_pandas(table, "G", self.player_year_indexes)     # Games played
+        self.data[6] = self.extract_column_value_pandas(table, "Cmp", self.player_year_indexes)   # Completions
+        self.data[7] = self.extract_column_value_pandas(table, "Att", self.player_year_indexes)   # Attempts
+        self.data[8] = self.extract_column_value_pandas(table, "Yds", self.player_year_indexes)   # Passing yards
+        self.data[9] = self.extract_column_value_pandas(table, "TD", self.player_year_indexes)    # Passing TDs
+        self.data[10] = self.extract_column_value_pandas(table, "Int", self.player_year_indexes)  # Interceptions
+        self.data[11] = self.extract_column_value_pandas(table, "Rate", self.player_year_indexes, metric="mean")   # Passer rating
 
     def scrape_rushing_stats(self, table):
         """Function to get rushing statistics for a quarterback"""
 
         # Scrape rushing data
-        self.data[12] = self.extract_column_value_pandas(table, "Att")  # Rushing Attempts
-        self.data[13] = self.extract_column_value_pandas(table, "Yds")  # Rushing Yards
-        self.data[14] = self.extract_column_value_pandas(table, "TD")   # Rushing TDs
+        self.data[12] = self.extract_column_value_pandas(table, "Att", self.player_year_indexes)  # Rushing Attempts
+        self.data[13] = self.extract_column_value_pandas(table, "Yds", self.player_year_indexes)  # Rushing Yards
+        self.data[14] = self.extract_column_value_pandas(table, "TD", self.player_year_indexes)   # Rushing TDs
 
-    def scrape_team_stats(self, college, player_years):
+    def scrape_team_stats(self):
         """Function to get a quarterback's team statistics for a certain season"""
 
         # Initialize rank
         rank = 999
 
         # Extract college stats
-        for year in player_years:
+        for i, year in enumerate(self.player_years):
+            college = self.player_schools[i]
+
             # Get yearly statistics
             self.logger.info(f"Scraping team statisitcs for {year} {college}")
             url = f"https://www.sports-reference.com/cfb/schools/{format_college_for_url(college)}/{year}-schedule.html"
@@ -115,6 +137,7 @@ class NCAAStatsScraper(Scraper):
             # Handle missing data
             else:
                 self.logger.error(f"Unable to scrape team data for {year} {college}; Url: {url}")
-                for i in range(4, 22):
-                    self.data[i] = -1
+                # for j in range(4, 22):
+                #     self.data[j] += 0
+                self.data[22] += 1
 

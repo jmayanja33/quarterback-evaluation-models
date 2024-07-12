@@ -11,13 +11,21 @@ def scrape_season(stats, conference):
 
 def scrape_conference(table):
     """Function to scrape the conference"""
-    conference_count = int(table['Conf'].value_counts().max())
+    # conference_count = int(table['Conf'].value_counts().max())
     # Take most recent conference if the years are split
-    if conference_count == 1 and len(set(table['Conf'])) > 1:
-        return table['Conf'][-2]
-    # Take the conference
-    else:
-        return table['Conf'].value_counts().idxmax()
+    # if conference_count == 1 and len(set(table['Conf'])) > 1:
+    #     return table["Conf"].mode()
+    # # Take the conference
+    # else:
+    #     return table['Conf'].value_counts().idxmax()
+    try:
+        conference_count = int(table['Conf'].value_counts().max())
+        if conference_count < 6:
+            return "Ind"
+        return table["Conf"].mode()[0]
+
+    except Exception as e:
+        return "MISSING"
 
 
 def scrape_record(table, conference):
