@@ -5,7 +5,7 @@ from columns import *
 
 class NFLDraftScraper(Scraper):
 
-    def __init__(self, start_year=2001, end_year=2022):
+    def __init__(self, start_year=2000, end_year=2025):
         super().__init__(start_year, end_year)
         self.logger.info("Initializing NFL Draft Scraper")
         self.columns_to_index = nfl_columns_to_index

@@ -1,4 +1,16 @@
 year,position,player_id,player,round,pick,team,age,final_year,first_team_all_pro_selections,pro_bowl_selections,number_of_years_as_a_starter,weighted_career_approximate_value,games_played,completions,passes_attempted,passing_yards,passing_touchdowns,interceptions,rushing_attempts,rushing_yards,rushing_touchdowns,college
+2000,QB,2000-18,1,Chad Pennington,18,NYJ,24,2010,0,0,5,55,89,1632,2471,17823,102,64,180,465,7,Marshall
+2000,QB,2000-65,3,Giovanni Carmazzi,65,SFO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Hofstra
+2000,QB,2000-75,3,Chris Redman,75,BAL,23,2011,0,0,0,9,30,286,500,3179,21,14,33,25,0,Louisville
+2000,QB,2000-163,5,Tee Martin,163,PIT,22,2003,0,0,0,0,3,6,16,69,0,1,6,36,0,Tennessee
+2000,QB,2000-168,6,Marc Bulger,168,NOR,23,2009,0,2,8,57,96,1969,3171,22814,122,93,118,300,8,West Virginia
+2000,QB,2000-183,6,Spergon Wynn,183,CLE,22,2001,0,0,0,2,10,70,152,585,1,7,11,76,0,Texas St.
+2000,QB,2000-199,6,Tom Brady,199,NWE,23,2022,3,15,21,184,335,7753,12050,89214,649,212,693,1123,28,Michigan
+2000,QB,2000-202,6,Todd Husak,202,WAS,22,2000,0,0,0,0,1,2,2,-2,0,0,1,-1,0,Stanford
+2000,QB,2000-205,6,JaJuan Seider,205,SDG,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Florida A&M
+2000,QB,2000-212,7,Tim Rattay,212,SFO,23,2007,0,0,1,12,40,432,714,4853,31,23,45,77,0,Louisiana Tech
+2000,QB,2000-214,7,Jarious Jackson,214,DEN,23,2003,0,0,0,0,5,11,22,114,0,1,7,15,0,Notre Dame
+2000,QB,2000-234,7,Joe Hamilton,234,TAM,23,2000,0,0,0,0,1,0,0,0,0,0,1,-2,0,Georgia Tech
 2001,QB,2001-1,1,Michael Vick,1,ATL,21,2015,0,4,7,92,143,1807,3217,22464,133,88,873,6109,36,Virginia Tech
 2001,QB,2001-32,2,Drew Brees,32,SDG,22,2020,1,13,19,167,287,7142,10551,80358,571,243,498,752,25,Purdue
 2001,QB,2001-53,2,Quincy Carter,53,DAL,23,2004,0,0,2,16,38,542,960,6337,32,37,152,518,3,Georgia
