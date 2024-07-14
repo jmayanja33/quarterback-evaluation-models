@@ -1,4 +1,4 @@
-year,position,player_id,player,round,pick,team,age,final_year,first_team_all_pro_selections,pro_bowl_selections,number_of_years_as_a_starter,weighted_career_approximate_value,games_played,completions,passes_attempted,passing_yards,passing_touchdowns,interceptions,rushing_attempts,rushing_yards,rushing_touchdowns,college,height,weight
+year,position,player_id,round,player,pick,team,age,final_year,first_team_all_pro_selections,pro_bowl_selections,number_of_years_as_a_starter,weighted_career_approximate_value,games_played,completions,passes_attempted,passing_yards,passing_touchdowns,interceptions,rushing_attempts,rushing_yards,rushing_touchdowns,college,height,weight
 2000,QB,2000-18,1,Chad Pennington,18,NYJ,24,2010,0,0,5,55,89,1632,2471,17823,102,64,180,465,7,Marshall,75.4,229.0
 2000,QB,2000-65,3,Giovanni Carmazzi,65,SFO,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Hofstra,74.6,224.0
 2000,QB,2000-75,3,Chris Redman,75,BAL,23,2011,0,0,0,9,30,286,500,3179,21,14,33,25,0,Louisville,74.8,222.0

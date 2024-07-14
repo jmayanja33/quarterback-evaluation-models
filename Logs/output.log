@@ -50267,3 +50267,107 @@
 2024-07-13 23:54:45,910 - INFO - Scraping team statisitcs for 2023 Tulane
 2024-07-13 23:54:52,263 - INFO - Saving data to file: nfl_draft_qbs.csv
 2024-07-13 23:54:52,268 - INFO - Saving data to file: ncaa_drafted_qbs.csv
+2024-07-14 00:38:40,866 - INFO - Loading data
+2024-07-14 00:38:40,868 - INFO - Finding all players with seasons missing
+2024-07-14 00:38:40,869 - INFO - Removing all players with seasons missing
+2024-07-14 00:40:44,285 - INFO - Loading data
+2024-07-14 00:40:44,289 - INFO - Finding all players with seasons missing
+2024-07-14 00:41:06,847 - INFO - Loading data
+2024-07-14 00:41:06,851 - INFO - Finding all players with seasons missing
+2024-07-14 00:41:20,637 - INFO - Removing all players with seasons missing
+2024-07-14 01:16:01,535 - INFO - Loading data
+2024-07-14 01:16:01,538 - INFO - Finding all players with seasons missing
+2024-07-14 01:16:01,539 - INFO - Removing all players with seasons missing
+2024-07-14 01:16:28,972 - INFO - Loading data
+2024-07-14 01:16:28,976 - INFO - Finding all players with seasons missing
+2024-07-14 01:16:28,976 - INFO - Removing all players with seasons missing
+2024-07-14 01:17:15,983 - INFO - Loading data
+2024-07-14 01:17:15,986 - INFO - Finding all players with seasons missing
+2024-07-14 01:17:15,987 - INFO - Removing all players with seasons missing
+2024-07-14 01:17:34,019 - INFO - Loading data
+2024-07-14 01:17:34,023 - INFO - Finding all players with seasons missing
+2024-07-14 01:17:34,024 - INFO - Removing all players with seasons missing
+2024-07-14 01:18:00,454 - INFO - Loading data
+2024-07-14 01:18:00,457 - INFO - Finding all players with seasons missing
+2024-07-14 01:18:00,458 - INFO - Removing all players with seasons missing
+2024-07-14 01:20:53,438 - INFO - Loading data
+2024-07-14 01:20:53,441 - INFO - Finding all players with seasons missing
+2024-07-14 01:20:53,442 - INFO - Removing all players with seasons missing
+2024-07-14 01:29:35,643 - INFO - Loading data
+2024-07-14 01:29:35,646 - INFO - Finding all players with seasons missing
+2024-07-14 01:29:35,646 - INFO - Removing all players with seasons missing
+2024-07-14 01:30:34,243 - INFO - Loading data
+2024-07-14 01:30:34,247 - INFO - Finding all players with seasons missing
+2024-07-14 01:30:34,247 - INFO - Removing all players with seasons missing
+2024-07-14 01:30:47,163 - INFO - Loading data
+2024-07-14 01:30:47,166 - INFO - Finding all players with seasons missing
+2024-07-14 01:30:47,167 - INFO - Removing all players with seasons missing
+2024-07-14 01:31:07,549 - INFO - Loading data
+2024-07-14 01:31:07,552 - INFO - Finding all players with seasons missing
+2024-07-14 01:31:07,553 - INFO - Removing all players with seasons missing
+2024-07-14 01:31:23,237 - INFO - Saving cleaned data
+2024-07-14 01:31:42,635 - INFO - Loading data
+2024-07-14 01:31:42,637 - INFO - Finding all players with seasons missing
+2024-07-14 01:31:42,638 - INFO - Removing all players with seasons missing
+2024-07-14 01:31:42,638 - INFO - Saving cleaned data
+2024-07-14 01:32:05,834 - INFO - Loading data
+2024-07-14 01:32:05,836 - INFO - Finding all players with seasons missing
+2024-07-14 01:32:05,837 - INFO - Removing all players with seasons missing
+2024-07-14 01:32:05,837 - INFO - Encoding colleges and conferences
+2024-07-14 01:32:05,837 - INFO - Saving cleaned data
+2024-07-14 01:32:35,446 - INFO - Loading data
+2024-07-14 01:32:35,448 - INFO - Finding all players with seasons missing
+2024-07-14 01:32:35,449 - INFO - Removing all players with seasons missing
+2024-07-14 01:32:35,449 - INFO - Encoding colleges and conferences
+2024-07-14 01:32:35,450 - INFO - Saving cleaned data
+2024-07-14 01:33:20,798 - INFO - Loading data
+2024-07-14 01:33:20,802 - INFO - Finding all players with seasons missing
+2024-07-14 01:33:20,802 - INFO - Removing all players with seasons missing
+2024-07-14 01:33:20,803 - INFO - Encoding colleges and conferences
+2024-07-14 01:38:22,207 - INFO - Loading data
+2024-07-14 01:38:22,211 - INFO - Finding all players with seasons missing
+2024-07-14 01:38:22,212 - INFO - Removing all players with seasons missing
+2024-07-14 01:38:22,212 - INFO - Encoding colleges and conferences
+2024-07-14 02:17:08,024 - INFO - Loading data
+2024-07-14 02:17:08,028 - INFO - Finding all players with seasons missing
+2024-07-14 02:17:41,915 - INFO - Loading data
+2024-07-14 02:17:41,919 - INFO - Finding all players with seasons missing
+2024-07-14 02:17:41,920 - INFO - Removing all players with seasons missing
+2024-07-14 02:17:41,921 - INFO - Encoding colleges and conferences
+2024-07-14 02:17:41,922 - INFO - Filling missing height/weight data
+2024-07-14 02:18:05,646 - INFO - Loading data
+2024-07-14 02:18:05,650 - INFO - Finding all players with seasons missing
+2024-07-14 02:18:05,651 - INFO - Removing all players with seasons missing
+2024-07-14 02:18:05,651 - INFO - Encoding colleges and conferences
+2024-07-14 02:18:05,653 - INFO - Filling missing height/weight data
+2024-07-14 02:18:46,920 - INFO - Loading data
+2024-07-14 02:18:46,924 - INFO - Finding all players with seasons missing
+2024-07-14 02:18:46,925 - INFO - Removing all players with seasons missing
+2024-07-14 02:18:46,926 - INFO - Encoding colleges and conferences
+2024-07-14 02:18:46,927 - INFO - Filling missing height/weight data
+2024-07-14 02:19:46,962 - INFO - Loading data
+2024-07-14 02:21:25,355 - INFO - Loading data
+2024-07-14 02:21:41,911 - INFO - Loading data
+2024-07-14 02:22:24,291 - INFO - Loading data
+2024-07-14 02:22:34,127 - INFO - Finding all players with seasons missing
+2024-07-14 02:22:34,132 - INFO - Removing all players with seasons missing
+2024-07-14 02:22:34,134 - INFO - Encoding colleges and conferences
+2024-07-14 02:22:34,137 - INFO - Filling missing height/weight data
+2024-07-14 02:24:02,735 - INFO - Loading data
+2024-07-14 02:24:05,832 - INFO - Finding all players with seasons missing
+2024-07-14 02:24:05,835 - INFO - Removing all players with seasons missing
+2024-07-14 02:24:05,837 - INFO - Encoding colleges and conferences
+2024-07-14 02:24:05,840 - INFO - Filling missing height/weight data
+2024-07-14 02:37:39,482 - INFO - Loading data
+2024-07-14 02:37:39,486 - INFO - Finding all players with seasons missing
+2024-07-14 02:37:39,487 - INFO - Removing all players with seasons missing
+2024-07-14 02:37:39,488 - INFO - Encoding colleges and conferences
+2024-07-14 02:37:39,490 - INFO - Filling missing height/weight data
+2024-07-14 02:37:39,512 - INFO - Filling in age data
+2024-07-14 02:38:56,663 - INFO - Loading data
+2024-07-14 02:38:56,665 - INFO - Finding all players with seasons missing
+2024-07-14 02:38:56,666 - INFO - Removing all players with seasons missing
+2024-07-14 02:38:56,666 - INFO - Encoding colleges and conferences
+2024-07-14 02:38:56,667 - INFO - Filling missing height/weight data
+2024-07-14 02:38:56,676 - INFO - Filling in age data
+2024-07-14 02:38:56,679 - INFO - Saving cleaned data

@@ -6,7 +6,7 @@ ncaa_csv_columns = [
 ]
 
 nfl_csv_columns = [
-    "year", "position", "player_id", "player", "round", "pick", "team", "age", "final_year",
+    "year", "position", "player_id", "round", "player", "pick", "team", "age", "final_year",
     "first_team_all_pro_selections", "pro_bowl_selections", "number_of_years_as_a_starter",
     "weighted_career_approximate_value", "games_played", "completions", "passes_attempted", "passing_yards",
     "passing_touchdowns", "interceptions", "rushing_attempts", "rushing_yards", "rushing_touchdowns", "college",
