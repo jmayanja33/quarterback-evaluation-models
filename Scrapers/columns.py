@@ -2,14 +2,15 @@ ncaa_csv_columns = [
     "player_id", "player", "college", "conference", "years", "games_played", "completions", "passes_attempted",
     "passing_yards", "passing_touchdowns", "interceptions", "passer_rating", "rushing_attempts", "rushing_yards",
     "rushing_touchdowns", "wins", "losses", "highest_rank", "conference_wins", "conference_losses", "points_for",
-    "points_against", "years_missing"
+    "points_against", "years_missing", "height", "weight"
 ]
 
 nfl_csv_columns = [
     "year", "position", "player_id", "player", "round", "pick", "team", "age", "final_year",
     "first_team_all_pro_selections", "pro_bowl_selections", "number_of_years_as_a_starter",
     "weighted_career_approximate_value", "games_played", "completions", "passes_attempted", "passing_yards",
-    "passing_touchdowns", "interceptions", "rushing_attempts", "rushing_yards", "rushing_touchdowns", "college"
+    "passing_touchdowns", "interceptions", "rushing_attempts", "rushing_yards", "rushing_touchdowns", "college",
+    "height", "weight"
 ]
 
 nfl_columns_to_index = {

@@ -1,5 +1,6 @@
 from scraper import Scraper
 from ncaa_stats_scraper import NCAAStatsScraper
+from combine_scraper import CombineScraper
 from columns import *
 
 
@@ -10,13 +11,16 @@ class NFLDraftScraper(Scraper):
         self.logger.info("Initializing NFL Draft Scraper")
         self.columns_to_index = nfl_columns_to_index
         self.ncaa_scraper = NCAAStatsScraper()
+        self.combine_scraper = CombineScraper()
         self.nfl_data = []
         self.college_data = []
 
     def scrape_all_years(self):
         """Function to scrape draft data for all years specified"""
         for year in self.years:
-            self.logger.info(f"Scraping NFL draft data for quarterbacks for year: {year}")
+            self.logger.info(f"Retrieving NFL draft data for quarterbacks for year: {year}")
+            self.combine_scraper.find_table(year)
+
             # Get HTML data from Sports Reference
             url = f"https://www.pro-football-reference.com/years/{year}/draft.htm"
             self.send_request(url)
@@ -65,7 +69,17 @@ class NFLDraftScraper(Scraper):
                     except AttributeError:
                         college_stats_url = None
 
+                    # Scrape height/weight
+                    height, weight = self.combine_scraper.scrape(player)
+
+                    # Scrape college data
                     college_data_point = self.ncaa_scraper.get_college_stats(player, player_id, college, college_stats_url)
+
+                    # Save height and weight
+                    nfl_data_point.append(height)
+                    nfl_data_point.append(weight)
+                    college_data_point.append(height)
+                    college_data_point.append(weight)
 
                     # Track data
                     self.nfl_data.append(nfl_data_point)

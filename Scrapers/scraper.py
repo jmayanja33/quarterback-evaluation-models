@@ -32,8 +32,8 @@ class Scraper:
             try:
                 response = requests.get(url).text
 
-                # Pause for 5 seconds to avoid exceeding rate limit
-                time.sleep(5)
+                # Pause for 3 seconds to avoid exceeding rate limit
+                time.sleep(3)
                 break
             # Handle connection error
             except ConnectionError as e:
@@ -64,7 +64,7 @@ class Scraper:
 
         # Return regular text to beautiful soup object
         self.soup = BeautifulSoup(response, 'html.parser')
-        return
+        return response
 
     def find_table(self, table_id):
         """Function to find a table by its id in the soup result"""
