@@ -2,7 +2,8 @@ import logging
 import sys
 import os
 
-class Logger():
+
+class Logger:
     _logger_file_path = os.path.realpath(os.path.dirname(os.path.realpath(__file__)))
     _log_file_path = os.path.join(_logger_file_path, "output.log")
     level = logging.INFO
