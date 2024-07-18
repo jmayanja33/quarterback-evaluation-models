@@ -21,5 +21,5 @@ if __name__ == '__main__':
 
     # Fit KMeans models
     kmeans.fit(k=5)
-    kmeans.fit(k=8, normalize=True)
+    kmeans.fit(k=6, normalize=True)
 

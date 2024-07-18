@@ -1,6 +1,6 @@
 from sklearn.cluster import KMeans as kmeans
 from matplotlib import pyplot as plt
-from clustering_helpers import *
+from Helpers.helpers import *
 from cluster import Cluster
 
 
@@ -25,8 +25,6 @@ class KMeans(Cluster):
             self.model = kmeans(n_clusters=k, random_state=33)
 
         super().fit(normalize=normalize)
-
-
 
     def elbow_method(self, normalize=False):
         """Function to implement the elbow method for 25 clusters"""

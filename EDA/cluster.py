@@ -2,7 +2,7 @@ from Logs.logger import Logger
 from matplotlib import pyplot as plt
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
-from clustering_helpers import *
+from Helpers.helpers import *
 import pandas as pd
 
 class Cluster:
@@ -10,7 +10,7 @@ class Cluster:
     def __init__(self, data):
         """Base class for clustering objects"""
         self.drop_cols = [
-            "year", "position", "player_id", "player", "team", "round", "pick", "final_year", "age"
+            "year", "position", "player_id", "player", "team", "round", "pick", "final_year", "age", "college"
         ]
         self.data = data[data["year"] < 2023]
         self.data.reset_index(drop=True, inplace=True)
