@@ -1,12 +1,13 @@
 from cluster_edits import edits
 from Logs.logger import Logger
+from Data.columns import *
 import pandas as pd
 
 
-def assign_cluster(ncaa_data, cluster_data):
-    """Function to assign clusters to each player in the cleaned NCAA data"""
-    clusters = []
-    players = set(cluster_data["player"])
+def assign_variables(variable, ncaa_data, variable_data):
+    """Function to assign dependent variables to each player in the cleaned NCAA data"""
+    stats = []
+    players = set(variable_data["player"])
     edited_players = edits.keys()
 
     # Iterate through data and assign clusters
@@ -14,22 +15,22 @@ def assign_cluster(ncaa_data, cluster_data):
         player = ncaa_data["player"][i]
 
         # Case if the player's cluster has been edited
-        if player in edited_players:
+        if player in edited_players and variable == 'cluster':
             cluster = edits[player]
-            clusters.append(cluster)
+            stats.append(cluster)
 
         # Case if the player is old enough to be clustered
         elif player in players:
-            cluster_index = list(cluster_data["player"]).index(player)
-            cluster = list(cluster_data["cluster"])[cluster_index]
-            clusters.append(cluster)
+            player_index = list(variable_data["player"]).index(player)
+            stat = list(variable_data[variable])[player_index]
+            stats.append(stat)
 
         # Case if the player is too young to be clustered and in the test set
         else:
-            clusters.append(-999)
+            stats.append(-999)
 
     # Add clusters to data
-    ncaa_data["cluster"] = clusters
+    ncaa_data[variable] = stats
     return ncaa_data
 
 
@@ -42,17 +43,23 @@ if __name__ == '__main__':
     logger.info("Loading Data")
     cleaned_data_path = "../Data/cleaned_ncaa_drafted_qbs.csv"
     cluster_data_path = "../Data/ClusterResults/K-Means/nfl_qb_clusters_normalized.csv"
+    nfl_data_path = "../Data/cleaned_nfl_draft_qbs.csv"
 
     ncaa_df = pd.read_csv(cleaned_data_path)
     cluster_df = pd.read_csv(cluster_data_path)
+    nfl_df = pd.read_csv(nfl_data_path)
 
-    # Add clusters to data
-    logger.info("Assigning clusters to data")
-    clustered_ncaa_df = assign_cluster(ncaa_df, cluster_df)
-    x = clustered_ncaa_df.copy()
-    x.sort_values(by=["cluster", "player"], inplace=True)
+    # Add dependent variables to data
+    for variable in dependent_variables.keys():
+        logger.info(f"Assigning {variable} to data")
+        if variable == 'cluster':
+            ncaa_df = assign_variables(variable, ncaa_df, cluster_df)
+        else:
+            ncaa_df = assign_variables(variable, ncaa_df, nfl_df)
+        # debug = final_ncaa_df.copy()
+        # debug.sort_values(by=["cluster", "player"], inplace=True)
 
     # Save data
     logger.info("Saving data")
-    clustered_ncaa_df.to_csv("../Data/cleaned_clustered_ncaa_drafted_qbs.csv", index=False)
+    ncaa_df.to_csv("../Data/cleaned_clustered_ncaa_drafted_qbs.csv", index=False)
 
