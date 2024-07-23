@@ -9,6 +9,16 @@ import numpy as np
 warnings.filterwarnings("ignore")
 
 
+def calculate_adj_r2(r2, data):
+    """Function to calculate adjusted r-squared"""
+    try:
+        num_observations = len(data)
+        num_features = len(data.columns)
+        return 1 - (1-r2) * (num_observations-1)/(num_observations-num_features-1)
+    except ZeroDivisionError:
+        return "ZeroDivisionError"
+
+
 def load_data(dependent_variable):
     """Function to load data"""
     data_path = f"../../Data/TrainingData/{dependent_variable}"
@@ -37,7 +47,6 @@ class Model:
 
     def initialize_directories(self):
         """Function to initialize directories to hold results"""
-        # model_path = f"../../Models/{self.model_type}"
         make_directory(self.dependent_variable)
         make_directory(f"{self.dependent_variable}", "Results")
 
@@ -68,9 +77,9 @@ class Model:
 
         # Calculate base metrics
         r_squared = round(r2_score(self.y_test, predictions), 4)
-        r = round(np.sqrt(r_squared), 4)
+        adj_r_squared = round(calculate_adj_r2(r_squared, self.X_test), 4)
 
-        content += f"""\n- R-Squared Score: {r_squared}\n- R Score: {r}"""
+        content += f"""\n- R-Squared Score: {r_squared}\n- Adj. R-Squared Score: {adj_r_squared}"""
 
         # Write to file
         file = open(f"{self.dependent_variable}/Results/summary_report.txt", "w")
