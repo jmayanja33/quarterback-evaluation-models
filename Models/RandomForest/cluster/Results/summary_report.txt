@@ -1,0 +1,5 @@
+-----SUMMARY REPORT-----
+
+- Accuracy: 0.72
+- R-Squared Score: -0.2352
+- R Score: nan
