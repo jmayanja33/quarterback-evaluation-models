@@ -1,6 +1,7 @@
 from random_forest import RandomForest
+from Data.columns import dependent_variables
 
-DEPENDANT_VARIABLES = ["cluster"]
+DEPENDANT_VARIABLES = [i for i in dependent_variables.keys()]
 
 
 if __name__ == "__main__":

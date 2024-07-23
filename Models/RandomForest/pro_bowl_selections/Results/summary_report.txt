@@ -1,0 +1,5 @@
+-----SUMMARY REPORT-----
+
+- RMSE: 1.6262
+- R-Squared Score: -0.2967
+- Adj. R-Squared Score: -2.6906

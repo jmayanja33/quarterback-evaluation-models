@@ -7,6 +7,7 @@ import pandas as pd
 import numpy as np
 
 warnings.filterwarnings("ignore")
+np.random.seed(33)
 
 
 def calculate_adj_r2(r2, data):
