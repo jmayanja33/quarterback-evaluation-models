@@ -1,4 +1,4 @@
-from random_forest import RandomForest
+from xg_boost import XGBoost
 from Data.columns import dependent_variables
 
 
@@ -10,5 +10,5 @@ if __name__ == "__main__":
     for variable in DEPENDENT_VARIABLES:
 
         # Initialize Random Forest model
-        model = RandomForest(variable)
+        model = XGBoost(variable)
         model.fit()

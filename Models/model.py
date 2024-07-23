@@ -1,12 +1,11 @@
-import warnings
 from sklearn.metrics import accuracy_score, r2_score, root_mean_squared_error
+from sklearn.model_selection import GridSearchCV
 from Helpers.helpers import make_directory
 from Data.columns import *
 from Logs.logger import Logger
 import pandas as pd
 import numpy as np
 
-warnings.filterwarnings("ignore")
 np.random.seed(33)
 
 
@@ -16,6 +15,11 @@ def calculate_adj_r2(r2, data):
         num_observations = len(data)
         num_features = len(data.columns)
         return 1 - (1-r2) * (num_observations-1)/(num_observations-num_features-1)
+    except AttributeError:
+        data_copy = pd.DataFrame(data)
+        num_observations = len(data_copy)
+        num_features = len(data_copy.columns)
+        return 1 - (1 - r2) * (num_observations - 1) / (num_observations - num_features - 1)
     except ZeroDivisionError:
         return "ZeroDivisionError"
 
@@ -37,12 +41,13 @@ def load_data(dependent_variable):
 
 class Model:
 
-    def __init__(self, dependent_variable, model_type, model):
+    def __init__(self, dependent_variable, model_type):
         self.logger = Logger()
-        self.model = model
+        self.model = None
         self.model_type = model_type
         self.dependent_variable = dependent_variable
         self.X_train, self.X_test, self.y_train, self.y_test = load_data(dependent_variable)
+        self.best_params = None
 
         self.initialize_directories()
 
@@ -58,6 +63,14 @@ class Model:
         predictions = self.model.predict(self.X_test)
         self.summary_report(predictions)
 
+    def grid_search(self, model_object=None, param_grid=None, scoring=None):
+        """Function to perform grid search cross validation"""
+        self.logger.info(f"Performing 10 fold cross validation for {self.model_type} {self.dependent_variable} model")
+        params_model = GridSearchCV(estimator=model_object, param_grid=param_grid, scoring=scoring,
+                                    verbose=10, n_jobs=-1, cv=10)
+        params_model.fit(self.X_train, self.y_train)
+        self.best_params = params_model.best_params_
+
     def predict(self):
         """Function to predict a model"""
         return self.model.predict(self.X_test)
@@ -66,7 +79,10 @@ class Model:
         """Function to write a summary report"""
         self.logger.info(f"Writing summary report for {self.model_type} {self.dependent_variable} model")
 
-        content = """-----SUMMARY REPORT-----"""
+        content = f"""-----SUMMARY REPORT-----
+        
+- Best Params: {self.best_params}
+        """
 
         # Calculate regression metrics if regression is performed
         if dependent_variables[self.dependent_variable] == "regression":
@@ -80,6 +96,7 @@ class Model:
         r_squared = round(r2_score(self.y_test, predictions), 4)
         adj_r_squared = round(calculate_adj_r2(r_squared, self.X_test), 4)
 
+        # Write base metrics to report
         content += f"""\n- R-Squared Score: {r_squared}\n- Adj. R-Squared Score: {adj_r_squared}"""
 
         # Write to file

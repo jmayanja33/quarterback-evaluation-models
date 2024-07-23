@@ -1,0 +1,8 @@
+-----SUMMARY REPORT-----
+        
+- Best Params: {'learning_rate': 0.1, 'max_depth': 10, 'n_estimators': 200}
+        
+
+- Accuracy: 0.6053
+- R-Squared Score: 0.0463
+- Adj. R-Squared Score: -0.8572

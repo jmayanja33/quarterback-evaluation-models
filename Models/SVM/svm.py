@@ -1,12 +1,12 @@
-from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
+from sklearn.svm import SVR, SVC
 from Data.columns import dependent_variables
 from Models.model import Model
 
 
-class RandomForest(Model):
+class SVM(Model):
 
     def __init__(self, dependent_variable):
-        model_type = "RandomForest"
+        model_type = "SVM"
         super().__init__(dependent_variable, model_type)
 
         # Initialize a regressor or classifier
@@ -18,18 +18,18 @@ class RandomForest(Model):
         if dependent_variables[self.dependent_variable] == "regression":
             if self.best_params is None:
                 self.logger.info(f"Initializing {self.model_type} {self.dependent_variable} model")
-                self.model = RandomForestRegressor(random_state=33)
+                self.model = SVR()
             else:
                 self.logger.info(f"Configuring {self.model_type} {self.dependent_variable} model with best parameters")
-                self.model = RandomForestRegressor(**self.best_params, random_state=33)
+                self.model = SVR(**self.best_params)
         # Initialize a classifier
         else:
             if self.best_params is None:
                 self.logger.info(f"Initializing {self.model_type} {self.dependent_variable} model")
-                self.model = RandomForestClassifier(random_state=33)
+                self.model = SVC()
             else:
                 self.logger.info(f"Configuring {self.model_type} {self.dependent_variable} model with best parameters")
-                self.model = RandomForestClassifier(**self.best_params, random_state=33)
+                self.model = SVC(**self.best_params)
 
     def fit(self):
         """Function to find the best parameters with gridsearch CV and then fit a model"""
@@ -41,17 +41,17 @@ class RandomForest(Model):
 
         # Initialize param grid and demo model
         param_grid = {
-            "n_estimators": [i for i in range(100, 500, 100)],
-            "max_depth": [i for i in range(10, 50, 5)],
-            "bootstrap": [True, False]
+            "C": [0.1, 1, 10, 100, 1000],
+            "kernel": ["linear", "poly", "rbf"],
+            "gamma": ["scale", "auto"],
         }
 
         # Initialize a regressor or classifier
         if dependent_variables[self.dependent_variable] == "regression":
-            model = RandomForestRegressor(random_state=33)
+            model = SVR()
             scoring = "neg_mean_squared_error"
         else:
-            model = RandomForestClassifier(random_state=33)
+            model = SVC()
             scoring = "accuracy"
 
         # Run Grid Search CV

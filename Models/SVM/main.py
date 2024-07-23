@@ -1,4 +1,4 @@
-from random_forest import RandomForest
+from svm import SVM
 from Data.columns import dependent_variables
 
 
@@ -10,5 +10,5 @@ if __name__ == "__main__":
     for variable in DEPENDENT_VARIABLES:
 
         # Initialize Random Forest model
-        model = RandomForest(variable)
+        model = SVM(variable)
         model.fit()

@@ -1,0 +1,7 @@
+-----FIRST TEAM ALL PRO SELECTIONS FEATURE IMPORTANCE-----
+- wins: 0.5262491
+- points_for: 0.20830654
+- height: 0.060411453
+- rushing_yards: 0.04839564
+- age: 0.030476889
+- games_played: 0.02418266
