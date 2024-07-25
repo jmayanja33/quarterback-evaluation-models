@@ -3,6 +3,6 @@
 - Best Params: {'C': 0.1, 'kernel': 'rbf', 'gamma': 'auto'}
         
 
-- RMSE: 3.2778
-- R-Squared Score: -0.1387
-- Adj. R-Squared Score: -2.0094
+- RMSE: 3.2049
+- R-Squared Score: -0.0886
+- Adj. R-Squared Score: -0.4918

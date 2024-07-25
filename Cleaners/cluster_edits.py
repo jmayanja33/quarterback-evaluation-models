@@ -1,5 +1,5 @@
 """
-These edits are for the normalized K-means clusters with k = 7
+These edits are for the normalized K-means clusters with k = 6
 
 Quarterback Clusters:
     - 0: Starters

@@ -6,6 +6,8 @@ from Logs.logger import Logger
 import pandas as pd
 import numpy as np
 import pickle
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
 
 np.random.seed(33)
 
@@ -27,6 +29,9 @@ def calculate_adj_r2(r2, data):
 
 def load_data(dependent_variable):
     """Function to load data"""
+    scaler = StandardScaler()
+    pca = PCA(n_components=10)
+
     data_path = f"../../Data/TrainingData/{dependent_variable}"
     X_train = pd.read_csv(f"{data_path}/X_train.csv")
     X_test = pd.read_csv(f"{data_path}/X_test.csv")
@@ -36,6 +41,13 @@ def load_data(dependent_variable):
     # Remove player name and id
     X_train.drop(columns=drop_cols, axis=1, inplace=True)
     X_test.drop(columns=drop_cols, axis=1, inplace=True)
+
+    # Scale and normalize features
+    X_train = pd.DataFrame(scaler.fit_transform(X_train), columns=X_train.columns)
+    X_train = pd.DataFrame(pca.fit_transform(X_train), columns=[f"pc{i + 1}" for i in range(0, pca.n_components)])
+
+    X_test = pd.DataFrame(scaler.fit_transform(X_test), columns=X_test.columns)
+    X_test = pd.DataFrame(pca.fit_transform(X_test), columns=[f"pc{i + 1}" for i in range(0, pca.n_components)])
 
     return X_train, X_test, y_train, y_test
 

@@ -3,6 +3,6 @@
 - Best Params: {'max_depth': 1, 'n_estimators': 200}
         
 
-- RMSE: 0.1627
+- RMSE: 0.0932
 - R-Squared Score: 0.0
-- Adj. R-Squared Score: -1.6429
+- Adj. R-Squared Score: -0.3704

@@ -3,6 +3,6 @@
 - Best Params: None
         
 
-- Accuracy: 0.6579
-- R-Squared Score: -0.2471
-- Adj. R-Squared Score: -2.2959
+- Accuracy: 0.6842
+- R-Squared Score: -0.1004
+- Adj. R-Squared Score: -0.508

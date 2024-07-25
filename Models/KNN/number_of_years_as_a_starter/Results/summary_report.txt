@@ -1,8 +1,8 @@
 -----SUMMARY REPORT-----
         
-- Best Params: {'metric': 'manhattan', 'n_neighbors': 19, 'weights': 'uniform'}
+- Best Params: {'metric': 'euclidean', 'n_neighbors': 19, 'weights': 'uniform'}
         
 
-- RMSE: 3.2243
-- R-Squared Score: -0.1018
-- Adj. R-Squared Score: -1.9119
+- RMSE: 2.8904
+- R-Squared Score: 0.1146
+- Adj. R-Squared Score: -0.2133

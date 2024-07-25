@@ -1,5 +1,7 @@
+import numpy as np
 from tensorflow import keras
 from keras.api.callbacks import EarlyStopping
+from keras.api.activations import softmax
 from matplotlib import pyplot as plt
 from Data.columns import dependent_variables
 from Models.model import Model
@@ -17,7 +19,6 @@ class ANN(Model):
 
         # Initialize a regressor or classifier
         self.metric = None
-        self.activation = None
         self.loss = None
         self.initialize_model()
 
@@ -26,21 +27,23 @@ class ANN(Model):
         # Initialize a regressor model
         if dependent_variables[self.dependent_variable] == "regression":
             self.metric = "root_mean_squared_error"
-            self.activation = None
+            activation = None
             self.loss = "mean_squared_error"
+            output_neurons = 1
 
         # Initialize a classifier
         else:
             self.metric = "accuracy"
-            self.activation = "softmax"
-            self.loss = "categorical_crossentropy"
+            activation = "softmax"
+            self.loss = "sparse_categorical_crossentropy"
+            output_neurons = 6
 
         # Create model
         self.model = keras.Sequential([
             keras.layers.InputLayer(shape=(len(self.X_train.columns),)),
             keras.layers.Dense(16, activation='relu', name='hidden1'),
             keras.layers.Dense(16, activation='relu', name='hidden2'),
-            keras.layers.Dense(1, name='output', activation=self.activation)
+            keras.layers.Dense(output_neurons, name='output', activation=activation)
         ])
 
     def fit(self):
@@ -58,6 +61,10 @@ class ANN(Model):
         # Evaluate model
         self.plot_training_losses()
         predictions = self.model.predict(self.X_test)
+
+        # Write summary report
+        if self.metric == "accuracy":
+            predictions = [np.argmax(i) for i in predictions]
         self.summary_report(predictions)
 
         # Save model

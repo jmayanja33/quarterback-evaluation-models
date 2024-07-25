@@ -9,6 +9,6 @@ if __name__ == "__main__":
 
     for variable in DEPENDENT_VARIABLES:
 
-        # Initialize Random Forest model
+        # Initialize SVM model
         model = SVM(variable)
         model.fit()

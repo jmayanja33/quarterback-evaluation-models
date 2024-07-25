@@ -2,7 +2,7 @@ from ann import ANN
 from Data.columns import dependent_variables
 import warnings
 
-# =warnings.filterwarnings("ignore")
+warnings.filterwarnings("ignore")
 
 
 DEPENDENT_VARIABLES = [i for i in dependent_variables.keys()]

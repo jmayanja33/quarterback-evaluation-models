@@ -1,8 +1,8 @@
 -----SUMMARY REPORT-----
         
-- Best Params: {'metric': 'manhattan', 'n_neighbors': 19, 'weights': 'uniform'}
+- Best Params: {'metric': 'euclidean', 'n_neighbors': 13, 'weights': 'distance'}
         
 
 - Accuracy: 0.6579
-- R-Squared Score: -0.2471
-- Adj. R-Squared Score: -2.2959
+- R-Squared Score: -0.027
+- Adj. R-Squared Score: -0.4074

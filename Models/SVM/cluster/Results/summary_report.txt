@@ -4,5 +4,5 @@
         
 
 - Accuracy: 0.6579
-- R-Squared Score: -0.2471
-- Adj. R-Squared Score: -2.2959
+- R-Squared Score: -0.1371
+- Adj. R-Squared Score: -0.5582
