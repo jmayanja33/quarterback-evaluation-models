@@ -1,7 +1,6 @@
 import numpy as np
 from tensorflow import keras
 from keras.api.callbacks import EarlyStopping
-from keras.api.activations import softmax
 from matplotlib import pyplot as plt
 from Data.columns import dependent_variables
 from Models.model import Model

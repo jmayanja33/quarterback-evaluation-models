@@ -3,12 +3,13 @@ from Data.columns import dependent_variables
 from Helpers.helpers import make_directory
 import pandas as pd
 
+
 if __name__ == "__main__":
 
     # Load Data
     data = pd.read_csv("../Data/cleaned_clustered_ncaa_drafted_qbs.csv")
     train_data = data[data["cluster"] != -999]
-    test_data = data[data["cluster"] == 999]
+    test_data = data[data["cluster"] == -999]
 
     # Split data for each dependent variable
     for variable in dependent_variables.keys():
