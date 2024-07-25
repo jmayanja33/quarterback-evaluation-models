@@ -53,6 +53,16 @@ def load_model(dependent_variable):
         return model
 
 
+def rename_columns(df):
+    """Function to rename columns to match model data frame"""
+    columns = df.columns
+    column_names = dict()
+    for i in range(len(columns)):
+        column = columns[i]
+        column_names[column] = i
+    return df.rename(columns=column_names)
+
+
 def save_cosine_similarities(cosine_similarities):
     """Function to save cosine similarities"""
     columns = ["player", "most_similar_1", "most_similar_1_value", "most_similar_2",
@@ -84,11 +94,21 @@ class Predictor:
         """Function to make predictions"""
         self.logger.info(f"Making predictions for {self.dependent_variable}")
 
+        # Format XGBoost data
+        model_type = best_models[self.dependent_variable]
+        if model_type == "XGBoost":
+            with open(f"../Models/{model_type}/{self.dependent_variable}/TrainingStats/MostSignificantFeatures.pkl", "rb") as pklfile:
+                significant_features = pickle.load(pklfile)
+                pklfile.close()
+
+            self.data = self.data[significant_features]
+            self.data = rename_columns(self.data)
+
         # Make predictions
         predictions = self.model.predict(self.data)
         if dependent_variables[self.dependent_variable] == "regression":
             predictions = [round(float(i), 0) for i in predictions]
-        else:
+        elif model_type == "ANN":
             predictions = [np.argmax(i) for i in predictions]
         return predictions
 

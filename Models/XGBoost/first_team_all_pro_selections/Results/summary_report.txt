@@ -1,8 +1,8 @@
 -----SUMMARY REPORT-----
         
-- Best Params: {'learning_rate': 0.01, 'max_depth': 10, 'n_estimators': 100}
+- Best Params: {'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 100}
         
 
-- RMSE: 0.15
+- RMSE: 0.1123
 - R-Squared Score: 0.0
-- Adj. R-Squared Score: -0.1935
+- Adj. R-Squared Score: -0.0278

@@ -113,7 +113,7 @@ class XGBoost(Model):
             counter += 1
         file.close()
 
-        # Find threshold that has best metric
+        # Find threshold that has the best metric
         if scoring == "RMSE":
             best_metric = min(model_thresholds.values())
         else:
@@ -142,7 +142,7 @@ class XGBoost(Model):
              importance_vals[i] >= self.threshold}.items(),
             key=lambda x: x[1], reverse=True))
 
-        with open(f"{self.dependent_variable}/{self.dependent_variable}/TrainingStats/MostSignificantFeatureValues.txt", "w") as file:
+        with open(f"{self.dependent_variable}/TrainingStats/MostSignificantFeatureValues.txt", "w") as file:
             file.write(f"-----{self.dependent_variable.replace('_', ' ').upper()} FEATURE IMPORTANCE-----")
             for i in importance_dict.keys():
                 file.write(f"\n- {i}: {importance_dict[i]}")

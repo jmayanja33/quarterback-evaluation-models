@@ -1,5 +1,0 @@
------PRO BOWL SELECTIONS FEATURE IMPORTANCE-----
-- completions: 0.1871455
-- losses: 0.104911886
-- weight: 0.1010566
-- passes_attempted: 0.08746227
