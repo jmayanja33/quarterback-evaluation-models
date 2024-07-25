@@ -7,5 +7,5 @@ dependent_variables = {
 }
 
 drop_cols = [
-    "player", "player_id"
+    "player", "player_id", "years_missing"
 ]

@@ -1,0 +1,8 @@
+-----SUMMARY REPORT-----
+        
+- Best Params: {'C': 0.1, 'kernel': 'rbf', 'gamma': 'auto'}
+        
+
+- Accuracy: 0.6579
+- R-Squared Score: -0.2471
+- Adj. R-Squared Score: -2.2959

@@ -1,0 +1,8 @@
+-----SUMMARY REPORT-----
+        
+- Best Params: None
+        
+
+- RMSE: 173.7026
+- R-Squared Score: -27.7243
+- Adj. R-Squared Score: -74.9142

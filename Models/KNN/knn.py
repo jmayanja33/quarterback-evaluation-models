@@ -1,9 +1,9 @@
-from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
+from sklearn.neighbors import KNeighborsClassifier, KNeighborsRegressor
 from Data.columns import dependent_variables
 from Models.model import Model
 
 
-class RandomForest(Model):
+class KNN(Model):
 
     def __init__(self, dependent_variable):
         model_type = "RandomForest"
@@ -18,18 +18,18 @@ class RandomForest(Model):
         if dependent_variables[self.dependent_variable] == "regression":
             if self.best_params is None:
                 self.logger.info(f"Initializing {self.model_type} {self.dependent_variable} model")
-                self.model = RandomForestRegressor(random_state=33)
+                self.model = KNeighborsRegressor()
             else:
                 self.logger.info(f"Configuring {self.model_type} {self.dependent_variable} model with best parameters")
-                self.model = RandomForestRegressor(**self.best_params, random_state=33)
+                self.model = KNeighborsRegressor(**self.best_params)
         # Initialize a classifier
         else:
             if self.best_params is None:
                 self.logger.info(f"Initializing {self.model_type} {self.dependent_variable} model")
-                self.model = RandomForestClassifier(random_state=33)
+                self.model = KNeighborsClassifier()
             else:
                 self.logger.info(f"Configuring {self.model_type} {self.dependent_variable} model with best parameters")
-                self.model = RandomForestClassifier(**self.best_params, random_state=33)
+                self.model = KNeighborsClassifier(**self.best_params)
 
     def fit(self):
         """Function to find the best parameters with gridsearch CV and then fit a model"""
@@ -41,16 +41,17 @@ class RandomForest(Model):
 
         # Initialize param grid and demo model
         param_grid = {
-            "n_estimators": [i for i in range(100, 500, 100)],
-            "max_depth": [i for i in range(1, 11, 1)],
+            "n_neighbors": [i for i in range(1, 21, 2)],
+            "metric": ["manhattan", "euclidean"],
+            "weights": ["uniform", "distance"]
         }
 
         # Initialize a regressor or classifier
         if dependent_variables[self.dependent_variable] == "regression":
-            model = RandomForestRegressor(random_state=33)
+            model = KNeighborsRegressor()
             scoring = "neg_mean_squared_error"
         else:
-            model = RandomForestClassifier(random_state=33)
+            model = KNeighborsClassifier()
             scoring = "accuracy"
 
         # Run Grid Search CV

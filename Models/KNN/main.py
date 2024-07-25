@@ -1,4 +1,4 @@
-from xg_boost import XGBoost
+from knn import KNN
 from Data.columns import dependent_variables
 
 
@@ -10,5 +10,5 @@ if __name__ == "__main__":
     for variable in DEPENDENT_VARIABLES:
 
         # Initialize XGBoost model
-        model = XGBoost(variable)
+        model = KNN(variable)
         model.fit()

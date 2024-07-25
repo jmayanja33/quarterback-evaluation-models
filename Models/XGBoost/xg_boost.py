@@ -31,10 +31,10 @@ class XGBoost(Model):
         else:
             if self.best_params is None:
                 self.logger.info(f"Initializing {self.model_type} {self.dependent_variable} model")
-                self.model = XGBClassifier(random_state=33)
+                self.model = XGBClassifier(random_state=33, objective="softmax")
             else:
                 self.logger.info(f"Configuring {self.model_type} {self.dependent_variable} model with best parameters")
-                self.model = XGBClassifier(**self.best_params, random_state=33)
+                self.model = XGBClassifier(**self.best_params, random_state=33, objective="softmax")
 
     def fit(self):
         """Function to find the best parameters with gridsearch CV and then fit a model"""
@@ -47,7 +47,7 @@ class XGBoost(Model):
 
         # Initialize param grid and demo model
         param_grid = {
-            "max_depth": [i for i in range(1, 10)],
+            "max_depth": [i for i in range(3, 11)],
             "learning_rate": [0.01, 0.1, 1],
             "n_estimators": [i for i in range(100, 500, 100)],
         }
@@ -57,7 +57,7 @@ class XGBoost(Model):
             model = XGBRegressor(random_state=33)
             scoring = "neg_mean_squared_error"
         else:
-            model = XGBClassifier(random_state=33)
+            model = XGBClassifier(random_state=33, objective="softmax")
             scoring = "accuracy"
 
         # Run Grid Search CV
@@ -74,7 +74,7 @@ class XGBoost(Model):
             model = XGBRegressor(random_state=33)
             scoring = "RMSE"
         else:
-            model = XGBClassifier(random_state=33)
+            model = XGBClassifier(random_state=33, objective="softmax")
             scoring = "Accuracy"
 
         self.logger.info("Finding feature significance")
@@ -83,7 +83,7 @@ class XGBoost(Model):
 
         # Create a model using each feature importance as a feature threshold, pick threshold with lowest RMSE/highest accuracy
         model_thresholds = dict()
-        file = open(f"{self.dependent_variable}/ThresholdEval.txt", "w")
+        file = open(f"{self.dependent_variable}/TrainingStats/ThresholdEval.txt", "w")
         counter = 1
 
         # Iterate through thresholds
@@ -100,7 +100,7 @@ class XGBoost(Model):
                 predictions = feature_model.predict(features_X_validation)
                 result = root_mean_squared_error(self.y_test, predictions)
             else:
-                feature_model = XGBClassifier(random_state=33)
+                feature_model = XGBClassifier(random_state=33, objective="softmax")
                 feature_model.fit(features_X_train, self.y_train)
                 predictions = feature_model.predict(features_X_validation)
                 result = accuracy_score(self.y_test, predictions)
@@ -131,7 +131,7 @@ class XGBoost(Model):
 
         # Save most significant features to a file
         self.logger.info("Writing feature names and importance to a file")
-        with open(f"{self.dependent_variable}/MostSignificantFeatures.pkl", "wb") as pklfile:
+        with open(f"{self.dependent_variable}/TrainingStats/MostSignificantFeatures.pkl", "wb") as pklfile:
             pickle.dump(self.significant_feature_names, pklfile)
             pklfile.close()
 
@@ -142,7 +142,7 @@ class XGBoost(Model):
              importance_vals[i] >= self.threshold}.items(),
             key=lambda x: x[1], reverse=True))
 
-        with open(f"{self.dependent_variable}/{self.dependent_variable}MostSignificantFeatureValues.txt", "w") as file:
+        with open(f"{self.dependent_variable}/{self.dependent_variable}/TrainingStats/MostSignificantFeatureValues.txt", "w") as file:
             file.write(f"-----{self.dependent_variable.replace('_', ' ').upper()} FEATURE IMPORTANCE-----")
             for i in importance_dict.keys():
                 file.write(f"\n- {i}: {importance_dict[i]}")

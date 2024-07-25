@@ -33,7 +33,8 @@ class SVM(Model):
 
     def fit(self):
         """Function to find the best parameters with gridsearch CV and then fit a model"""
-        self.grid_search()
+        # self.grid_search()
+        self.best_params = {"C": 0.1, "kernel": "rbf", "gamma": "auto"}
         super().fit()
 
     def grid_search(self, model_object=None, param_grid=None, scoring=None):

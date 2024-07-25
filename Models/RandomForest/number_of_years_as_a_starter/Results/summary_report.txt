@@ -1,8 +1,8 @@
 -----SUMMARY REPORT-----
         
-- Best Params: {'bootstrap': True, 'max_depth': 20, 'n_estimators': 100}
+- Best Params: {'max_depth': 1, 'n_estimators': 100}
         
 
-- RMSE: 3.4157
-- R-Squared Score: -0.2365
-- Adj. R-Squared Score: -2.5193
+- RMSE: 3.0484
+- R-Squared Score: 0.0152
+- Adj. R-Squared Score: -1.6027

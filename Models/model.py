@@ -5,6 +5,7 @@ from Data.columns import *
 from Logs.logger import Logger
 import pandas as pd
 import numpy as np
+import pickle
 
 np.random.seed(33)
 
@@ -55,6 +56,7 @@ class Model:
         """Function to initialize directories to hold results"""
         make_directory(self.dependent_variable)
         make_directory(f"{self.dependent_variable}", "Results")
+        make_directory(f"{self.dependent_variable}", "TrainingStats")
 
     def fit(self):
         """Function to fit a model"""
@@ -62,18 +64,25 @@ class Model:
         self.model.fit(self.X_train, self.y_train)
         predictions = self.model.predict(self.X_test)
         self.summary_report(predictions)
+        self.save_model()
 
     def grid_search(self, model_object=None, param_grid=None, scoring=None):
         """Function to perform grid search cross validation"""
-        self.logger.info(f"Performing 10 fold cross validation for {self.model_type} {self.dependent_variable} model")
+        self.logger.info(f"Performing 5 fold cross validation for {self.model_type} {self.dependent_variable} model")
         params_model = GridSearchCV(estimator=model_object, param_grid=param_grid, scoring=scoring,
-                                    verbose=10, n_jobs=-1, cv=10)
+                                    verbose=10, n_jobs=-1, cv=5)
         params_model.fit(self.X_train, self.y_train)
         self.best_params = params_model.best_params_
 
     def predict(self):
         """Function to predict a model"""
         return self.model.predict(self.X_test)
+
+    def save_model(self):
+        """Function to save a model"""
+        with open(f"{self.dependent_variable}/model.pkl", "wb") as pkl_file:
+            pickle.dump(self.model, pkl_file)
+            pkl_file.close()
 
     def summary_report(self, predictions):
         """Function to write a summary report"""

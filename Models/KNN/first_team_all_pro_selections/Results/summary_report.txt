@@ -1,8 +1,8 @@
 -----SUMMARY REPORT-----
         
-- Best Params: {'max_depth': 1, 'n_estimators': 200}
+- Best Params: {'metric': 'euclidean', 'n_neighbors': 11, 'weights': 'uniform'}
         
 
-- RMSE: 0.1627
+- RMSE: 0.1383
 - R-Squared Score: 0.0
 - Adj. R-Squared Score: -1.6429
