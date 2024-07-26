@@ -74,7 +74,7 @@ def save_cosine_similarities(cosine_similarities):
         row = [i[0]]
         for j in i[1]:
             row.append(j[0])
-            row.append(j[1])
+            row.append(round(j[1], 4))
         formatted_cosine_similarities.append(row)
 
     # Create data frame
@@ -106,11 +106,15 @@ class Predictor:
 
         # Make predictions
         predictions = self.model.predict(self.data)
+        prediction_probabilities = None
+        total_probabilities = None
         if dependent_variables[self.dependent_variable] == "regression":
-            predictions = [round(float(i), 0) for i in predictions]
+            predictions = [round(float(i), 1) for i in predictions]
         elif model_type == "ANN":
+            prediction_probabilities = [np.round(i[np.argmax(i)], 4) for i in predictions]
+            total_probabilities = predictions.copy()
             predictions = [np.argmax(i) for i in predictions]
-        return predictions
+        return predictions, prediction_probabilities, total_probabilities
 
     def similarity(self):
         """Function to find cosine similarity between two players"""
@@ -158,10 +162,12 @@ class Predictor:
         self.logger.info("Saving cosine similarities")
         save_cosine_similarities(cosine_similarities)
 
-    def save_predictions(self, predictions):
+    def save_predictions(self, predictions, total_prob_df):
         """Function to save predictions"""
         self.logger.info("Saving predictions")
         player_data = load_data(dependent_variable=self.dependent_variable, similarity=True)
         predictions["player"] = list(player_data["player"])
+        total_prob_df["player"] = list(player_data["player"])
         predictions.to_csv("../Data/Predictions/predictions.csv", index=False)
+        total_prob_df.to_csv("../Data/Predictions/predictions_total_probabilities.csv", index=False)
 

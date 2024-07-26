@@ -80,7 +80,7 @@ class Cluster:
         x_data = pca_data["pc1"]
         y_data = pca_data["pc2"]
         cluster = pca_data["cluster"]
-        scatter = plt.scatter(x_data, y_data, c=cluster, cmap="plasma")
+        scatter = plt.scatter(x_data, y_data, c=cluster, cmap="rainbow")
 
         # Configure legend
         handles, labels = scatter.legend_elements()

@@ -56,8 +56,6 @@ if __name__ == '__main__':
             ncaa_df = assign_variables(variable, ncaa_df, cluster_df)
         else:
             ncaa_df = assign_variables(variable, ncaa_df, nfl_df)
-        # debug = final_ncaa_df.copy()
-        # debug.sort_values(by=["cluster", "player"], inplace=True)
 
     # Save data
     logger.info("Saving data")

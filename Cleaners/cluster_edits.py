@@ -18,10 +18,13 @@ edits = {
     "Andrew Luck": 5,           # Andrew Luck, cluster 0 --> 5
     "Brock Purdy": 0,           # Brock Purdy, cluster 2 --> 0
     "Mason Rudolph": 2,         # Mason Rudolph, cluster 1 --> 2
-    "Robert Griffin III": 3,    # Robert Griffin III, cluster 4 --> 5
+    "Robert Griffin III": 3,    # Robert Griffin III, cluster 2 --> 3
     "Joe Burrow": 5,            # Joe Burrow, cluster 2 --> 5
     "Deshaun Watson": 3,        # Deshaun Watson, cluster 2 --> 3
     "Dak Prescott": 3,          # Dak Prescott, cluster 0 --> 3
     "Joshua Dobbs": 2,          # Josh Dobbs, cluster 1 --> 2
     "Jalen Hurts": 3,           # Jalen Hurts, cluster 2 --> 3
+    "Tua Tagovailoa": 0,        # Tua Tagovailoa cluster 2 --> 0
+    "Matt Schaub": 0,           # Matt Schaub cluster 2 --> 0
+    "Baker Mayfield": 0         # Baker Mayfield cluster 2 --> 0
 }
