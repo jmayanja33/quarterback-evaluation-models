@@ -40,8 +40,8 @@ class ANN(Model):
         # Create model
         self.model = keras.Sequential([
             keras.layers.InputLayer(shape=(len(self.X_train.columns),)),
-            keras.layers.Dense(16, activation='relu', name='hidden1'),
-            keras.layers.Dense(16, activation='relu', name='hidden2'),
+            keras.layers.Dense(8, activation='relu', name='hidden1'),
+            keras.layers.Dense(8, activation='relu', name='hidden2'),
             keras.layers.Dense(output_neurons, name='output', activation=activation)
         ])
 

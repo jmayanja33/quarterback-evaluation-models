@@ -6,7 +6,7 @@ from Models.model import Model
 class KNN(Model):
 
     def __init__(self, dependent_variable):
-        model_type = "RandomForest"
+        model_type = "KNN"
         super().__init__(dependent_variable, model_type)
 
         # Initialize a regressor or classifier

@@ -41,7 +41,7 @@ class RandomForest(Model):
 
         # Initialize param grid and demo model
         param_grid = {
-            "n_estimators": [i for i in range(100, 500, 100)],
+            "n_estimators": [i for i in range(100, 600, 100)],
             "max_depth": [i for i in range(1, 11, 1)],
         }
 

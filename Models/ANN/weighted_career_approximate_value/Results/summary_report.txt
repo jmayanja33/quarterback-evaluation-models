@@ -3,6 +3,6 @@
 - Best Params: None
         
 
-- RMSE: 31.9087
-- R-Squared Score: 0.0307
-- Adj. R-Squared Score: -0.3283
+- RMSE: 32.8968
+- R-Squared Score: -0.0303
+- Adj. R-Squared Score: -0.4119
