@@ -1,0 +1,10 @@
+# Dictionary mapping colleges to numerical encodings
+colleges = {'Marshall': 42, 'Louisville': 41, 'Tennessee': 77, 'West Virginia': 96, 'Texas St.': 80, 'Michigan': 46, 'Stanford': 74, 'Louisiana Tech': 40, 'Notre Dame': 57, 'Georgia Tech': 27, 'Virginia Tech': 93, 'Purdue': 65, 'Georgia': 26, 'Washington': 94, 'Florida St.': 23, 'Iowa St.': 34, 'Florida': 20, 'Rutgers': 66, 'Oregon': 61, 'LSU': 38, 'Oklahoma': 59, 'Fresno St.': 24, 'Tulane': 85, 'Sam Houston St.': 68, 'East Carolina': 19, 'Illinois': 31, 'BYU': 7, 'Ohio St.': 58, 'Southern Miss': 73, 'USC': 88, 'California': 12, 'Texas': 78, 'Boston Col.': 10, 'Wisconsin': 98, 'Texas Tech': 81, 'Indiana': 32, 'Miami (FL)': 44, 'Mississippi': 48, 'North Carolina St.': 54, 'Miami (OH)': 45, 'Virginia': 92, 'Bowling Green': 11, 'Michigan St.': 47, 'Colorado St.': 16, 'Utah': 89, 'Auburn': 6, 'Akron': 0, 'Arizona St.': 4, 'Connecticut': 17, 'Oregon St.': 62, 'Tulsa': 86, 'Vanderbilt': 91, 'Alabama St.': 2, 'Clemson': 15, 'Alabama': 1, 'Missouri': 50, 'Furman': 25, 'Texas A&M': 79, 'Toledo': 83, 'Houston': 29, 'Texas-El Paso': 82, 'San Diego St.': 69, 'Hawaii': 28, 'Kentucky': 37, 'Washington St.': 95, 'Kansas St.': 36, 'Northwestern': 56, 'Florida Atlantic': 21, 'Cincinnati': 14, 'Troy': 84, 'TCU': 76, 'Nevada': 52, 'Arkansas': 5, 'Iowa': 33, 'North Carolina': 53, 'Idaho': 30, 'Baylor': 9, 'Oklahoma St.': 60, 'Arizona': 3, 'Northern Illinois': 55, 'Syracuse': 75, 'South Florida': 72, 'Duke': 18, 'Central Florida': 13, 'Pittsburgh': 64, 'San Jose St.': 70, 'Ball St.': 8, 'SMU': 67, 'UCLA': 87, 'Memphis': 43, 'Penn St.': 63, 'Mississippi St.': 49, 'Western Kentucky': 97, 'Wyoming': 99, 'Nebraska': 51, 'Florida International': 22, 'Utah St.': 90, 'James Madison': 35, 'Liberty': 39, 'South Carolina': 71}
+
+# Dictionary mapping conferences to numerical encodings
+conferences = {'MAC': 7, 'CUSA': 5, 'SEC': 11, 'Big East': 3, 'Big Ten': 4, 'Pac-10': 9, 'Ind': 6, 'ACC': 0, 'Big 12': 2, 'WAC': 13, 'MWC': 8, 'Sun Belt': 12, 'Pac-12': 10, 'American': 1}
+
+colleges["Kansas"] = 330
+colleges["Ole Miss"] = colleges["Mississippi"]
+colleges["Colorado"] = 331
+colleges["Ohio State"] = colleges["Ohio St."]

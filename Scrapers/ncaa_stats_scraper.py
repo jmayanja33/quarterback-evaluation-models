@@ -11,12 +11,13 @@ load_dotenv()
 
 class NCAAStatsScraper(Scraper):
 
-    def __init__(self):
+    def __init__(self, current_season=None):
         super().__init__()
         self.data = []
         self.player_years = []
         self.player_year_indexes = []
         self.player_schools = []
+        self.current_season = current_season
         self.logger.info("Initializing NCAA Statistics Scraper")
 
     def get_college_stats(self, player, player_id, college, player_url):
@@ -65,12 +66,13 @@ class NCAAStatsScraper(Scraper):
             year = str(val).replace("*", "")
             # Scrape the year
             try:
-                self.player_years.append(int(year))
-                self.player_year_indexes.append(i)
+                if self.current_season is None or year != str(self.current_season):
+                    self.player_years.append(int(year))
+                    self.player_year_indexes.append(i)
 
-                # Add college in case of transfer
-                college = table["School"][i]
-                self.player_schools.append(college)
+                    # Add college in case of transfer
+                    college = table["School"][i]
+                    self.player_schools.append(college)
             # Exclude strings in the column (ex. Career)
             except ValueError:
                 continue

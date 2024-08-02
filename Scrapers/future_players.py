@@ -1,0 +1,130 @@
+# List of players eligible for 2025 NFL draft
+
+players = {
+    "Noah Fifita": {
+        "college": "Arizona",
+        "url": "https://www.sports-reference.com/cfb/players/noah-fifita-1.html",
+        "height": 70,
+        "weight": 194,
+    },
+    "Shedeur Sanders": {
+        "college": "Colorado",
+        "url": "https://www.sports-reference.com/cfb/players/shedeur-sanders-1.html",
+        "height": 74,
+        "weight": 215,
+    },
+    "Quinn Ewers": {
+        "college": "Texas",
+        "url": "https://www.sports-reference.com/cfb/players/quinn-ewers-1.html",
+        "height": 75,
+        "weight": 206,
+    },
+    "Thomas Castellanos": {
+        "college": "Boston Col.",
+        "url": "https://www.sports-reference.com/cfb/players/thomas-castellanos-1.html",
+        "height": 70,
+        "weight": 196,
+    },
+    "Dillon Gabriel": {
+        "college": "Oregon",
+        "url": "https://www.sports-reference.com/cfb/players/dillon-gabriel-1.html",
+        "height": 72,
+        "weight": 200,
+    },
+    "Carson Beck": {
+        "college": "Georgia",
+        "url": "https://www.sports-reference.com/cfb/players/carson-beck-1.html",
+        "height": 76,
+        "weight": 215,
+    },
+    "Jalen Milroe": {
+        "college": "Alabama",
+        "url": "https://www.sports-reference.com/cfb/players/jalen-milroe-1.html",
+        "height": 74,
+        "weight": 201,
+    },
+    "Jaxson Dart": {
+        "college": "Ole Miss",
+        "url": "https://www.sports-reference.com/cfb/players/jaxson-dart-1.html",
+        "height": 74,
+        "weight": 215,
+    },
+    "Jalon Daniels": {
+        "college": "Kansas",
+        "url": "https://www.sports-reference.com/cfb/players/jalon-daniels-1.html",
+        "height": 72,
+        "weight": 203,
+    },
+    "Cameron Ward": {
+        "college": "Miami (FL)",
+        "url": "https://www.sports-reference.com/cfb/players/cameron-ward-1.html",
+        "height": 74,
+        "weight": 223,
+    },
+    "D.J. Uiagalelei": {
+        "college": "Florida St.",
+        "url": "https://www.sports-reference.com/cfb/players/dj-uiagalelei-1.html",
+        "height": 76,
+        "weight": 250,
+    },
+    "Kyron Drones": {
+        "college": "Virginia Tech",
+        "url": "https://www.sports-reference.com/cfb/players/kyron-drones-1.html",
+        "height": 74,
+        "weight": 222,
+    },
+    "Kyle McCord": {
+        "college": "Syracuse",
+        "url": "https://www.sports-reference.com/cfb/players/kyle-mccord-1.html",
+        "height": 75,
+        "weight": 210,
+    },
+    "Haynes King": {
+        "college": "Georgia Tech",
+        "url": "https://www.sports-reference.com/cfb/players/haynes-king-1.html",
+        "height": 75,
+        "weight": 200,
+    },
+    "Riley Leonard": {
+        "college": "Notre Dame",
+        "url": "https://www.sports-reference.com/cfb/players/riley-leonard-1.html",
+        "height": 76,
+        "weight": 205,
+    },
+    "Seth Henigan": {
+        "college": "Memphis",
+        "url": "https://www.sports-reference.com/cfb/players/seth-henigan-1.html",
+        "height": 75,
+        "weight": 200,
+    },
+    "Garrett Greene": {
+        "college": "West Virginia",
+        "url": "https://www.sports-reference.com/cfb/players/garrett-greene-1.html",
+        "height": 70,
+        "weight": 193,
+    },
+    "Brady Cook": {
+        "college": "Missouri",
+        "url": "https://www.sports-reference.com/cfb/players/brady-cook-1.html",
+        "height": 74,
+        "weight": 207,
+    },
+    "K.J. Jefferson": {
+        "college": "Central Florida",
+        "url": "https://www.sports-reference.com/cfb/players/kj-jefferson-1.html",
+        "height": 75,
+        "weight": 245,
+    },
+    "Will Howard": {
+        "college": "Ohio State",
+        "url": "https://www.sports-reference.com/cfb/players/will-howard-2.html",
+        "height": 76,
+        "weight": 235,
+    },
+    "Cade Klubnik": {
+        "college": "Clemson",
+        "url": "https://www.sports-reference.com/cfb/players/cade-klubnik-1.html",
+        "height": 74,
+        "weight": 205,
+    },
+}

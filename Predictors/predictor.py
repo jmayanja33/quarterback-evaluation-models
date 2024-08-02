@@ -24,7 +24,10 @@ def load_data(dependent_variable="cluster", filepath=None, similarity=False):
 
     # Remove player name and id
     test_data.drop(columns=drop_cols, axis=1, inplace=True)
-    test_data.drop(columns=[i for i in dependent_variables.keys()], axis=1, inplace=True)
+    try:
+        test_data.drop(columns=[i for i in dependent_variables.keys()], axis=1, inplace=True)
+    except KeyError:
+        pass
 
     # Scale and normalize features
     test_data = pd.DataFrame(scaler.fit_transform(test_data), columns=test_data.columns)
@@ -63,7 +66,7 @@ def rename_columns(df):
     return df.rename(columns=column_names)
 
 
-def save_cosine_similarities(cosine_similarities):
+def save_cosine_similarities(cosine_similarities, year=None):
     """Function to save cosine similarities"""
     columns = ["player", "most_similar_1", "most_similar_1_value", "most_similar_2",
                "most_similar_2_value", "most_similar_3", "most_similar_3_value"]
@@ -79,15 +82,18 @@ def save_cosine_similarities(cosine_similarities):
 
     # Create data frame
     df = pd.DataFrame(formatted_cosine_similarities, columns=columns)
-    df.to_csv("../Data/Predictions/cosine_similarities.csv")
+    if year is None:
+        df.to_csv("../Data/Predictions/cosine_similarities.csv")
+    else:
+        df.to_csv(f"../Data/FutureData/{year}/Predictions/cosine_similarities.csv")
 
 
 class Predictor:
 
-    def __init__(self, dependent_variable):
+    def __init__(self, dependent_variable, filepath=None):
         self.logger = Logger()
         self.dependent_variable = dependent_variable
-        self.data = load_data(dependent_variable)
+        self.data = load_data(dependent_variable, filepath=filepath)
         self.model = load_model(dependent_variable)
 
     def predict(self):
@@ -116,7 +122,7 @@ class Predictor:
             predictions = [np.argmax(i) for i in predictions]
         return predictions, prediction_probabilities, total_probabilities
 
-    def similarity(self):
+    def similarity(self, year=None):
         """Function to find cosine similarity between two players"""
 
         cosine_similarities = []
@@ -124,7 +130,10 @@ class Predictor:
                     "number_of_years_as_a_starter", "weighted_career_approximate_value", "cluster"}
 
         # Load data
-        young_qb_data = load_data(similarity=True)
+        if year is None:
+            young_qb_data = load_data(similarity=True)
+        else:
+            young_qb_data = load_data(similarity=True, filepath=f"../Data/FutureData/{year}/cleaned_prospects.csv")
         old_qb_data = load_data(filepath="../Data/cleaned_clustered_ncaa_drafted_qbs.csv", similarity=True)
         old_qb_data = old_qb_data[old_qb_data["cluster"] != -999]
         old_qb_data.reset_index(drop=True, inplace=True)
@@ -160,14 +169,21 @@ class Predictor:
 
         # Save similarities
         self.logger.info("Saving cosine similarities")
-        save_cosine_similarities(cosine_similarities)
+        save_cosine_similarities(cosine_similarities, year)
 
-    def save_predictions(self, predictions, total_prob_df):
+    def save_predictions(self, predictions, total_prob_df, year=None):
         """Function to save predictions"""
         self.logger.info("Saving predictions")
-        player_data = load_data(dependent_variable=self.dependent_variable, similarity=True)
+        if year is None:
+            player_data = load_data(dependent_variable=self.dependent_variable, similarity=True)
+        else:
+            player_data = load_data(dependent_variable=self.dependent_variable, similarity=True,
+                                    filepath=f"../Data/FutureData/{year}/cleaned_prospects.csv")
         predictions["player"] = list(player_data["player"])
         total_prob_df["player"] = list(player_data["player"])
-        predictions.to_csv("../Data/Predictions/predictions.csv", index=False)
-        total_prob_df.to_csv("../Data/Predictions/predictions_total_probabilities.csv", index=False)
-
+        if year is None:
+            predictions.to_csv("../Data/Predictions/predictions.csv", index=False)
+            total_prob_df.to_csv("../Data/Predictions/predictions_total_probabilities.csv", index=False)
+        else:
+            predictions.to_csv(f"../Data/FutureData/{year}/Predictions/predictions.csv", index=False)
+            total_prob_df.to_csv(f"../Data/FutureData/{year}/Predictions/predictions_total_probabilities.csv", index=False)
